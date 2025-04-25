@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 5WUEySzJQRcVlmkWHQpeaytzuxWu_1S1zQ9PSH2mxv8
+  default_config_hash: NlevO-9glXyhKXlUWlh7riNfQrp0Ntb8tQDuJzaTLlQ
 id: card_video
 label: 'Card Video'
 icon_uuid: null

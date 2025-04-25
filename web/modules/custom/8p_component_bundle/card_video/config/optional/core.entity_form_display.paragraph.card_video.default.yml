@@ -1,4 +1,4 @@
-uuid: 4e5d62fa-713e-4956-835b-6d9dc55695a9
+uuid: c2e23878-b9e5-4e35-ae88-2fc2d1b870d0
 langcode: en
 status: true
 dependencies:
@@ -39,7 +39,7 @@ content:
     weight: 2
     region: content
     settings:
-      rows: 1
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_cp_custom_id:
@@ -47,7 +47,7 @@ content:
     weight: 3
     region: content
     settings:
-      rows: 1
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_cp_video:
