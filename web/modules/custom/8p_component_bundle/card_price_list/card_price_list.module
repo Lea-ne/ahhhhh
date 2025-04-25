@@ -16,33 +16,33 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_theme for the paragraph().
  */
-function card_price_list_theme($existing, $type, $theme, $path) {
-  return [
-    'paragraph__card_button_list' => [
-      'base hook' => 'paragraph',
-    ],
+// function card_price_list_theme($existing, $type, $theme, $path) {
+//   return [
+//     'paragraph__card_button_list' => [
+//       'base hook' => 'paragraph',
+//     ],
 
-    'paragraph__button_list_title' => [
-      'base hook' => 'paragraph',
-    ],
+//     'paragraph__button_list_title' => [
+//       'base hook' => 'paragraph',
+//     ],
 
-    'paragraph__button_list_link' => [
-      'base hook' => 'paragraph',
-    ],
+//     'paragraph__button_list_link' => [
+//       'base hook' => 'paragraph',
+//     ],
 
-    'paragraph__button_list_description' => [
-      'base hook' => 'paragraph',
-    ],
-  ];
-}
-
-
+//     'paragraph__button_list_description' => [
+//       'base hook' => 'paragraph',
+//     ],
+//   ];
+// }
 
 
 
 
-function card_price_list_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
-  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_button_list') {
-    $build['#attached']['library'][] = 'card_button_list/component_style';
-  }
-}
+
+
+// function card_price_list_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+//   if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_button_list') {
+//     $build['#attached']['library'][] = 'card_button_list/component_style';
+//   }
+// }

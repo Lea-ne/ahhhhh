@@ -25,6 +25,7 @@
         "drupal/core-composer-scaffold": "^11.1",
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
+        "drupal/field_group": "^4.0",
         "drupal/layout_builder_modal": "^2.0",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",

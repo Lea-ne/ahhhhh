@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'bd8b3eef37ccf6f6558c9bd6c70ea4e482f3eaee',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -460,6 +460,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/field_group' => array(
+            'pretty_version' => '4.0.0',
+            'version' => '4.0.0.0',
+            'reference' => '4.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/field_group',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/inline_entity_form' => array(
             'pretty_version' => '3.0.0-rc20',
             'version' => '3.0.0.0-RC20',
@@ -524,9 +533,9 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'bd8b3eef37ccf6f6558c9bd6c70ea4e482f3eaee',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
