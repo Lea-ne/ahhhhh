@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_video.field_cp_custom_class
+    - field.field.paragraph.card_video.field_cp_custom_id
     - field.field.paragraph.card_video.field_cp_video
     - paragraphs.paragraphs_type.card_video
 _core:
@@ -19,6 +20,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_video:
     type: entity_reference_label

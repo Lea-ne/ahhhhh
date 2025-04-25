@@ -4,8 +4,32 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_video.field_cp_custom_class
+    - field.field.paragraph.card_video.field_cp_custom_id
     - field.field.paragraph.card_video.field_cp_video
     - paragraphs.paragraphs_type.card_video
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_options:
+      children:
+        - field_cp_custom_class
+        - field_cp_custom_id
+      label: Options
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: 3xvjJAU1gSaV1orcOP0QuSR7mTHkI4nP3yzCFbmpj4Y
 id: paragraph.card_video.default
 targetEntityType: paragraph
 bundle: card_video
@@ -13,7 +37,15 @@ mode: default
 content:
   field_cp_custom_class:
     type: string_textarea
-    weight: 2
+    weight: 4
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_custom_id:
+    type: string_textarea
+    weight: 5
     region: content
     settings:
       rows: 1

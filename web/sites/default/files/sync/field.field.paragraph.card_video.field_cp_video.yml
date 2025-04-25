@@ -13,7 +13,7 @@ id: paragraph.card_video.field_cp_video
 field_name: field_cp_video
 entity_type: paragraph
 bundle: card_video
-label: field_cp_video
+label: Video
 description: ''
 required: false
 translatable: false
