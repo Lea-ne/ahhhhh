@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_cp_ref_molecule_content
     - paragraphs.paragraphs_type.card_content_list
+    - paragraphs.paragraphs_type.molecule_content
   module:
     - entity_reference_revisions
 _core:
@@ -22,7 +23,8 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      molecule_content: molecule_content
     negate: 0
     target_bundles_drag_drop:
       atom_button:

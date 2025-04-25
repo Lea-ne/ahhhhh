@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_cp_ref_molecule_slide
     - paragraphs.paragraphs_type.card_feature_slider
+    - paragraphs.paragraphs_type.molecule_slide
   module:
     - entity_reference_revisions
 _core:
@@ -22,7 +23,8 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      molecule_slide: molecule_slide
     negate: 0
     target_bundles_drag_drop:
       atom_button:

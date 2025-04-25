@@ -1,6 +1,6 @@
 uuid: 671409e3-71aa-4032-b60b-7a48f2617ea1
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: molecule_slide
 label: Molecules
