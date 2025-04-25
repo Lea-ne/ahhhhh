@@ -14,7 +14,7 @@ id: paragraph.card_content_list.field_cp_ref_molecule_content
 field_name: field_cp_ref_molecule_content
 entity_type: paragraph
 bundle: card_content_list
-label: 'Content '
+label: 'Content Item'
 description: ''
 required: false
 translatable: false
@@ -29,9 +29,6 @@ settings:
     target_bundles_drag_drop:
       atom_button:
         weight: 13
-        enabled: false
-      atom_image:
-        weight: 14
         enabled: false
       atom_text:
         weight: 15
@@ -48,11 +45,23 @@ settings:
       card_cta_banner:
         weight: 18
         enabled: false
+      card_feature_icon:
+        weight: 21
+        enabled: false
+      card_feature_slider:
+        weight: 22
+        enabled: false
       card_hero_slider:
         weight: 19
         enabled: false
       card_simple_article:
         weight: 20
+        enabled: false
+      card_text_callout:
+        weight: 25
+        enabled: false
+      card_video:
+        weight: 26
         enabled: false
       molecule_content:
         weight: 21
