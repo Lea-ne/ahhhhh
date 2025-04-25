@@ -14,7 +14,7 @@ id: paragraph.molecule_slide.field_cp_media
 field_name: field_cp_media
 entity_type: paragraph
 bundle: molecule_slide
-label: field_cp_media
+label: Media
 description: ''
 required: false
 translatable: false
