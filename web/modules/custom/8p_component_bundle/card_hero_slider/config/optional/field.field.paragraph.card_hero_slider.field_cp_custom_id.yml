@@ -1,0 +1,19 @@
+uuid: 0d687f65-570c-4868-9f0e-020f93c917c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_custom_id
+    - paragraphs.paragraphs_type.card_hero_slider
+id: paragraph.card_hero_slider.field_cp_custom_id
+field_name: field_cp_custom_id
+entity_type: paragraph
+bundle: card_hero_slider
+label: 'Custom Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

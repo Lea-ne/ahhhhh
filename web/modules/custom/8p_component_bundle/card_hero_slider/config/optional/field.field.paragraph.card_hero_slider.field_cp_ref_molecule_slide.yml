@@ -5,13 +5,16 @@ dependencies:
   config:
     - field.storage.paragraph.field_cp_ref_molecule_slide
     - paragraphs.paragraphs_type.card_hero_slider
+    - paragraphs.paragraphs_type.molecule_slide
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: K4XQh61a1ye6aqlY93OKOtwHlqBckJH_8AJ0GDlcG84
 id: paragraph.card_hero_slider.field_cp_ref_molecule_slide
 field_name: field_cp_ref_molecule_slide
 entity_type: paragraph
 bundle: card_hero_slider
-label: field_cp_ref_molecule_slide
+label: 'Slide Item'
 description: ''
 required: false
 translatable: false
@@ -20,7 +23,8 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      molecule_slide: molecule_slide
     negate: 0
     target_bundles_drag_drop:
       atom_button:
@@ -41,14 +45,14 @@ settings:
       card_cta_banner:
         weight: 21
         enabled: false
+      card_feature_icon:
+        weight: 20
+        enabled: false
+      card_feature_slider:
+        weight: 21
+        enabled: false
       card_hero_slider:
         weight: 22
-        enabled: false
-      card_image:
-        weight: 23
-        enabled: false
-      card_price_list:
-        weight: 24
         enabled: false
       card_simple_article:
         weight: 25
@@ -61,9 +65,6 @@ settings:
         enabled: false
       molecule_content:
         weight: 28
-        enabled: false
-      molecule_price_list:
-        weight: 29
         enabled: false
       molecule_slide:
         weight: 30
