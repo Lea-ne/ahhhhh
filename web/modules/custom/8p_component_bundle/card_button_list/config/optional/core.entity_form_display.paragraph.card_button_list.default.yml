@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_button_list.field_cp_custom_class
+    - field.field.paragraph.card_button_list.field_cp_custom_id
     - field.field.paragraph.card_button_list.field_cp_ref_items_button_list
     - paragraphs.paragraphs_type.card_button_list
   module:
     - paragraphs
+_core:
+  default_config_hash: uVb08szBwT79-Tug_g9qczYtek5BJldsfwSwZN7jOnw
 id: paragraph.card_button_list.default
 targetEntityType: paragraph
 bundle: card_button_list
@@ -16,6 +19,14 @@ content:
   field_cp_custom_class:
     type: string_textarea
     weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_custom_id:
+    type: string_textarea
+    weight: 3
     region: content
     settings:
       rows: 1
