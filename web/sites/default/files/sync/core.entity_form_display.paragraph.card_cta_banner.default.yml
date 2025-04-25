@@ -14,6 +14,7 @@ dependencies:
   module:
     - field_group
     - link
+    - media_library
     - text
 third_party_settings:
   field_group:
@@ -36,7 +37,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: Lb4xD9B0TOPV8yVA6Svp5eVDsa-6j1AZE2L5kGhlrDY
+  default_config_hash: FOZ-fqud55DB34jF15hlIoqdOgCtZRTVc-5BLJEzgRo
 id: paragraph.card_cta_banner.default
 targetEntityType: paragraph
 bundle: card_cta_banner
@@ -59,14 +60,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_cp_image:
-    type: entity_reference_autocomplete
+    type: media_library_widget
     weight: 3
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
   field_cp_link:
     type: link_default

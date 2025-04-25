@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: UC6FpWNugQq3AaIcSO9r9p849dqky5HAzk1PXxH3s5E
+  default_config_hash: JE9l161TxtJA3kXakhxK4lZtN6eswn6Tg6LyfKRtAFM
 id: paragraph.card_cta_banner.field_option_overlay_render
 field_name: field_option_overlay_render
 entity_type: paragraph

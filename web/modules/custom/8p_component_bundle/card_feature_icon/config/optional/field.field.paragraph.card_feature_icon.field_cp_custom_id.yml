@@ -1,0 +1,19 @@
+uuid: 0a407616-cb78-4173-b0a5-f8f2149abe82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_custom_id
+    - paragraphs.paragraphs_type.card_feature_icon
+id: paragraph.card_feature_icon.field_cp_custom_id
+field_name: field_cp_custom_id
+entity_type: paragraph
+bundle: card_feature_icon
+label: 'Custom Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
