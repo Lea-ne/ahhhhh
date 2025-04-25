@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_cp_custom_class
     - paragraphs.paragraphs_type.card_video
 _core:
-  default_config_hash: vDN8Hfzxnl3rbNOXz5FzlhXg3dGrZWRXPbIbGSML4GU
+  default_config_hash: FP5DHNAv-IsPe9WZpl8G42hzDadL-uZvf_iXzUvEcPQ
 id: paragraph.card_video.field_cp_custom_class
 field_name: field_cp_custom_class
 entity_type: paragraph

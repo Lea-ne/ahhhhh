@@ -29,6 +29,8 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
+_core:
+  default_config_hash: UtrqJ-GijrhYnSNfgseb7jS6FOwmKl67ufmnIGOPv0g
 id: paragraph.card_video.default
 targetEntityType: paragraph
 bundle: card_video

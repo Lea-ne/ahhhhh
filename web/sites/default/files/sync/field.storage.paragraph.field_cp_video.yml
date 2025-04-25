@@ -1,10 +1,12 @@
-uuid: e38383a2-75f1-4b65-868a-90692551a7a7
+uuid: d965b0dd-7f7e-4c64-98e5-0cda206bd81f
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: KRi3om1RMluY2Gl3DcnkNOeBpUvpWMWzkNbtsq_QZxQ
 id: paragraph.field_cp_video
 field_name: field_cp_video
 entity_type: paragraph

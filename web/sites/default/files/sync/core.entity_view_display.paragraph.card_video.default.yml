@@ -7,6 +7,8 @@ dependencies:
     - field.field.paragraph.card_video.field_cp_custom_id
     - field.field.paragraph.card_video.field_cp_video
     - paragraphs.paragraphs_type.card_video
+_core:
+  default_config_hash: LbYD_RulMzpStxYLjoKyNhTg8Gdak56LzUnktgfNj0M
 id: paragraph.card_video.default
 targetEntityType: paragraph
 bundle: card_video
