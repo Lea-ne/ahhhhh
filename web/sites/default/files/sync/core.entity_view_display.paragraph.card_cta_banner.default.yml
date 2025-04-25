@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_cta_banner.field_cp_custom_class
+    - field.field.paragraph.card_cta_banner.field_cp_custom_id
     - field.field.paragraph.card_cta_banner.field_cp_image
     - field.field.paragraph.card_cta_banner.field_cp_link
     - field.field.paragraph.card_cta_banner.field_cp_text
@@ -27,6 +28,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_image:
     type: entity_reference_label

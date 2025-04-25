@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_cta_banner.field_cp_custom_class
+    - field.field.paragraph.card_cta_banner.field_cp_custom_id
     - field.field.paragraph.card_cta_banner.field_cp_image
     - field.field.paragraph.card_cta_banner.field_cp_link
     - field.field.paragraph.card_cta_banner.field_cp_text
@@ -14,6 +15,8 @@ dependencies:
     - link
     - options
     - text
+_core:
+  default_config_hash: cDpceh6iRqCrRk59BQd4KsITSmK5_pZUPH6obh9JoX0
 id: paragraph.card_cta_banner.default
 targetEntityType: paragraph
 bundle: card_cta_banner
@@ -25,6 +28,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_image:
     type: entity_reference_label

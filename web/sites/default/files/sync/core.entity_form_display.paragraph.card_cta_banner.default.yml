@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_cta_banner.field_cp_custom_class
+    - field.field.paragraph.card_cta_banner.field_cp_custom_id
     - field.field.paragraph.card_cta_banner.field_cp_image
     - field.field.paragraph.card_cta_banner.field_cp_link
     - field.field.paragraph.card_cta_banner.field_cp_text
@@ -22,7 +23,15 @@ mode: default
 content:
   field_cp_custom_class:
     type: string_textarea
-    weight: 2
+    weight: 5
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_custom_id:
+    type: string_textarea
+    weight: 6
     region: content
     settings:
       rows: 1
@@ -30,7 +39,7 @@ content:
     third_party_settings: {  }
   field_cp_image:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
@@ -64,7 +73,7 @@ content:
     third_party_settings: {  }
   field_option_overlay_render:
     type: options_select
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
