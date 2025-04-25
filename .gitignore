@@ -46,3 +46,6 @@ sites/default/files/css/*
 sites/default/files/css
 sites/default/files/js
 sites/default/files/php
+sites/default/files/css/
+sites/default/files/js/
+sites/default/files/php/

@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_content_list.field_cp_custom_class
+    - field.field.paragraph.card_content_list.field_cp_custom_id
     - field.field.paragraph.card_content_list.field_cp_ref_molecule_content
     - paragraphs.paragraphs_type.card_content_list
   module:
     - paragraphs
 _core:
-  default_config_hash: 72XfNfzbXAcoqw0PmUqbednVu86y8iMoPxQHrAT0CQA
+  default_config_hash: q_ugDOkLVa2SyfYl2h8nCoolZAk5P8g0d3-xLoP57os
 id: paragraph.card_content_list.default
 targetEntityType: paragraph
 bundle: card_content_list
@@ -18,6 +19,14 @@ content:
   field_cp_custom_class:
     type: string_textarea
     weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_custom_id:
+    type: string_textarea
+    weight: 3
     region: content
     settings:
       rows: 1
