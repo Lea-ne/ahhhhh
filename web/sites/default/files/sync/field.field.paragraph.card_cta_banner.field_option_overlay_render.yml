@@ -13,7 +13,7 @@ id: paragraph.card_cta_banner.field_option_overlay_render
 field_name: field_option_overlay_render
 entity_type: paragraph
 bundle: card_cta_banner
-label: field_option_overlay_render
+label: 'Overlay Render Options'
 description: ''
 required: false
 translatable: false

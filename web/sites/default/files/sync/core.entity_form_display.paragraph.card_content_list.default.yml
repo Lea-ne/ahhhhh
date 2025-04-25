@@ -8,7 +8,27 @@ dependencies:
     - field.field.paragraph.card_content_list.field_cp_ref_molecule_content
     - paragraphs.paragraphs_type.card_content_list
   module:
+    - field_group
     - paragraphs
+third_party_settings:
+  field_group:
+    group_options:
+      children:
+        - field_cp_custom_class
+        - field_cp_custom_id
+      label: Options
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
 _core:
   default_config_hash: q_ugDOkLVa2SyfYl2h8nCoolZAk5P8g0d3-xLoP57os
 id: paragraph.card_content_list.default
@@ -18,7 +38,7 @@ mode: default
 content:
   field_cp_custom_class:
     type: string_textarea
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 1

@@ -12,8 +12,29 @@ dependencies:
     - field.field.paragraph.card_cta_banner.field_option_overlay_render
     - paragraphs.paragraphs_type.card_cta_banner
   module:
+    - field_group
     - link
     - text
+third_party_settings:
+  field_group:
+    group_options:
+      children:
+        - field_option_overlay_render
+        - field_cp_custom_class
+        - field_cp_custom_id
+      label: Options
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
 _core:
   default_config_hash: Lb4xD9B0TOPV8yVA6Svp5eVDsa-6j1AZE2L5kGhlrDY
 id: paragraph.card_cta_banner.default
