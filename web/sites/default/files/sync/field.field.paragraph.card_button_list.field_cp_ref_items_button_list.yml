@@ -11,7 +11,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: cWcWgLWQEny1PxVqDxAAPt_tFwGLHT3WN6uH-raTPGQ
+  default_config_hash: KwewadXAcH58UQcJ_iY4EUWn2sDTUlTScTsTl9wGCRg
 id: paragraph.card_button_list.field_cp_ref_items_button_list
 field_name: field_cp_ref_items_button_list
 entity_type: paragraph

@@ -12,7 +12,7 @@ dependencies:
     - entity_reference_revisions
     - options
 _core:
-  default_config_hash: iRAmhg_dvUpIO1TbEJ12IqzYxqZ3qkpRDM3f4dfYYYk
+  default_config_hash: QGTNf9uOTMAMobn1e1maTqXr5QrQ8Ro81Gq1GwwL9Mk
 id: paragraph.card_feature_slider.default
 targetEntityType: paragraph
 bundle: card_feature_slider

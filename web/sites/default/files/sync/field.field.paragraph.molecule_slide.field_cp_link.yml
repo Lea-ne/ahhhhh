@@ -8,7 +8,7 @@ dependencies:
   module:
     - link
 _core:
-  default_config_hash: xcxylkw1Kjf4lJa4cvZDQoxG6DrY1tKHu6L34rsxNos
+  default_config_hash: MEfrfV8CTHvbE5jXMiZKH0lPjFJq7bOrnMOMlkytLF8
 id: paragraph.molecule_slide.field_cp_link
 field_name: field_cp_link
 entity_type: paragraph

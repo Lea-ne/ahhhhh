@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: xPoB_PyBrGsLiL-yuO-uKJo59L13lCYhJi0oekLtaCM
+  default_config_hash: uVTGR6HF1E-5dwsY_2Q1nyUPK1btm38Wn4h7goYZf38
 id: paragraph.card_content_list.field_cp_ref_molecule_content
 field_name: field_cp_ref_molecule_content
 entity_type: paragraph

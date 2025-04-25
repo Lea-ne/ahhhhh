@@ -13,7 +13,7 @@ dependencies:
     - media_library
     - text
 _core:
-  default_config_hash: X-nU5ODHkFCtS8mRQBDRwJwlAks8NSHmQhmsK8Rp-og
+  default_config_hash: vPqbsjZcvwZeH14inje3VwCazOrJtLMoZ4A4hDQTbmw
 id: paragraph.molecule_slide.default
 targetEntityType: paragraph
 bundle: molecule_slide

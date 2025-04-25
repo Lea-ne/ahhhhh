@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: iLITmAfJTuesq958sino9msHYjYfsdNjQrpQivopFNk
+  default_config_hash: wfj-qjiT1gqW33FQuz9FQTKl9qdTUlXi_wNUUdzrURE
 id: molecule_content
 label: 'Molecule Content'
 icon_uuid: null

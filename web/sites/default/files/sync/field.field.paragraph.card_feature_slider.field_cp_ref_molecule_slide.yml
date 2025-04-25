@@ -9,7 +9,7 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: 7xIcI2Ajnu2cog5TREft4ttYHcdV0tyQc3Dm2-og6QA
+  default_config_hash: _gWTqa_CJSNGbxCXn3z8L0QAUjQi283ta3GJPJTjA7A
 id: paragraph.card_feature_slider.field_cp_ref_molecule_slide
 field_name: field_cp_ref_molecule_slide
 entity_type: paragraph

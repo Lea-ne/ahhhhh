@@ -14,6 +14,7 @@ module:
   card_feature_icon: 0
   card_feature_slider: 0
   card_hero_slider: 0
+  card_image: 0
   card_price_list: 0
   card_simple_article: 0
   card_text_callout: 0

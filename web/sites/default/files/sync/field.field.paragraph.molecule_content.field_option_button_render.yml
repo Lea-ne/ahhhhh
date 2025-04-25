@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: kJCMVbC2bd7dO4t0kWNBZVbS-lw4wTpSvgA59YELYNU
+  default_config_hash: 7PWzzQtJ-Mmfq9UZ2sLbvSIrB-govtWmx9EojfSCy0E
 id: paragraph.molecule_content.field_option_button_render
 field_name: field_option_button_render
 entity_type: paragraph

@@ -30,7 +30,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: uVb08szBwT79-Tug_g9qczYtek5BJldsfwSwZN7jOnw
+  default_config_hash: cwo_VpSquJyXWMt3spnrX5_3L6dlivDhNcX6oS11Hek
 id: paragraph.card_button_list.default
 targetEntityType: paragraph
 bundle: card_button_list

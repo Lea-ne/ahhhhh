@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: babPx0x70TlnIziC5kb7GSwid1TADnFquA5TluZzhLM
+  default_config_hash: TeT4fgYmgaRvof5MVh_zzesn6CqT65jSmMw59walQro
 id: paragraph.atom_button.field_option_button_render
 field_name: field_option_button_render
 entity_type: paragraph

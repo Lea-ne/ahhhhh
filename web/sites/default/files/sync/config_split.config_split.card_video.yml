@@ -14,6 +14,7 @@ module: {  }
 theme: {  }
 complete_list:
   - field.field.paragraph.card_video.field_cp_custom_class
+  - field.field.paragraph.card_video.field_cp_custom_id
   - field.field.paragraph.card_video.field_cp_video
   - paragraphs.paragraphs_type.card_video
 partial_list: {  }

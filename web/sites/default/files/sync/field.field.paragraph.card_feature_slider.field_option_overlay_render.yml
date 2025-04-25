@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: kidtftz_NvIokHUkGUxIoNb1feuuQX_pCpIoaz-JQIg
+  default_config_hash: Nm0V6hwsiLgOMf2hHiZMLLpyIxMlqHwBe2GKvZCUtuI
 id: paragraph.card_feature_slider.field_option_overlay_render
 field_name: field_option_overlay_render
 entity_type: paragraph

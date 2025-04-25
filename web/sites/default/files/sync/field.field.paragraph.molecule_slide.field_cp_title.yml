@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_cp_title
     - paragraphs.paragraphs_type.molecule_slide
 _core:
-  default_config_hash: xCDROxPeuiAD4VSCUO15XsJcx5bzFL_65nvwG442c2Q
+  default_config_hash: wWJ9gy38WrHcnppI_MDGCO4tHbkt2sPkRYiw9P11w2w
 id: paragraph.molecule_slide.field_cp_title
 field_name: field_cp_title
 entity_type: paragraph

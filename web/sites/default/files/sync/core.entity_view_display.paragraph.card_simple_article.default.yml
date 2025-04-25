@@ -14,7 +14,7 @@ dependencies:
     - link
     - text
 _core:
-  default_config_hash: 8lW3rp3jg-2rqbWMCLbwHrCLjFbDJ2ueSsr6rlCnh1A
+  default_config_hash: '-NFhYX_TAWDXSojuZ8X7ekrmAoRjh2pq8L0xcbG0S7M'
 id: paragraph.card_simple_article.default
 targetEntityType: paragraph
 bundle: card_simple_article

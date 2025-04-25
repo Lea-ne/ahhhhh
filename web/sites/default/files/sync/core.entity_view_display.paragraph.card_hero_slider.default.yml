@@ -12,7 +12,7 @@ dependencies:
     - entity_reference_revisions
     - options
 _core:
-  default_config_hash: YST077HK3E933bqq1-ayTx3qrAIWBuZsmODD0rJ7rGQ
+  default_config_hash: JnbGNDkeucFj_lqR2N3Y6MYRrGKzKXhisp4V1KHhRiQ
 id: paragraph.card_hero_slider.default
 targetEntityType: paragraph
 bundle: card_hero_slider

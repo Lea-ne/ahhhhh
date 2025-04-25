@@ -6,7 +6,7 @@ dependencies:
     - field.storage.paragraph.field_cp_title
     - paragraphs.paragraphs_type.molecule_content
 _core:
-  default_config_hash: 2ErVOCEZ24FOega4ciNH19CNvXJzQZ7QNJMZZs5eirQ
+  default_config_hash: 3NNRxrvvEl0HJ9oyTXrFp63ev4XoqVTbV-9ZAoBmklY
 id: paragraph.molecule_content.field_cp_title
 field_name: field_cp_title
 entity_type: paragraph

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 1_P8-bDAQygrqkoxao2g_gOTPwgLNqwKSnhbJndb6Gc
+  default_config_hash: ZOGnoMK4AOX4El0D4XBQEND3x4F94IKhlYAHAeSCmLM
 id: atom_button
 label: 'Atom Button'
 icon_uuid: null

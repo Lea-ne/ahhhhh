@@ -15,7 +15,7 @@ dependencies:
     - options
     - text
 _core:
-  default_config_hash: nGj_0a1Js_NQmtUREpCjFpUwTeNtx9RxWIvUAUDqan8
+  default_config_hash: b27ETr2_v0wNK73C5C8hARtx0YdeeY19r0o_0_cVmTU
 id: paragraph.card_text_callout.default
 targetEntityType: paragraph
 bundle: card_text_callout

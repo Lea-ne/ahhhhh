@@ -32,7 +32,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: 9zyN52m1mYqsWBaAyIRX0Z9iIZG4L7MSZALjybMyFEs
+  default_config_hash: txh86byoADeEZ49z3JSlAT0tMdbo-rYhceihPaSELyg
 id: paragraph.card_feature_slider.default
 targetEntityType: paragraph
 bundle: card_feature_slider

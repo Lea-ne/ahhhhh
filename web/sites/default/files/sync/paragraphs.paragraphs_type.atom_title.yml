@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ixUjfE3GOoKeZ03vFmidwdvkf1qzXm3bWZMa_jmB-64
+  default_config_hash: _LKu-yO6V_RLEgTXwHWU5GRo2jKMV2p6K2XqyubVQfU
 id: atom_title
 label: 'Atom Title'
 icon_uuid: null

@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 2VHUqtXgz7YBDV3YlV60JYFkIEO2n2Nl_NYbCnEYEYY
+  default_config_hash: Sd0lC6FqQ9QN6Dql8E7fGyK0-Rl-HMrJ7311dmFKbDE
 id: paragraph.molecule_content.field_cp_text
 field_name: field_cp_text
 entity_type: paragraph

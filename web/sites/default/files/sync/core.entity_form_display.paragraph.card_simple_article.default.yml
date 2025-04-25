@@ -35,7 +35,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: SmkxSgAnOsazPige5K_OxK4o72pj5ee1oHniN_flIdk
+  default_config_hash: FEdu_8eFsjpCPxER3s7EKJ_h8gHRhs_s5EjAQt5luw0
 id: paragraph.card_simple_article.default
 targetEntityType: paragraph
 bundle: card_simple_article

@@ -9,7 +9,7 @@ dependencies:
   module:
     - link
 _core:
-  default_config_hash: VPwrY-KiFvdfogHq3gTdKxmOWFIIy58IermGu_x9t68
+  default_config_hash: 9i1cZvKfPjP7yOQvX5EasivhGE1ywKR8fisLr1VZBqA
 id: paragraph.atom_button.default
 targetEntityType: paragraph
 bundle: atom_button

@@ -1,17 +1,15 @@
-uuid: 2cab59fe-b295-45fb-9323-c0be3e95bffc
+uuid: bcee0fc4-d884-4023-baeb-0a59740399eb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_cp_custom_class
+    - field.storage.paragraph.field_cp_custom_id
     - paragraphs.paragraphs_type.card_image
-_core:
-  default_config_hash: TnmuVk3PGkjHQdgvNOuAbDZxAFAKp08SzLVxylRDZGY
-id: paragraph.card_image.field_cp_custom_class
-field_name: field_cp_custom_class
+id: paragraph.card_image.field_cp_custom_id
+field_name: field_cp_custom_id
 entity_type: paragraph
 bundle: card_image
-label: 'Custom Class'
+label: 'Custom Id'
 description: ''
 required: false
 translatable: false

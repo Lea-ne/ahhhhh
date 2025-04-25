@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.atom_title.field_cp_title
     - paragraphs.paragraphs_type.atom_title
 _core:
-  default_config_hash: '-daDoJQ9J7uMMTzkhA0kjI81sVZAmlE3Aq7-wEFBQi0'
+  default_config_hash: 3rpx4zyDRzI3iwPqOUjCAsbok0MzOBrWjjglZVikL9g
 id: paragraph.atom_title.default
 targetEntityType: paragraph
 bundle: atom_title

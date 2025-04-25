@@ -1,4 +1,4 @@
-uuid: 098b8609-83a3-4956-abe1-066e591127fc
+uuid: 94392cf3-833a-475b-b6c8-d5a50876c9ff
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - field.field.paragraph.card_video.field_cp_custom_id
     - field.field.paragraph.card_video.field_cp_video
     - paragraphs.paragraphs_type.card_video
-_core:
-  default_config_hash: WdiBw8nyY02txagBmRzGgdPTrDCAJAR7d6FY9KaFerA
 id: paragraph.card_video.default
 targetEntityType: paragraph
 bundle: card_video
@@ -29,11 +27,12 @@ content:
     weight: 3
     region: content
   field_cp_video:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 4
     region: content
 hidden: {  }

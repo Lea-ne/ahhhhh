@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 756tk36nf2xBFv3nkEJKFJk1QPnrORLaCCcUvqlKAc8
+  default_config_hash: _3Yc_bCs9w3rVhVE7qbNibLCDdr_dh0AE_5QNSvYNnk
 id: molecule_slide
 label: 'Molecule Slide'
 icon_uuid: null

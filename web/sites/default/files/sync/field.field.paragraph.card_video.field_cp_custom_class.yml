@@ -1,12 +1,10 @@
-uuid: affcd1e3-bae5-4344-a795-a840bcf98bdf
+uuid: b9f81d81-edfc-4e1e-820d-11476c1c715a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_cp_custom_class
     - paragraphs.paragraphs_type.card_video
-_core:
-  default_config_hash: tf-QiO1mDAfYoKpGN0huKzSdych7PwW0njHwZbD9PIw
 id: paragraph.card_video.field_cp_custom_class
 field_name: field_cp_custom_class
 entity_type: paragraph

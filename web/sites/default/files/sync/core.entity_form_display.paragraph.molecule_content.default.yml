@@ -12,7 +12,7 @@ dependencies:
     - link
     - text
 _core:
-  default_config_hash: OsdDJxtddsY1qjRwJ22P8Ij_mP97iyjbPM0Aizt6q4o
+  default_config_hash: kzdCFZm6Kxvd-wfOWNm1thAwd05mBN4tMAU2W0I-EaA
 id: paragraph.molecule_content.default
 targetEntityType: paragraph
 bundle: molecule_content

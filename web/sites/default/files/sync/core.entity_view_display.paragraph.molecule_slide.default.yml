@@ -12,7 +12,7 @@ dependencies:
     - link
     - text
 _core:
-  default_config_hash: QLBCXAuV5ROJdHidjH9KblV2tCoyd-09hBY4ehi-GbA
+  default_config_hash: m7a7jQzeXcO8GwYnuqqOQAQa-kWKh8bZlaXhntoVYt4
 id: paragraph.molecule_slide.default
 targetEntityType: paragraph
 bundle: molecule_slide

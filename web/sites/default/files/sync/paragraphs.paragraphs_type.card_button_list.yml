@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 6D9YzNuFNmOcNJzfgusbIneR4dsenrN47I41zwQjKpw
+  default_config_hash: sWba2Tg3iHnWfVI32qMSvsBmi-JU8cnBcel3mdKro00
 id: card_button_list
 label: 'Card Button List'
 icon_uuid: null

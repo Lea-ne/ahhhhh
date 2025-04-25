@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: znhZuHBk5wtkePyd_l4a99ne2Yvi1V_3GeofpC8gPqU
+  default_config_hash: rR7GGhDWZOVA66GzuPCNZOiVQv14z9mch8HwP3Ovegs
 id: paragraph.molecule_slide.field_cp_text
 field_name: field_cp_text
 entity_type: paragraph
