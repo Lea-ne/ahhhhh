@@ -1,0 +1,20 @@
+uuid: 1f1223cf-b98c-4a08-a3f3-b3bdde08fd61
+langcode: en
+status: true
+dependencies:
+  theme:
+    - layout_builder_theme
+_core:
+  default_config_hash: fxzTrJi7CHk8a5Ff8lmkQLrujHZJyMpFIFIS00Q0a9w
+id: layout_builder_theme_page_title
+theme: layout_builder_theme
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

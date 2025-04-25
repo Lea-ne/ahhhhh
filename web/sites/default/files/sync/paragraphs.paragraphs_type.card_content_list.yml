@@ -1,0 +1,12 @@
+uuid: 2a9101db-72c1-476d-9db0-01d281d0a94d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WhEfv0x_CGRBEyGy5Jj_LydTVjghsAF35zEITeWxO48
+id: card_content_list
+label: 'Card Content List'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

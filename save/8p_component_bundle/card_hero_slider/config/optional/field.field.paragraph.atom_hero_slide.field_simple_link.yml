@@ -1,0 +1,23 @@
+uuid: b2bb67dc-7fea-4d46-81ec-94301ae0be11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_link
+    - paragraphs.paragraphs_type.atom_hero_slide
+  module:
+    - link
+id: paragraph.atom_hero_slide.field_simple_link
+field_name: field_simple_link
+entity_type: paragraph
+bundle: atom_hero_slide
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

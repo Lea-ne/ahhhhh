@@ -1,0 +1,66 @@
+uuid: a57b3d7a-e9f7-4d7a-8ea5-8d5068514f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_cta_banner.field_overlay_color_selection
+    - field.field.paragraph.card_cta_banner.field_simple_image_media
+    - field.field.paragraph.card_cta_banner.field_simple_link
+    - field.field.paragraph.card_cta_banner.field_simple_title
+    - field.field.paragraph.card_cta_banner.field_text_color_selection
+    - paragraphs.paragraphs_type.card_cta_banner
+  module:
+    - color_field
+    - link
+id: paragraph.card_cta_banner.default
+targetEntityType: paragraph
+bundle: card_cta_banner
+mode: default
+content:
+  field_overlay_color_selection:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: rgb
+      opacity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_simple_image_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_simple_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_simple_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_color_selection:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

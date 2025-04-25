@@ -1,0 +1,19 @@
+uuid: c3d9ac2f-1178-4204-8d65-5aec34a909ed
+langcode: en
+status: false
+dependencies: {  }
+id: card_video
+label: 'Card Video'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_video/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_video.field_cp_custom_class
+  - field.field.paragraph.card_video.field_cp_video
+  - paragraphs.paragraphs_type.card_video
+partial_list: {  }

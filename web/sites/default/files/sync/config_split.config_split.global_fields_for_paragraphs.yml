@@ -1,0 +1,31 @@
+uuid: ef783d97-7ef8-41be-9ad2-d64c474a2215
+langcode: en
+status: false
+dependencies: {  }
+id: global_fields_for_paragraphs
+label: 'Global fields for paragraphs'
+description: ''
+weight: 0
+stackable: true
+no_patching: true
+storage: folder
+folder: modules/custom/8p_component_bundle/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.storage.paragraph.field_cp_custom_class
+  - field.storage.paragraph.field_cp_image
+  - field.storage.paragraph.field_cp_link
+  - field.storage.paragraph.field_cp_media
+  - field.storage.paragraph.field_cp_ref_items_button_list
+  - field.storage.paragraph.field_cp_ref_molecule_content
+  - field.storage.paragraph.field_cp_ref_molecule_price_list
+  - field.storage.paragraph.field_cp_ref_molecule_slide
+  - field.storage.paragraph.field_cp_text
+  - field.storage.paragraph.field_cp_title
+  - field.storage.paragraph.field_cp_video
+  - field.storage.paragraph.field_option_button_render
+  - field.storage.paragraph.field_option_image_fit
+  - field.storage.paragraph.field_option_image_size
+  - field.storage.paragraph.field_option_overlay_render
+partial_list: {  }

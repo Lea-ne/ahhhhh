@@ -1,0 +1,24 @@
+uuid: d7b6d2e3-766a-44b2-abe4-eb214da4377b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_description
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.card_text_callout
+  module:
+    - text
+id: paragraph.card_text_callout.field_simple_description
+field_name: field_simple_description
+entity_type: paragraph
+bundle: card_text_callout
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

@@ -1,0 +1,59 @@
+uuid: 531da55d-5df7-4a98-a7d5-dcf884e81183
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_list_items
+    - paragraphs.paragraphs_type.button_list_description
+    - paragraphs.paragraphs_type.button_list_link
+    - paragraphs.paragraphs_type.button_list_title
+    - paragraphs.paragraphs_type.card_button_list
+  module:
+    - entity_reference_revisions
+id: paragraph.card_button_list.field_button_list_items
+field_name: field_button_list_items
+entity_type: paragraph
+bundle: card_button_list
+label: 'Button List Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button_list_description: button_list_description
+      button_list_link: button_list_link
+      button_list_title: button_list_title
+    negate: 0
+    target_bundles_drag_drop:
+      button_list_description:
+        weight: 10
+        enabled: true
+      button_list_link:
+        weight: 11
+        enabled: true
+      button_list_title:
+        weight: 12
+        enabled: true
+      card_button_list:
+        weight: 13
+        enabled: false
+      card_cta_banner:
+        weight: 14
+        enabled: false
+      card_description:
+        weight: 15
+        enabled: false
+      card_image:
+        weight: 16
+        enabled: false
+      card_product:
+        weight: 17
+        enabled: false
+      card_simple_article:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

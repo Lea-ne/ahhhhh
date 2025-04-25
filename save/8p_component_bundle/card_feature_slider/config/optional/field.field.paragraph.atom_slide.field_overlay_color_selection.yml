@@ -1,0 +1,27 @@
+uuid: d3f2be85-4460-44d0-9e33-e7c4c8da5aff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overlay_color_selection
+    - paragraphs.paragraphs_type.atom_slide
+  module:
+    - color_field
+_core:
+  default_config_hash: N4gVHC3xAf5f1PQNwFYVDDrfFvN7f92gWJx5uaeVmwo
+id: paragraph.atom_slide.field_overlay_color_selection
+field_name: field_overlay_color_selection
+entity_type: paragraph
+bundle: atom_slide
+label: 'Overlay Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#000000'
+    opacity: 0.6
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

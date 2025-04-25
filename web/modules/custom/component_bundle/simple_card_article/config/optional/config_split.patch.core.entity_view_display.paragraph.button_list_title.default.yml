@@ -1,0 +1,13 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.button_list_title.field_simple_title
+  content:
+    field_simple_title:
+      type: basic_string
+      label: hidden
+      settings: {  }
+      third_party_settings: {  }
+      weight: 0
+      region: content
+removing: {  }

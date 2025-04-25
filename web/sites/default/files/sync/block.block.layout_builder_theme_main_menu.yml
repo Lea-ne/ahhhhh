@@ -1,0 +1,27 @@
+uuid: c3d18930-36da-4d11-a3a5-1eba93497bd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - layout_builder_theme
+_core:
+  default_config_hash: j6wWsszAV9em8369-ir-EK6H8XJ4CsEDDCYVHviKFaE
+id: layout_builder_theme_main_menu
+theme: layout_builder_theme
+region: top_header
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

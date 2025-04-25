@@ -1,0 +1,53 @@
+uuid: f39a4d83-d07c-4de1-bc39-a911b45c1e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.atom_content.field_simple_description
+    - field.field.paragraph.atom_content.field_simple_link
+    - field.field.paragraph.atom_content.field_simple_title
+    - field.field.paragraph.atom_content.field_title_color_selection
+    - paragraphs.paragraphs_type.atom_content
+  module:
+    - color_field
+    - link
+    - text
+id: paragraph.atom_content.default
+targetEntityType: paragraph
+bundle: atom_content
+mode: default
+content:
+  field_simple_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_simple_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_simple_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_color_selection:
+    type: color_field_widget_box
+    weight: 1
+    region: content
+    settings:
+      default_colors: '#e7e0d0,#b17457,#2c2c2c,#ffffff'
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

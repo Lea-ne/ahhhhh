@@ -1,0 +1,12 @@
+uuid: b5aaf107-1092-4195-b85f-5d5f2550e4a7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O4qiggFFd4m17z3ghFn7QFYHiTxNBkTuEg3m3X3WDbI
+id: card_feature_slider
+label: 'Card Feature Slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

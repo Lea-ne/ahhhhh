@@ -1,0 +1,68 @@
+/* full component container */
+.component-card-hero-slider .card__container{
+    position: relative;
+    overflow: visible;
+}
+
+
+/* coontainers for both slider */
+.component-card-hero-slider .slider-for {
+    position: absolute;
+    bottom: 0;     
+    right: 0;
+    width: 400px;
+}
+.component-card-hero-slider .slider-nav {
+    position: relative;
+}
+
+
+
+/* stlye for slider images */
+.component-card-hero-slider .slider-nav .card__media{
+   display: block;
+   width: 100%;
+   height: 650px;
+}
+
+.component-card-hero-slider .slider-nav .card__media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+
+
+/* style for little slider text */
+.atom-hero-slide .card__container{
+    padding: 30px;
+}
+.atom-hero-slide .card__content{
+    background-color: rgba(44, 44, 44, 0.5);
+    padding: 15px;
+    padding-bottom: 50px; /* Give space for slick dots */
+    color: white;
+}
+
+
+
+/* slick styles */
+.component-card-hero-slider .slider-nav .slick-list{
+    padding: 0 !important;
+}
+
+.component-card-hero-slider .slider-nav .slick-dots{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    text-align: start;
+    padding: 0px 30px 45px 15px;
+    z-index: 1;
+}
+
+.slick-dotted.slick-slider{
+    margin: 0 !important;
+}

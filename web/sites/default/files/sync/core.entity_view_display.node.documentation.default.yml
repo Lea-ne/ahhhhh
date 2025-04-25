@@ -1,0 +1,147 @@
+uuid: 49736116-c865-45d9-b372-26e505371506
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.documentation.field_component_categories_tags
+    - field.field.node.documentation.field_documentation_figma_link
+    - field.field.node.documentation.field_documentation_important
+    - field.field.node.documentation.field_documentation_installation
+    - field.field.node.documentation.field_documentation_variables
+    - field.field.node.documentation.layout_builder__layout
+    - node.type.documentation
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8f0baf81-44a2-47fa-a531-9fc67f855a83:
+            uuid: 8f0baf81-44a2-47fa-a531-9fc67f855a83
+            region: content
+            configuration:
+              id: 'field_block:node:documentation:field_documentation_installation'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          d3b89288-be20-44ca-9848-014d98cab7b6:
+            uuid: d3b89288-be20-44ca-9848-014d98cab7b6
+            region: content
+            configuration:
+              id: 'field_block:node:documentation:field_documentation_figma_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          fcc28f0f-1c4b-480f-8f97-6dd511ca8e3d:
+            uuid: fcc28f0f-1c4b-480f-8f97-6dd511ca8e3d
+            region: content
+            configuration:
+              id: 'field_block:node:documentation:field_documentation_important'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0969fea3-559b-4ce0-be70-3c52a9d244c8:
+            uuid: 0969fea3-559b-4ce0-be70-3c52a9d244c8
+            region: content
+            configuration:
+              id: 'field_block:node:documentation:field_documentation_variables'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+id: node.documentation.default
+targetEntityType: node
+bundle: documentation
+mode: default
+content:
+  field_component_categories_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_documentation_figma_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_documentation_important:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_documentation_installation:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_documentation_variables:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

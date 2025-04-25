@@ -1,0 +1,63 @@
+uuid: 649fb2fc-559f-49ef-833a-f069164921c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_text_callout.field_cp_custom_class
+    - field.field.paragraph.card_text_callout.field_cp_link
+    - field.field.paragraph.card_text_callout.field_cp_text
+    - field.field.paragraph.card_text_callout.field_cp_title
+    - field.field.paragraph.card_text_callout.field_option_button_render
+    - paragraphs.paragraphs_type.card_text_callout
+  module:
+    - link
+    - options
+    - text
+_core:
+  default_config_hash: KLTcdq3FudA_7ZE6Q-KKIuZ6CUuEpaOsJQ21KDvRlWM
+id: paragraph.card_text_callout.default
+targetEntityType: paragraph
+bundle: card_text_callout
+mode: default
+content:
+  field_cp_custom_class:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cp_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cp_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cp_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_option_button_render:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

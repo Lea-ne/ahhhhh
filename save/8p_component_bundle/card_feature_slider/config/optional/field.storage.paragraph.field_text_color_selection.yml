@@ -1,0 +1,22 @@
+uuid: 792fc190-c46e-49b1-ba70-344341c80854
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_field
+    - paragraphs
+_core:
+  default_config_hash: SaCXeyfkcTrXC3qYFz0jOni7lI2uSRBfj8Vo33nUhkY
+id: paragraph.field_text_color_selection
+field_name: field_text_color_selection
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

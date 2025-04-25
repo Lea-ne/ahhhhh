@@ -1,0 +1,19 @@
+uuid: f497d3f0-8359-4716-a7b6-c1b32170fada
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_title
+    - paragraphs.paragraphs_type.molecule_slide
+id: paragraph.molecule_slide.field_cp_title
+field_name: field_cp_title
+entity_type: paragraph
+bundle: molecule_slide
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

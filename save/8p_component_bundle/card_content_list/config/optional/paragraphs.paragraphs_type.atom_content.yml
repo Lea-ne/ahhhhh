@@ -1,0 +1,10 @@
+uuid: a37a432c-cf08-402e-a83c-ac3469b30a74
+langcode: en
+status: true
+dependencies: {  }
+id: atom_content
+label: 'Atom Content'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

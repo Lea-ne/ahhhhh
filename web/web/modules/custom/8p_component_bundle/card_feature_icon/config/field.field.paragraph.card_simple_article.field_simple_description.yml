@@ -1,0 +1,26 @@
+uuid: 54e57b58-0118-4388-bec5-a7e3b05203f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_description
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.card_simple_article
+  module:
+    - text
+_core:
+  default_config_hash: E-wj6ZvD8rTlnjGfRIt6LwRz2E3_iWErfWQieDwBOVA
+id: paragraph.card_simple_article.field_simple_description
+field_name: field_simple_description
+entity_type: paragraph
+bundle: card_simple_article
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

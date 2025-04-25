@@ -1,0 +1,23 @@
+<?php
+
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+
+/**
+ * Implements hook_theme().
+ */
+function card_product_theme($existing, $type, $theme, $path) {
+  return [
+    'commerce_product__card_product' => [
+      'base hook' => 'commerce_product',
+    ],
+  ];
+}
+
+function card_product_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_product') {
+    $build['#attached']['library'][] = 'card_product/component_style';
+  }
+}

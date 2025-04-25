@@ -1,0 +1,9 @@
+name: '8p component: Card Feature Slider'
+type: module
+description: 'Provides the Card Feature Slider paragraph bundle.'
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom
+dependencies:
+  - component_bundle
+libraries:
+  - card_feature_slider/component_style

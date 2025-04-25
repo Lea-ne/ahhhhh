@@ -1,0 +1,20 @@
+uuid: dfb3f3b5-b329-4536-b49b-48eb4c878574
+langcode: en
+status: false
+dependencies: {  }
+id: card_hero_slider
+label: 'Card Hero Slider'
+description: ''
+weight: 0
+stackable: false
+no_patching: true
+storage: folder
+folder: modules/custom/8p_component_bundle/card_hero_slider/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_hero_slider.field_cp_custom_class
+  - field.field.paragraph.card_hero_slider.field_cp_ref_molecule_slide
+  - field.field.paragraph.card_hero_slider.field_option_overlay_render
+  - paragraphs.paragraphs_type.card_hero_slider
+partial_list: {  }

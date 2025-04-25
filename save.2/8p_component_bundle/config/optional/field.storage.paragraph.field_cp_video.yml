@@ -1,0 +1,22 @@
+uuid: d965b0dd-7f7e-4c64-98e5-0cda206bd81f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+_core:
+  default_config_hash: 1OZ7Ebm40UZDV0iUaMXogWDU07Yjas_uP4a6w7fL7KI
+id: paragraph.field_cp_video
+field_name: field_cp_video
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: 3fc85cbb-50a3-4214-b0ae-0044fb9c5c21
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: R4tfH2lobuQWHlZJs4OYbTgKoL9CTtrC8SKhbGFmgf4
+id: card_feature_icon
+label: 'Card Feature Icon'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

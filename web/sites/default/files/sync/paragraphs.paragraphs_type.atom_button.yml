@@ -1,0 +1,12 @@
+uuid: 5050c1f0-e56c-4713-ba25-0d09e5572011
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1_P8-bDAQygrqkoxao2g_gOTPwgLNqwKSnhbJndb6Gc
+id: atom_button
+label: 'Atom Button'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

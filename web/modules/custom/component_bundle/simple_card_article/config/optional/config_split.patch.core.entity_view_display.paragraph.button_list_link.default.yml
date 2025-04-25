@@ -1,0 +1,20 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.button_list_link.field_simple_link
+    module:
+      - link
+  content:
+    field_simple_link:
+      type: link
+      label: hidden
+      settings:
+        trim_length: 80
+        url_only: false
+        url_plain: false
+        rel: ''
+        target: ''
+      third_party_settings: {  }
+      weight: 1
+      region: content
+removing: {  }

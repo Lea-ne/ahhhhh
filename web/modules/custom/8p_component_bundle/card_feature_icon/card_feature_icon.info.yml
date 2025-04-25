@@ -1,0 +1,9 @@
+name: '8p Component: Card Feature Icon'
+type: module
+description: 'Card Feature Icon'
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom
+dependencies:
+  - component_bundle
+libraries:
+  - card_feature_icon/component_style

@@ -1,0 +1,25 @@
+uuid: b946dcd4-5343-44ee-83d8-b92c7ae5b32b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - layout_builder_theme
+_core:
+  default_config_hash: J1Hfsrk87t9TrZowA5N6UJsdcvc4LNuwe8vwKm6vHSA
+id: layout_builder_theme_site_branding
+theme: layout_builder_theme
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

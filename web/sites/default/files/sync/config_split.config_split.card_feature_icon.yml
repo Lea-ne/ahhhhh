@@ -1,0 +1,22 @@
+uuid: 1bcd973d-d3b0-43ab-863e-471245c64f56
+langcode: en
+status: false
+dependencies: {  }
+id: card_feature_icon
+label: 'Card Feature Icon'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_feature_icon/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_feature_icon.field_cp_custom_class
+  - field.field.paragraph.card_feature_icon.field_cp_image
+  - field.field.paragraph.card_feature_icon.field_cp_link
+  - field.field.paragraph.card_feature_icon.field_cp_text
+  - field.field.paragraph.card_feature_icon.field_cp_title
+  - paragraphs.paragraphs_type.card_feature_icon
+partial_list: {  }

@@ -1,0 +1,24 @@
+uuid: 3b473691-1881-492d-9382-c370c70a964c
+langcode: en
+status: false
+dependencies: {  }
+id: card_price_list
+label: 'Card Price List'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_price_list/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_price_list.field_cp_custom_class
+  - field.field.paragraph.card_price_list.field_cp_link
+  - field.field.paragraph.card_price_list.field_cp_ref_molecule_price_list
+  - field.field.paragraph.card_price_list.field_option_button_render
+  - field.field.paragraph.molecule_price_list.field_cp_text
+  - field.field.paragraph.molecule_price_list.field_cp_title
+  - paragraphs.paragraphs_type.card_price_list
+  - paragraphs.paragraphs_type.molecule_price_list
+partial_list: {  }

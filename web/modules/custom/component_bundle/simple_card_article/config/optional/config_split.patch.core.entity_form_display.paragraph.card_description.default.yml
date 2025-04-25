@@ -1,0 +1,16 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.card_description.field_simple_description
+    module:
+      - text
+  content:
+    field_simple_description:
+      type: text_textarea
+      weight: 2
+      region: content
+      settings:
+        rows: 3
+        placeholder: ''
+      third_party_settings: {  }
+removing: {  }

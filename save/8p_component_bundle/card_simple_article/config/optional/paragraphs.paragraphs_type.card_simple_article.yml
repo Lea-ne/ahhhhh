@@ -1,0 +1,10 @@
+uuid: 07816a8c-6018-4f90-923d-3d815b1b2b38
+langcode: en
+status: true
+dependencies: {  }
+id: card_simple_article
+label: 'Card Simple Article'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

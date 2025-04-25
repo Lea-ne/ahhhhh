@@ -1,0 +1,61 @@
+uuid: c1af36cc-9eab-4494-ab66-5565eea37218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_text_callout.field_btn_bg_color_selection
+    - field.field.paragraph.card_text_callout.field_btn_text_color_selection
+    - field.field.paragraph.card_text_callout.field_simple_description
+    - field.field.paragraph.card_text_callout.field_simple_link
+    - field.field.paragraph.card_text_callout.field_simple_title
+    - paragraphs.paragraphs_type.card_text_callout
+  module:
+    - color_field
+    - link
+    - text
+id: paragraph.card_text_callout.default
+targetEntityType: paragraph
+bundle: card_text_callout
+mode: default
+content:
+  field_btn_bg_color_selection:
+    type: color_field_widget_box
+    weight: 3
+    region: content
+    settings:
+      default_colors: '#b17457,#e7e0d0,#2c2c2c,#000000'
+    third_party_settings: {  }
+  field_btn_text_color_selection:
+    type: color_field_widget_box
+    weight: 2
+    region: content
+    settings:
+      default_colors: '#ffffff,#b17457,#e7e0d0,#2c2c2c,#000000'
+    third_party_settings: {  }
+  field_simple_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_simple_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_simple_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

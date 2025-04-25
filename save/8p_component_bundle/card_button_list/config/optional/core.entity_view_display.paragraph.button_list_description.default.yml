@@ -1,0 +1,22 @@
+uuid: d45163d8-2491-49b7-956c-37605fb3691b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.button_list_description.field_simple_title
+    - paragraphs.paragraphs_type.button_list_description
+_core:
+  default_config_hash: _ODZaF9p2EsWPEm7ss3hTWrJoQLA9GYFujEbpwmcFVo
+id: paragraph.button_list_description.default
+targetEntityType: paragraph
+bundle: button_list_description
+mode: default
+content:
+  field_simple_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

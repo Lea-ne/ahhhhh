@@ -1,0 +1,67 @@
+{% set slides = [] %}
+{% for item in paragraph.field_atom_slide_reference %}
+  {% set slide = item.entity %}
+
+  {% set title = slide.field_simple_title.value %}
+  {% set description = slide.field_simple_description.value %}
+  {% set link_title = slide.field_simple_link.0.title ?? '' %}
+  {% set link_url = slide.field_simple_link.0.uri ?? '' %}
+
+  {% set media_entity = slide.field_simple_media.entity %}
+  {% set image = media_entity.field_media_image.entity %}
+  {% set media = image.uri.value|file_url %}
+
+  {% set slides = slides|merge([{
+    title: title,
+    description: description,
+    link_title: link_title,
+    link_url: link_url,
+    media: media
+  }]) %}
+{% endfor %}
+
+
+
+{% set classes = [
+  'component-card-feature-slider',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+] %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="card__container">
+        {% for slide in slides %}
+          <div class="atom-slide">
+
+            {% if slide.media %}
+            <div class="atom__media">
+              <img src="{{ slide.media }}">
+            </div>
+            {% endif %}
+
+            <div class="atom__container">
+             <div class="atom__content">
+               {% if slide.title %}
+                <h3 class="card__title">{{ slide.title }}</h3>
+              {% endif %}
+
+              {% if slide.description %}
+                <div class="card__text">{{ slide.description }}</div>
+              {% endif %}
+
+              {% if slide.link_title %}
+                <div class="card__link link-icon-arrow">
+                  <a href="{{ slide.link_url }}" style="color: inherit;">{{ slide.link_title }}</a>
+                </div>
+              {% endif %}
+             </div>
+            </div>
+
+
+          </div>
+        {% endfor %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -1,0 +1,11 @@
+{%
+  set classes = [
+    'button-list-description',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+      <div>{{ paragraph.field_simple_title.value }}</div>
+  </div>
+{% endblock paragraph %}

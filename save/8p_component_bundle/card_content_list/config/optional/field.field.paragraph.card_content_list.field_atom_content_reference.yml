@@ -1,0 +1,79 @@
+uuid: baa48df5-922a-4795-bcc1-be9f53ce2ef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_atom_content_reference
+    - paragraphs.paragraphs_type.atom_content
+    - paragraphs.paragraphs_type.card_content_list
+  module:
+    - entity_reference_revisions
+id: paragraph.card_content_list.field_atom_content_reference
+field_name: field_atom_content_reference
+entity_type: paragraph
+bundle: card_content_list
+label: 'Content Card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      atom_content: atom_content
+    negate: 0
+    target_bundles_drag_drop:
+      atom_content:
+        weight: 18
+        enabled: true
+      atom_hero_slide:
+        weight: 19
+        enabled: false
+      atom_slide:
+        weight: 20
+        enabled: false
+      button_list_description:
+        weight: 21
+        enabled: false
+      button_list_link:
+        weight: 22
+        enabled: false
+      button_list_title:
+        weight: 23
+        enabled: false
+      card_button_list:
+        weight: 24
+        enabled: false
+      card_content_list:
+        weight: 25
+        enabled: false
+      card_cta_banner:
+        weight: 26
+        enabled: false
+      card_description:
+        weight: 27
+        enabled: false
+      card_feature_icon:
+        weight: 28
+        enabled: false
+      card_feature_slider:
+        weight: 29
+        enabled: false
+      card_hero_slider:
+        weight: 30
+        enabled: false
+      card_image:
+        weight: 31
+        enabled: false
+      card_product:
+        weight: 32
+        enabled: false
+      card_simple_article:
+        weight: 33
+        enabled: false
+      card_text_callout:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 990bcb4b-7d30-49e3-851e-5948551672ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - layout_builder_theme
+_core:
+  default_config_hash: WYVz6wgVYo7Feuwvr99G7E2Y1li9evHgwOkmLNI0s8s
+id: layout_builder_theme_powered
+theme: layout_builder_theme
+region: top_header
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

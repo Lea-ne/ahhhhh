@@ -1,0 +1,10 @@
+uuid: bd29ce11-f482-4130-b6e1-fe2671c1992a
+langcode: en
+status: true
+dependencies: {  }
+id: molecule_price_list
+label: 'Price List item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

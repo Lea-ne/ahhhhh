@@ -1,0 +1,7 @@
+layout_style:
+  version: 1.0
+  css:
+    theme:
+      css/layout.css: {}
+      css/back-office-form.css: {}
+  js: {}

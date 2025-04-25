@@ -1,0 +1,23 @@
+{# Template for Card Basic Content #}
+{% set title = label %}
+{% set text = date %}
+{% set link_url = url %}
+{% set classes = "component-card-article" %}
+
+{# define media #}
+{% set image_item = content.field_image['#items'].0 %}
+{% if image_item %}
+  {% set media_entity = image_item.entity %}
+  {% set media = file_url(media_entity.uri.value) %}
+{% endif %}
+
+
+
+{% include '@component_bundle/card_simple_article/templates/card-simple-article.html.twig' with {
+    classes: classes,
+    title: title,
+    text: text,
+    media: media,
+    link_url: link_url, 
+    link_title: 'Read Article',
+} %} 

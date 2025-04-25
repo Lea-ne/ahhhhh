@@ -1,0 +1,30 @@
+uuid: ae9d38eb-4a5a-42fc-8a4f-86c3a63de1e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.molecule_price_list.field_cp_text
+    - field.field.paragraph.molecule_price_list.field_cp_title
+    - paragraphs.paragraphs_type.molecule_price_list
+  module:
+    - text
+id: paragraph.molecule_price_list.default
+targetEntityType: paragraph
+bundle: molecule_price_list
+mode: default
+content:
+  field_cp_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cp_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

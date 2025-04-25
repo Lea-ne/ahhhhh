@@ -1,0 +1,55 @@
+uuid: 96321125-6611-49c2-921f-1280ce1b17b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_price_list.field_cp_custom_class
+    - field.field.paragraph.card_price_list.field_cp_link
+    - field.field.paragraph.card_price_list.field_cp_ref_molecule_price_list
+    - field.field.paragraph.card_price_list.field_option_button_render
+    - paragraphs.paragraphs_type.card_price_list
+  module:
+    - entity_reference_revisions
+    - link
+    - options
+id: paragraph.card_price_list.default
+targetEntityType: paragraph
+bundle: card_price_list
+mode: default
+content:
+  field_cp_custom_class:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cp_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cp_ref_molecule_price_list:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_option_button_render:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 74abc041-1a20-49e1-8a4d-7e6f4258559d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_color_selection
+    - paragraphs.paragraphs_type.atom_slide
+  module:
+    - color_field
+_core:
+  default_config_hash: DgtpUdEXEcKyZzB91CxD2UwtFCP8J9vh9VP9NYwa6Cg
+id: paragraph.atom_slide.field_text_color_selection
+field_name: field_text_color_selection
+entity_type: paragraph
+bundle: atom_slide
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#ffffff'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

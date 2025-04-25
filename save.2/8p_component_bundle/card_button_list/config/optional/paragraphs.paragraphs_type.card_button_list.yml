@@ -1,0 +1,12 @@
+uuid: 8a538b4e-593a-4af6-9bb0-8bc29a684845
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sWba2Tg3iHnWfVI32qMSvsBmi-JU8cnBcel3mdKro00
+id: card_button_list
+label: 'Card Button List'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

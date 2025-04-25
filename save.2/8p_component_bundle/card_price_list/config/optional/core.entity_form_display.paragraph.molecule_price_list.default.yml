@@ -1,0 +1,34 @@
+uuid: b360dd9d-e320-4c0a-8fdc-5940573eb76a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.molecule_price_list.field_cp_text
+    - field.field.paragraph.molecule_price_list.field_cp_title
+    - paragraphs.paragraphs_type.molecule_price_list
+  module:
+    - text
+id: paragraph.molecule_price_list.default
+targetEntityType: paragraph
+bundle: molecule_price_list
+mode: default
+content:
+  field_cp_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: fa67d5c4-123a-4006-9125-bbb46773f9c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - layout_builder_theme
+_core:
+  default_config_hash: Pz0x4wE8Bzfgd3wlJ4Jqw0NRV2IoMtN7OuULxmKYxoI
+id: layout_builder_theme_breadcrumbs
+theme: layout_builder_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

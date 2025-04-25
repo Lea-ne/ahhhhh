@@ -1,0 +1,38 @@
+uuid: 923a2b18-4673-436d-bf33-f902f3f2f288
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.atom_button.field_cp_link
+    - field.field.paragraph.atom_button.field_option_button_render
+    - paragraphs.paragraphs_type.atom_button
+  module:
+    - link
+    - options
+_core:
+  default_config_hash: 4Wy1xkLoV8hvsQhNAR_a2wPJRqyikLu9OMa16y_mMsI
+id: paragraph.atom_button.default
+targetEntityType: paragraph
+bundle: atom_button
+mode: default
+content:
+  field_cp_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_option_button_render:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

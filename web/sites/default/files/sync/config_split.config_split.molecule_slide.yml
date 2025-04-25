@@ -1,0 +1,26 @@
+uuid: 671409e3-71aa-4032-b60b-7a48f2617ea1
+langcode: en
+status: true
+dependencies: {  }
+id: molecule_slide
+label: Molecules
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.molecule_content.field_cp_link
+  - field.field.paragraph.molecule_content.field_cp_text
+  - field.field.paragraph.molecule_content.field_cp_title
+  - field.field.paragraph.molecule_content.field_option_button_render
+  - field.field.paragraph.molecule_slide.field_cp_link
+  - field.field.paragraph.molecule_slide.field_cp_media
+  - field.field.paragraph.molecule_slide.field_cp_text
+  - field.field.paragraph.molecule_slide.field_cp_title
+  - paragraphs.paragraphs_type.molecule_content
+  - paragraphs.paragraphs_type.molecule_slide
+partial_list: {  }

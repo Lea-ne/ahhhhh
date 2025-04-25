@@ -1,0 +1,34 @@
+uuid: adaca7d1-eba6-4672-84a1-d1ac6747d0fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_content_list.field_cp_custom_class
+    - field.field.paragraph.card_content_list.field_cp_ref_molecule_content
+    - paragraphs.paragraphs_type.card_content_list
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: jgpGbiywN3pGYINGQsG2GSMNYGbSi7F8RJGE_op_64s
+id: paragraph.card_content_list.default
+targetEntityType: paragraph
+bundle: card_content_list
+mode: default
+content:
+  field_cp_custom_class:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cp_ref_molecule_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+{% set items = [] %}
+{% for item in content.field_button_list_items %}
+    {% if item['#paragraph'] %}
+         {% set items = items|merge([item]) %}
+    {% endif %}
+{% endfor %}
+
+
+{%
+  set classes = [
+    'component-card-button-list',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+         <div class="card__container">
+            {{ items }}
+         </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

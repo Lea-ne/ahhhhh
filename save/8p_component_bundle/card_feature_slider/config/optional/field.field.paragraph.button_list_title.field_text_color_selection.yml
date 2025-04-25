@@ -1,0 +1,27 @@
+uuid: 51246e2b-4765-4a52-9f80-a86d3aca264c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_color_selection
+    - paragraphs.paragraphs_type.button_list_title
+  module:
+    - color_field
+_core:
+  default_config_hash: ZL5KSTHKd6hxbZzPOkIEiE2IPU5TT0i5ab5HvXnG8pI
+id: paragraph.button_list_title.field_text_color_selection
+field_name: field_text_color_selection
+entity_type: paragraph
+bundle: button_list_title
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#2C2C2C'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

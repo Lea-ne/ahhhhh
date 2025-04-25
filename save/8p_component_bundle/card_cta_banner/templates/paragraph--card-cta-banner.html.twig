@@ -1,0 +1,57 @@
+{# Define content #}
+{% set title = content.field_simple_title %}
+{% set text = content.field_simple_description %}
+{% set link_url = content.field_simple_link[0]['#url'] %}
+{% set link_title = content.field_simple_link[0]['#title'] %}
+
+{# Define media #}
+{% set media_entity = paragraph.field_simple_image_media.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+
+{# Define colors #}
+{% set overlay_bg_color = content.field_overlay_color_selection.0['#markup'] ?? '' %}
+{% set text_color = content.field_text_color_selection.0['#markup'] ?? '' %}
+
+{# Compose inline style #}
+{% set style = (overlay_bg_color ? 'background-color:' ~ overlay_bg_color ~ ';' : '') ~ (text_color ? 'color:' ~ text_color ~ ';' : '') %}
+
+
+{%
+  set classes = [
+    'component-card-cta-banner',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <div class="card__container" style="background-image: url('{{ media }}')">
+        
+        <div class="card__content" {% if style %}style="{{ style }}"{% endif %}>
+
+            {% if title %}
+            <h3 class="card__title">
+                {{ title }}
+            </h3>
+            {% endif %}
+            
+            {% if text %}
+            <div class="card__text">
+                {{ text }}
+            </div>
+            {% endif %}
+
+            {% if link_title %}
+            <div class="card__link link-icon-arrow">
+                <a href="{{ link_url }}" style="color: inherit;">{{ link_title }}</a>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

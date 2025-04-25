@@ -1,0 +1,86 @@
+
+/* Font import */
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/****** Very basic drupal overide ****/
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black !important;
+}
+
+body {
+  font-weight: 400;
+}
+
+/* Default styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 !important;
+}
+
+
+/* link */
+a{
+    color: black;
+    text-decoration: underline;
+}
+a, a:hover, a:focus{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* list */
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul .nav-item a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a.nav-link {
+  padding: 0;
+}
+
+
+/* clearfix */
+.clearfix::after{
+content: none;
+}
+
+
+/* button styles type submit */
+.btn{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary); 
+    padding: 10px 20px;
+    border-radius: 0px;
+}
+
+.btn:hover, .btn:focus, .btn:focus-visible, .btn:active{
+    background-color:var(--color-white) !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-primary) !important; 
+    box-shadow: none;
+}
+
+/* input */
+input{
+    border-radius: 0px !important;
+}
+
+input:focus{
+    box-shadow: none !important;
+    border-color: #939393 !important;
+}
+

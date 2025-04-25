@@ -1,0 +1,61 @@
+uuid: e9bcd723-74a5-4e53-a234-b790d294041e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_slider_items
+    - paragraphs.paragraphs_type.atom_hero_slide
+    - paragraphs.paragraphs_type.card_hero_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.card_hero_slider.field_hero_slider_items
+field_name: field_hero_slider_items
+entity_type: paragraph
+bundle: card_hero_slider
+label: 'Hero Slider Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      atom_hero_slide: atom_hero_slide
+    negate: 0
+    target_bundles_drag_drop:
+      atom_hero_slide:
+        weight: 12
+        enabled: true
+      button_list_description:
+        weight: 13
+        enabled: false
+      button_list_link:
+        weight: 14
+        enabled: false
+      button_list_title:
+        weight: 15
+        enabled: false
+      card_button_list:
+        weight: 16
+        enabled: false
+      card_cta_banner:
+        weight: 17
+        enabled: false
+      card_description:
+        weight: 18
+        enabled: false
+      card_hero_slider:
+        weight: 19
+        enabled: false
+      card_image:
+        weight: 20
+        enabled: false
+      card_product:
+        weight: 21
+        enabled: false
+      card_simple_article:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+
+{# Paragraph template for Card Basic Content #}
+{% set title = content.field_simple_title %}
+{% set text = content.field_simple_description %}
+{% set link_url = content.field_simple_link[0]['#url'] %}
+{% set link_title = content.field_simple_link[0]['#title'] %}
+
+{# Define media #}
+{% set media_entity = paragraph.field_simple_image_media.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+
+{%
+  set classes = [
+    'component-card-article',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+
+{% include '@component_bundle/card_simple_article/templates/card-simple-article.html.twig' with {
+    classes: classes,
+    title: title,
+    text: text,
+    media: media,
+    link_url: link_url, 
+    link_title: link_title,
+} %} 

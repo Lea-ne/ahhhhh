@@ -1,0 +1,22 @@
+uuid: 99ee9413-ac66-4066-b740-6eaaea8260ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: NWPMXGu3PF06cAh7YDBrS47R03Zu8IZPs9x5cU4rajE
+id: paragraph.field_cp_ref_molecule_price_list
+field_name: field_cp_ref_molecule_price_list
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

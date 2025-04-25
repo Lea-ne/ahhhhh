@@ -1,0 +1,24 @@
+uuid: c01e9154-ec85-4c46-9cbd-5303ea2f522f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_color_selection
+    - paragraphs.paragraphs_type.button_list_link
+  module:
+    - color_field
+_core:
+  default_config_hash: fQ8ry8OIMIGcNWlcarjjGfK7g0n9m14Ggl96keb7OXA
+id: paragraph.button_list_link.field_bg_color_selection
+field_name: field_bg_color_selection
+entity_type: paragraph
+bundle: button_list_link
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

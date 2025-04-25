@@ -1,0 +1,12 @@
+uuid: 53602d07-29fb-4956-83b3-add506f293ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IqY1868KDhVUgrL24ir3ZtFBxDy1ZZq38agyJEen7eI
+id: atom_text
+label: 'Atom Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

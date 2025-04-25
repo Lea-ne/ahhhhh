@@ -1,0 +1,12 @@
+uuid: 6c90c2ae-d252-4bcc-a588-4d509c8003e9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: YoE8q8mS-Tup5EHuQorFgO67Ub8_piCdGvmGbNBIOM8
+id: atom_slide
+label: 'Atom Slide'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

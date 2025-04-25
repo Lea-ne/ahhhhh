@@ -1,0 +1,9 @@
+name: '8p component: Card Product'
+type: module
+description: 'Provides the Card of commerce product'
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom
+dependencies:
+  - component_bundle_commerce
+libraries:
+  - card_product/component_style

@@ -1,0 +1,13 @@
+.component-card-content-list .atom-content .atom__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+
+.component-card-content-list .atom-content:last-of-type .atom__container {
+    border-bottom: 0px;
+}

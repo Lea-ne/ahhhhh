@@ -1,0 +1,55 @@
+#drupal-off-canvas-wrapper select{
+    width: 100%;
+    border-radius: 0;
+}
+
+/* For Title */
+#drupal-off-canvas-wrapper .fieldset-legend{
+    padding-bottom: 10px !important;
+    display: block;
+}
+
+
+#drupal-off-canvas-wrapper fieldset.title_alignement input[type="radio"] {
+    display: none; /* cacher les radios natifs */
+}
+
+#drupal-off-canvas-wrapper fieldset.title_alignement .fieldset-wrapper .radio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Exemple d’icônes (tu peux remplacer par les tiennes) */
+#drupal-off-canvas-wrapper fieldset.title_alignement label {
+    display: block;
+    text-indent: -99999px; /* cacher le texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+#drupal-off-canvas-wrapper fieldset.title_alignement label:before{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+#drupal-off-canvas-wrapper fieldset.title_alignement label[for*="left"]:before {
+    background-image: url('../images/align-left.svg');
+}
+#drupal-off-canvas-wrapper fieldset.title_alignement label[for*="center"]:before {
+    background-image: url('../images/align-center.svg');
+}
+#drupal-off-canvas-wrapper fieldset.title_alignement label[for*="right"]:before {
+    background-image: url('../images/align-right.svg');
+}
+
+/* Quand coché */
+#drupal-off-canvas-wrapper fieldset.title_alignement input[type="radio"]:checked + label {
+    background-color: #0074d9;
+}

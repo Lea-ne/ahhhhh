@@ -1,0 +1,10 @@
+uuid: b714fe99-6c23-400f-92ad-2dfdc7be0b94
+langcode: en
+status: true
+dependencies: {  }
+id: card_hero_slider
+label: 'Card Hero Slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+name: '8p component: View card simple article'
+type: module
+description: 'Provides a view rendering diffenrent entity type in component style.'
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom
+dependencies:
+  - 8p_component_bundle
+  - component_bundle:card_simple_article
+libraries:
+  - view_card_simple_article/component_style

@@ -1,0 +1,37 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.atom_slide.field_simple_description
+      - field.field.paragraph.atom_slide.field_simple_link
+      - field.field.paragraph.atom_slide.field_simple_title
+    module:
+      - link
+      - text
+  content:
+    field_simple_description:
+      type: text_default
+      label: hidden
+      settings: {  }
+      third_party_settings: {  }
+      weight: 2
+      region: content
+    field_simple_link:
+      type: link
+      label: hidden
+      settings:
+        trim_length: 80
+        url_only: false
+        url_plain: false
+        rel: ''
+        target: ''
+      third_party_settings: {  }
+      weight: 1
+      region: content
+    field_simple_title:
+      type: basic_string
+      label: hidden
+      settings: {  }
+      third_party_settings: {  }
+      weight: 0
+      region: content
+removing: {  }

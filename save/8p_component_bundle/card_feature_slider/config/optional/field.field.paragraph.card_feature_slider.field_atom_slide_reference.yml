@@ -1,0 +1,69 @@
+uuid: e2e470bf-1214-4bf2-9ecf-eadb2484d2fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_atom_slide_reference
+    - paragraphs.paragraphs_type.atom_slide
+    - paragraphs.paragraphs_type.card_feature_slider
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: ccqLUJ_WMjnA3Y-ncjXEDiPUUNk5PoG0cz0wKDRRGfs
+id: paragraph.card_feature_slider.field_atom_slide_reference
+field_name: field_atom_slide_reference
+entity_type: paragraph
+bundle: card_feature_slider
+label: 'Atom Slide Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      atom_slide: atom_slide
+    negate: 0
+    target_bundles_drag_drop:
+      atom_hero_slide:
+        weight: 14
+        enabled: false
+      atom_slide:
+        weight: 15
+        enabled: true
+      button_list_description:
+        weight: 16
+        enabled: false
+      button_list_link:
+        weight: 17
+        enabled: false
+      button_list_title:
+        weight: 18
+        enabled: false
+      card_button_list:
+        weight: 19
+        enabled: false
+      card_cta_banner:
+        weight: 20
+        enabled: false
+      card_description:
+        weight: 21
+        enabled: false
+      card_feature_slider:
+        weight: 22
+        enabled: false
+      card_hero_slider:
+        weight: 23
+        enabled: false
+      card_image:
+        weight: 24
+        enabled: false
+      card_product:
+        weight: 25
+        enabled: false
+      card_simple_article:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

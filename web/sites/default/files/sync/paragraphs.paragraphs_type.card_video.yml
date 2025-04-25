@@ -1,0 +1,12 @@
+uuid: 0573218e-db1d-48a9-9116-9e885de8e897
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5WUEySzJQRcVlmkWHQpeaytzuxWu_1S1zQ9PSH2mxv8
+id: card_video
+label: 'Card Video'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

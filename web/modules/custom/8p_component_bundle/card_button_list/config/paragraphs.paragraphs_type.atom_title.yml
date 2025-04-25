@@ -1,0 +1,10 @@
+uuid: d2843383-b6c9-4bd6-acfa-36cdae980562
+langcode: en
+status: true
+dependencies: {  }
+id: atom_title
+label: 'Atom Title'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

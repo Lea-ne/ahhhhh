@@ -1,0 +1,21 @@
+uuid: 90beff95-58bc-43c2-8ddd-ebe8c3803416
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_title
+    - paragraphs.paragraphs_type.atom_slide
+_core:
+  default_config_hash: _E6JXoNN1JjEEcOxfljyOjaX8GJ-fAyCPtJ8FDE15QQ
+id: paragraph.atom_slide.field_simple_title
+field_name: field_simple_title
+entity_type: paragraph
+bundle: atom_slide
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

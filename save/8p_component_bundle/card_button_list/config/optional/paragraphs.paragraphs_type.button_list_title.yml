@@ -1,0 +1,12 @@
+uuid: 50bab1ff-059f-432b-aa1e-89ac75fb70e6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: V4Bn4paYEUk4jq7CK8yh2lJuANdHXonYHJ3GiFqkWrY
+id: button_list_title
+label: 'Button List Title'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

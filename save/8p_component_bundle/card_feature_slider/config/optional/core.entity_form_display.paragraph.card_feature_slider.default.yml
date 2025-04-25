@@ -1,0 +1,37 @@
+uuid: 558efd15-a526-4bfc-aefc-73aefd233254
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_feature_slider.field_atom_slide_reference
+    - paragraphs.paragraphs_type.card_feature_slider
+  module:
+    - paragraphs
+_core:
+  default_config_hash: cvWjv09xky6gst9ec9iWIw0XyDgSdgi7x03OeFUdNi0
+id: paragraph.card_feature_slider.default
+targetEntityType: paragraph
+bundle: card_feature_slider
+mode: default
+content:
+  field_atom_slide_reference:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

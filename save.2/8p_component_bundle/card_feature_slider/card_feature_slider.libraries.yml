@@ -1,0 +1,12 @@
+component_style:
+  version: 1.0
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once     # pour Drupal.behaviors et .once()
+    - layout_builder_theme/slick      # la librairie Slick de ton thème
+    - core/drupalSettings  # si tu as besoin de drupalSettings dans ton JS

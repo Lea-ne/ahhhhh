@@ -1,0 +1,35 @@
+uuid: 47d3f26e-b9cc-4ade-a353-83b0135a568a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: qtySycQRH4Rmfb50PsV-foDEYhkiaP-lYBclCqnhez4
+id: paragraph.field_option_button_render
+field_name: field_option_button_render
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cp_button_render_default
+      label: Default
+    -
+      value: cp_button_render_1
+      label: 'Button Render 1'
+    -
+      value: cp_button_render_2
+      label: 'Button Render 2'
+    -
+      value: cp_button_render_3
+      label: 'Button Render 3'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

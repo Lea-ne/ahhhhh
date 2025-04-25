@@ -1,0 +1,45 @@
+uuid: f3afb756-7912-4a5a-867e-8502e1d35dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.atom_hero_slide.field_simple_link
+    - field.field.paragraph.atom_hero_slide.field_simple_media
+    - field.field.paragraph.atom_hero_slide.field_simple_title
+    - paragraphs.paragraphs_type.atom_hero_slide
+  module:
+    - link
+id: paragraph.atom_hero_slide.default
+targetEntityType: paragraph
+bundle: atom_hero_slide
+mode: default
+content:
+  field_simple_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_simple_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_simple_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

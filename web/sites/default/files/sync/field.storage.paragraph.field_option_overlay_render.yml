@@ -1,0 +1,32 @@
+uuid: f5b6d3a2-dcae-44ae-a725-b462d6648097
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: T6rjOjx2P_RqctX-k98zGZi1vQaRFnPv4T51oIEB3F0
+id: paragraph.field_option_overlay_render
+field_name: field_option_overlay_render
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cp_overlay_render_default
+      label: Default
+    -
+      value: cp_overlay_render1
+      label: 'Render 1'
+    -
+      value: cp_overlay_render2
+      label: 'Render 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

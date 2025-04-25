@@ -1,0 +1,21 @@
+{% set text = content.field_simple_description %}
+ 
+
+{% set classes = [
+  'component-card-description',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+] %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="card__container">
+         {% if text %}
+          <div class="card__text">
+            {{ text }}
+          </div>
+        {% endif %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

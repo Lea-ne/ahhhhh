@@ -1,0 +1,66 @@
+uuid: f298308e-d23b-4c25-a914-ba82084dfba1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_simple_article.field_cp_custom_class
+    - field.field.paragraph.card_simple_article.field_cp_image
+    - field.field.paragraph.card_simple_article.field_cp_link
+    - field.field.paragraph.card_simple_article.field_cp_text
+    - field.field.paragraph.card_simple_article.field_cp_title
+    - paragraphs.paragraphs_type.card_simple_article
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: SmkxSgAnOsazPige5K_OxK4o72pj5ee1oHniN_flIdk
+id: paragraph.card_simple_article.default
+targetEntityType: paragraph
+bundle: card_simple_article
+mode: default
+content:
+  field_cp_custom_class:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_image:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_cp_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

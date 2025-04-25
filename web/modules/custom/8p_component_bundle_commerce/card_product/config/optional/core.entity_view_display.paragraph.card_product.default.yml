@@ -1,0 +1,24 @@
+uuid: b1f13429-43f3-444d-8edc-ad605259d42d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_product.field_simple_product_reference
+    - paragraphs.paragraphs_type.card_product
+_core:
+  default_config_hash: WyUsv3t5qOvoJk6H59gJFdWaTJ-iD-1AmzHE4eQ1zZI
+id: paragraph.card_product.default
+targetEntityType: paragraph
+bundle: card_product
+mode: default
+content:
+  field_simple_product_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card_product
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

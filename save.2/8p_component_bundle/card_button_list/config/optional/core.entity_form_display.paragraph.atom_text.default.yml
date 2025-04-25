@@ -1,0 +1,27 @@
+uuid: 4daacc13-f5a6-404b-b943-da0ddce0d2d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.atom_text.field_cp_text
+    - paragraphs.paragraphs_type.atom_text
+  module:
+    - text
+_core:
+  default_config_hash: 4OgM0y3j7-tFdqaqcw70dMC8pYQAzveX0lZZhA823LM
+id: paragraph.atom_text.default
+targetEntityType: paragraph
+bundle: atom_text
+mode: default
+content:
+  field_cp_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

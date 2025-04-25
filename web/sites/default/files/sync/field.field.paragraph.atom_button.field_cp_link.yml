@@ -1,0 +1,25 @@
+uuid: dc189967-17d3-49f5-928a-503a9ce56b25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_link
+    - paragraphs.paragraphs_type.atom_button
+  module:
+    - link
+_core:
+  default_config_hash: 8cN29xPrIdW3nlQlzQkBYF5f1Iruv06Y3xHC22BuB1I
+id: paragraph.atom_button.field_cp_link
+field_name: field_cp_link
+entity_type: paragraph
+bundle: atom_button
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

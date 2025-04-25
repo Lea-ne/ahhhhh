@@ -1,0 +1,48 @@
+uuid: faf5fc07-75b6-4830-8397-1d76754ed334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_hero_slider.field_cp_custom_class
+    - field.field.paragraph.card_hero_slider.field_cp_ref_molecule_slide
+    - field.field.paragraph.card_hero_slider.field_option_overlay_render
+    - paragraphs.paragraphs_type.card_hero_slider
+  module:
+    - inline_entity_form
+_core:
+  default_config_hash: j8mSvmGrsn40EEcK7dlOw71uNQlmUQdSPB4g0i_hyXU
+id: paragraph.card_hero_slider.default
+targetEntityType: paragraph
+bundle: card_hero_slider
+mode: default
+content:
+  field_cp_custom_class:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_ref_molecule_slide:
+    type: inline_entity_form_simple
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
+    third_party_settings: {  }
+  field_option_overlay_render:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

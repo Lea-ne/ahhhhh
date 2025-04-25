@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Link module library
+ */
+function view_card_simple_article_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'view' && $entity->bundle() === 'view_card_simple_article') {
+    $build['#attached']['library'][] = 'view_card_simple_article/component_style';
+  }
+}
+
+

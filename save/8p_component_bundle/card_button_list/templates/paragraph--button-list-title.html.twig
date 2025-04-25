@@ -1,0 +1,21 @@
+{# Define colors #}
+{% set bg_color = content.field_bg_color_selection.0['#markup'] ?? '' %}
+{% set text_color = content.field_text_color_selection.0['#markup'] ?? '' %}
+
+{# Compose inline style #}
+{% set style = (bg_color ? 'background-color:' ~ bg_color ~ ';' : '') ~ (text_color ? 'color:' ~ text_color ~ ';' : '') %}
+
+
+{%
+  set classes = [
+    'button-list-title',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }} {% if style %}style="{{ style }}"{% endif %}>
+    {% block content %}
+      <h3>{{ paragraph.field_simple_title.value }}</h3>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

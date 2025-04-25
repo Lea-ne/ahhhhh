@@ -1,0 +1,25 @@
+uuid: 2de2b695-eca5-4d14-a255-7b7c25b152d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_button_render
+    - paragraphs.paragraphs_type.molecule_content
+  module:
+    - options
+_core:
+  default_config_hash: kJCMVbC2bd7dO4t0kWNBZVbS-lw4wTpSvgA59YELYNU
+id: paragraph.molecule_content.field_option_button_render
+field_name: field_option_button_render
+entity_type: paragraph
+bundle: molecule_content
+label: 'Option Button Render'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: cp_button_render_default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,46 @@
+global-styling:
+  version: VERSION
+  js:
+    js/popper.min.js: { weight: -49 }
+    js/bootstrap.min.js:  { weight: -48 }
+    js/base.js: {}
+  css:
+    theme:
+      css/style.css: {}
+      css/bootstrap.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+  
+custom-styling:
+  version: 1.x
+  css:
+    theme:
+      css/global.css: {}
+      css/global-variable.css: {}
+  js:
+    js/custom.js: {}
+
+slick:
+  css:
+    theme:
+      slick/slick.css: {}
+      slick/slick-theme.css: {}
+  js:
+    slick/slick.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+ 
+
+jquery-custom:
+  remote: https://github.com/jquery/jquery
+  version: "2.2.4"
+  license:
+    name: MIT
+    url: https://github.com/jquery/jquery/blob/2.2.4/LICENSE.txt
+    gpl-compatible: true
+  js:
+    js/jquery-2.2.4.min.js: { minified: true, weight: -20 }

@@ -1,0 +1,12 @@
+uuid: 91821881-21df-4161-a252-47abc3a61500
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wTVrCxqbrlV0xvcAAZdFrodvljX0MxUzc4AmJyL4h_s
+id: card_product
+label: 'Card Product'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

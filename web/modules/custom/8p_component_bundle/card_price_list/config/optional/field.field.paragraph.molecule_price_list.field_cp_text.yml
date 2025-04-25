@@ -1,0 +1,22 @@
+uuid: 6fb0b88e-2562-41cb-974d-2ba923edcc8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_text
+    - paragraphs.paragraphs_type.molecule_price_list
+  module:
+    - text
+id: paragraph.molecule_price_list.field_cp_text
+field_name: field_cp_text
+entity_type: paragraph
+bundle: molecule_price_list
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

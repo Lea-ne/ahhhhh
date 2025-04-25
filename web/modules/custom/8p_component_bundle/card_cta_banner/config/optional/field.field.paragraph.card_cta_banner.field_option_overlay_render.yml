@@ -1,0 +1,21 @@
+uuid: a7d9b163-3220-4900-8220-1729658bd46c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_overlay_render
+    - paragraphs.paragraphs_type.card_cta_banner
+  module:
+    - options
+id: paragraph.card_cta_banner.field_option_overlay_render
+field_name: field_option_overlay_render
+entity_type: paragraph
+bundle: card_cta_banner
+label: field_option_overlay_render
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

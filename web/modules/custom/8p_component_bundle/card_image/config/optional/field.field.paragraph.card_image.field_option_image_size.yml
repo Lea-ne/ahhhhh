@@ -1,0 +1,21 @@
+uuid: cfe65232-eea8-41c5-9242-2756f0ac3408
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_image_size
+    - paragraphs.paragraphs_type.card_image
+  module:
+    - options
+id: paragraph.card_image.field_option_image_size
+field_name: field_option_image_size
+entity_type: paragraph
+bundle: card_image
+label: field_option_image_size
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

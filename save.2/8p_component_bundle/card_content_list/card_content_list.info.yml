@@ -1,0 +1,9 @@
+name: '8p Component: Card Content List'
+type: module
+description: 'Card Content List'
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom
+dependencies:
+  - component_bundle
+libraries:
+  - card_content_list/component_style

@@ -1,0 +1,10 @@
+uuid: 1f5ec345-797f-4b7a-aa69-b88eced873e3
+langcode: en
+status: true
+dependencies: {  }
+id: card_feature_slider
+label: 'Card Feature Slider'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

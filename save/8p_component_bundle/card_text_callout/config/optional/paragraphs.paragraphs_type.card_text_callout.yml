@@ -1,0 +1,10 @@
+uuid: ed20b52c-1d60-4234-aa46-6c72f0a006f7
+langcode: en
+status: true
+dependencies: {  }
+id: card_text_callout
+label: 'Card Text Callout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

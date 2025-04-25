@@ -1,0 +1,22 @@
+uuid: 7f377d27-f441-4f11-b578-39065b1a1249
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_image.field_simple_image_media
+    - paragraphs.paragraphs_type.card_image
+id: paragraph.card_image.default
+targetEntityType: paragraph
+bundle: card_image
+mode: default
+content:
+  field_simple_image_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

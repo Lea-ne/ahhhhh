@@ -1,0 +1,21 @@
+uuid: 57cd3ac4-36ce-429a-90a1-868a547bba25
+langcode: en
+status: false
+dependencies: {  }
+id: card_image
+label: 'Card Image'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_image/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_image.field_cp_custom_class
+  - field.field.paragraph.card_image.field_cp_image
+  - field.field.paragraph.card_image.field_option_image_fit
+  - field.field.paragraph.card_image.field_option_image_size
+  - paragraphs.paragraphs_type.card_image
+partial_list: {  }

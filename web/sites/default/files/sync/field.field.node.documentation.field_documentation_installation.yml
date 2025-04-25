@@ -1,0 +1,22 @@
+uuid: 3c553e52-ced5-487b-9f54-4e35e461ef8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documentation_installation
+    - node.type.documentation
+  module:
+    - text
+id: node.documentation.field_documentation_installation
+field_name: field_documentation_installation
+entity_type: node
+bundle: documentation
+label: 'Installation & Module infos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

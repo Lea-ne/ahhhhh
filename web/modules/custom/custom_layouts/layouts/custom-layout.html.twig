@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ * Template pour le layout personnalisé à 5 colonnes.
+ *
+ * Variables disponibles :
+ * - content: Le contenu de chaque région.
+ * - attributes: Les attributs HTML globaux du layout.
+ * - region_attributes: Les attributs propres à chaque région.
+ */
+#}
+{# Lit regions define by plugin #}
+{% set regions = region_attributes|keys %}
+{% set count = regions|length %}
+
+
+{% set sm = (count == 3 ? 1 : (count > 1 ? 2 : 1)) %}
+{% set md_lg = (count == 3 ? 3 : (count > 3 ? 2 : sm)) %}
+{% set col_count_classes = [
+  'row-cols-1',
+  'row-cols-sm-' ~ sm,
+  'row-cols-md-' ~ md_lg,
+  'row-cols-lg-' ~ count,
+] %}
+
+
+{% set layout_class = [
+  'component-type-layout',
+  layout.id,
+] %}
+
+{% set row_class = [
+  'row',
+  (content['#settings'].column_gap != 'default-gap' ? content['#settings'].column_gap : '') 
+] %}
+
+{% set title_color = content['#settings'].title_color %}
+{% set title_size = content['#settings'].title_size ? : 'h2' %}
+
+
+{% if content %}
+  <div{{ attributes.addClass(classes ~ '' ~ layout_class | join(' ')) }}>
+    <div class="layout__title">
+       <{{title_size}}{% if title_color is not empty %} style="color:{{ title_color }};"{% endif %}>{{ settings.title }}</{{title_size}}>
+    </div>
+    <div class="{{ row_class | join(' ') }} {{ col_count_classes | join(' ') }}">
+    {% if content.col1 %}
+      <div {{ region_attributes.col1.addClass('layout__col-1 col') }}>
+        {{ content.col1 }}
+      </div>
+    {% endif %}
+    {% if content.col2 %}
+      <div {{ region_attributes.col2.addClass('layout__col-2 col') }}>
+        {{ content.col2 }}
+      </div>
+    {% endif %}
+    {% if content.col3 %}
+      <div {{ region_attributes.col3.addClass('layout__col-3 col') }}>
+        {{ content.col3 }}
+      </div>
+    {% endif %}
+    {% if content.col4 %}
+      <div {{ region_attributes.col4.addClass('layout__col-4 col') }}>
+        {{ content.col4 }}
+      </div>
+    {% endif %}
+    {% if content.col5 %}
+      <div {{ region_attributes.col5.addClass('layout__col-5 col') }}>
+        {{ content.col5 }}
+      </div>
+    {% endif %}
+    </div>
+
+</div>
+{% endif %}
+ 

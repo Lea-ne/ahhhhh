@@ -1,0 +1,21 @@
+uuid: 46b360c4-8bad-4dfc-835f-f08fbffd0dc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_title
+    - paragraphs.paragraphs_type.button_list_title
+_core:
+  default_config_hash: pItOWrK4NIObtW2ZWRJiuf3m2nm3X1ddccRNocUYWpw
+id: paragraph.button_list_title.field_simple_title
+field_name: field_simple_title
+entity_type: paragraph
+bundle: button_list_title
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

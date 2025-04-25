@@ -1,0 +1,44 @@
+uuid: 95a963e2-bf38-48a6-ac4c-51400aa33385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.button_list_title.field_bg_color_selection
+    - field.field.paragraph.button_list_title.field_simple_title
+    - field.field.paragraph.button_list_title.field_text_color_selection
+    - paragraphs.paragraphs_type.button_list_title
+  module:
+    - color_field
+_core:
+  default_config_hash: I5tEDNQ0m1Z44x-QoJO5dwRieqI8zpCcvZsghSj9z_E
+id: paragraph.button_list_title.default
+targetEntityType: paragraph
+bundle: button_list_title
+mode: default
+content:
+  field_bg_color_selection:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_simple_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_color_selection:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

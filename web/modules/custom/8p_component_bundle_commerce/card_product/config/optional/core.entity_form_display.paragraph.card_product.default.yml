@@ -1,0 +1,27 @@
+uuid: fbfccdc2-a00e-4528-8de7-a27e3df910ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_product.field_simple_product_reference
+    - paragraphs.paragraphs_type.card_product
+_core:
+  default_config_hash: lW4sVzkdyQUoe6hLkrLA1Wnab-iGcqnllnM6kOGCYj8
+id: paragraph.card_product.default
+targetEntityType: paragraph
+bundle: card_product
+mode: default
+content:
+  field_simple_product_reference:
+    type: entity_reference_autocomplete_tags
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

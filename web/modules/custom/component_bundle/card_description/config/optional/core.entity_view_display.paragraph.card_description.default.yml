@@ -1,0 +1,22 @@
+uuid: a3ee1241-ffc5-4268-824e-8744b60df833
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_description.field_simple_description
+    - paragraphs.paragraphs_type.card_description
+  module:
+    - text
+id: paragraph.card_description.default
+targetEntityType: paragraph
+bundle: card_description
+mode: default
+content:
+  field_simple_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

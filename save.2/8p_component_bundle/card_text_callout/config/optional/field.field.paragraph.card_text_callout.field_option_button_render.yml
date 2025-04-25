@@ -1,0 +1,25 @@
+uuid: 9e01485b-b9e4-4ece-ab03-5fd1b576bc9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_button_render
+    - paragraphs.paragraphs_type.card_text_callout
+  module:
+    - options
+_core:
+  default_config_hash: KsxfAkZAS9dD1aPhmFHDmsOojW6pjCjwzwlCxSpkuww
+id: paragraph.card_text_callout.field_option_button_render
+field_name: field_option_button_render
+entity_type: paragraph
+bundle: card_text_callout
+label: 'Option Button Render'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: cp_button_render_default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

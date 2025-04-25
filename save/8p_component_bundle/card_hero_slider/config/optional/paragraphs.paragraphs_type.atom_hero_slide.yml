@@ -1,0 +1,10 @@
+uuid: 9de3951b-3208-4684-ae55-ed7871d46399
+langcode: en
+status: true
+dependencies: {  }
+id: atom_hero_slide
+label: 'Atom Hero Slide'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

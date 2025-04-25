@@ -1,0 +1,24 @@
+uuid: 4ecd2b53-b717-4657-aafc-cf5b75bf3521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_button_list.field_button_list_items
+    - paragraphs.paragraphs_type.card_button_list
+  module:
+    - entity_reference_revisions
+id: paragraph.card_button_list.default
+targetEntityType: paragraph
+bundle: card_button_list
+mode: default
+content:
+  field_button_list_items:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

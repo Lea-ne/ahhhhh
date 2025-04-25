@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Paragraph Bundle Image.
+ *
+ * Filename:     paragraph_bundle_image.module
+ * Website:      https://www.flashwebcenter.com
+ * Description:  template.
+ * Developer:    Alaa Haddad https://www.alaahaddad.com.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme for the paragraph().
+ */
+function card_text_callout_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__card_text_callout' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+
+
+
+
+
+function card_text_callout_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_text_callout') {
+    $build['#attached']['library'][] = 'card_text_callout/component_style';
+  }
+}

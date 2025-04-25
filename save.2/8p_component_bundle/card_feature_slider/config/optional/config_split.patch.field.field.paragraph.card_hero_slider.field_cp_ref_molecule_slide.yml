@@ -1,0 +1,9 @@
+adding:
+  dependencies:
+    config:
+      - paragraphs.paragraphs_type.molecule_slide
+  settings:
+    handler_settings:
+      target_bundles:
+        molecule_slide: molecule_slide
+removing: {  }

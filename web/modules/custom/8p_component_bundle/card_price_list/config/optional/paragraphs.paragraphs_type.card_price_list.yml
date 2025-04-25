@@ -1,0 +1,10 @@
+uuid: a8f71d8d-6bf3-42e1-9e77-493f492ab6b2
+langcode: en
+status: true
+dependencies: {  }
+id: card_price_list
+label: 'Card Price List'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

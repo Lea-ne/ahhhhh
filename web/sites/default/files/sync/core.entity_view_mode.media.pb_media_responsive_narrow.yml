@@ -1,0 +1,13 @@
+uuid: 38a9c069-a088-4a1c-a093-e51d85ff3d31
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: ZtxrwzdEAETcDxJQxL8fJMunQPBvqkDvODD0cL-4jck
+id: media.pb_media_responsive_narrow
+label: 'PB Media Responsive Narrow'
+description: null
+targetEntityType: media
+cache: true

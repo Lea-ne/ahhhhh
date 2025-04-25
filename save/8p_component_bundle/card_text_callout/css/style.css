@@ -1,0 +1,11 @@
+.component-card-text-callout .card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* exepet for link button */
+.component-card-text-callout .card__link{
+    margin-top: 8px;
+}

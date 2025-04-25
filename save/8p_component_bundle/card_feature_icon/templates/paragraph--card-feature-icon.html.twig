@@ -1,0 +1,74 @@
+
+{# Paragraph template for Card Basic Content #}
+{% set title = content.field_simple_title %}
+{% set text = content.field_simple_description %}
+{% set link_url = content.field_simple_link[0]['#url'] %}
+{% set link_title = paragraph.field_simple_link.0.title %}
+
+{# Note : if user add a link title it create a button, if there just a link url the link is aplied on the card elements #}
+{% if link_url is not empty and link_title is empty %}
+  {% set only_url = true %}
+{% elseif link_title is not empty and link_url is not empty %}
+  {% set url_and_title = true %}
+{% endif %}
+
+
+{# Define media #}
+{% set media_entity = paragraph.field_simple_image_media.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+
+{%
+  set classes = [
+    'component-card-feature-icon',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+
+<div class="{{ classes|join(' ') }}">
+    <div class="card__container">
+
+        {% if media %}
+          <div class="card__media">
+            {% if only_url %}
+            <a href="{{ link_url }}">
+              <img src="{{ media }}" alt="{{ media_alt }}">
+            </a>
+            {% else %}
+              <img src="{{ media }}" alt="{{ media_alt }}">
+            {% endif %}
+          </div>
+        {% endif %}
+        
+        {% if only_url %}
+        <a href="{{ link_url }}">
+        {% endif %}
+
+        <div class="card__content">
+
+          {% if title %}
+            <div class="card__title">
+              {{ title }}
+            </div>
+          {% endif %}
+          
+          {% if text %}
+            <div class="card__text">
+              {{ text }}
+            </div>
+          {% endif %}
+
+          {% if url_and_title %}
+            <div class="card__link">
+              <a href="{{ link_url }}">{{ link_title }}</a>
+            </div>
+          {% endif %}
+        </div>
+        {% if only_url %}
+          </a>
+        {% endif %}
+     
+    </div>
+  </div>

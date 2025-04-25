@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Paragraph Bundle Image.
+ *
+ * Filename:     paragraph_bundle_image.module
+ * Website:      https://www.flashwebcenter.com
+ * Description:  template.
+ * Developer:    Alaa Haddad https://www.alaahaddad.com.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme for the paragraph().
+ */
+function card_hero_slider_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__card_hero_slider' => [
+      'base hook' => 'paragraph',
+    ],
+
+    'paragraph__atom_hero_slide' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+
+
+function card_hero_slider_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_hero_slider') {
+    $build['#attached']['library'][] = 'card_hero_slider/component_style';
+  }
+}

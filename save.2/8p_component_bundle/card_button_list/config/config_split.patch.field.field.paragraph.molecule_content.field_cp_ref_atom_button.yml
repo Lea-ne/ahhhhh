@@ -1,0 +1,9 @@
+adding:
+  dependencies:
+    config:
+      - paragraphs.paragraphs_type.atom_button
+  settings:
+    handler_settings:
+      target_bundles:
+        atom_button: atom_button
+removing: {  }

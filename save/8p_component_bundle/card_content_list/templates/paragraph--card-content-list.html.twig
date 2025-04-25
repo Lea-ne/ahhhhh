@@ -1,0 +1,59 @@
+{% set items_table = [] %}
+
+{% for item in paragraph.field_atom_content_reference %}
+  {% set entity = item.entity %}
+  {% set title = entity.field_simple_title.value %}
+  {% set description = entity.field_simple_description.value|striptags %}
+  {% set link_title = entity.field_simple_link.0.title ?? '' %}
+  {% set link_url = entity.field_simple_link[0]['#url'] ?? '' %}
+
+  {# Define colors #}
+  {% set title_color = entity.field_title_color_selection.value.0.color ?? '' %}
+  {% set title_style = (title_color ? 'color:' ~ title_color ~ ';' : '') %}
+
+  
+  {% set items_table = items_table|merge([{
+    title: title,
+    description: description,
+    link_title: link_title,
+    link_url: link_url,
+    title_style: title_style,
+  }]) %}
+{% endfor %}
+
+
+
+{% set classes = [
+  'component-card-content-list',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+] %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="card__container">
+        {% for item in items_table %}
+        
+          <div class="atom-content">
+            <div class="atom__container">
+              {% if item.title %}
+                <h5 style="{{ item.title_style }}" class="card__title">{{ item.title }}</h5>
+              {% endif %}
+
+              {% if item.description %}
+                <div class="card__text">{{ item.description }}</div>
+              {% endif %}
+
+              {% if item.link_title %}
+                <div class="card__link link-icon-arrow">
+                  <a href="{{ item.link_url }}" style="color: inherit;">{{ item.link_title }}</a>
+                </div>
+              {% endif %}
+            </div>
+
+          </div>
+        {% endfor %}
+      </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

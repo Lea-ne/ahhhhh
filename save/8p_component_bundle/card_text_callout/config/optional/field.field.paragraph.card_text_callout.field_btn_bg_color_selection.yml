@@ -1,0 +1,25 @@
+uuid: 99b8f5ee-7f6e-46e2-9ab2-4cc2811782fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_btn_bg_color_selection
+    - paragraphs.paragraphs_type.card_text_callout
+  module:
+    - color_field
+id: paragraph.card_text_callout.field_btn_bg_color_selection
+field_name: field_btn_bg_color_selection
+entity_type: paragraph
+bundle: card_text_callout
+label: 'Button Background Color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#b17457'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

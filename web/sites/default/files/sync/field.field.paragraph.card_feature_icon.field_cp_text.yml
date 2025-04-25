@@ -1,0 +1,24 @@
+uuid: 9e8b0e2f-e237-48c7-8370-50b7401afc67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_text
+    - paragraphs.paragraphs_type.card_feature_icon
+  module:
+    - text
+_core:
+  default_config_hash: cf10o3LadYtf1gz5f7TnsM-886TU-f_Y3Q9KFwY990s
+id: paragraph.card_feature_icon.field_cp_text
+field_name: field_cp_text
+entity_type: paragraph
+bundle: card_feature_icon
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: 8c758277-13e7-475f-8313-c18b7747707f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_builder_test
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_page_builder_test
+field_name: field_page_builder_test
+entity_type: node
+bundle: page
+label: 'Page builder test'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      simple_card_article_paragraph:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

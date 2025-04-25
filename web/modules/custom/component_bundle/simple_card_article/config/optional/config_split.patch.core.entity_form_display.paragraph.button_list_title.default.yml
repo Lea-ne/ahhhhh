@@ -1,0 +1,14 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.button_list_title.field_simple_title
+  content:
+    field_simple_title:
+      type: string_textarea
+      weight: 0
+      region: content
+      settings:
+        rows: 1
+        placeholder: ''
+      third_party_settings: {  }
+removing: {  }

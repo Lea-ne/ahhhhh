@@ -1,0 +1,28 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.atom_hero_slide.field_simple_link
+      - field.field.paragraph.atom_hero_slide.field_simple_title
+    module:
+      - link
+  content:
+    field_simple_link:
+      type: link
+      label: hidden
+      settings:
+        trim_length: 80
+        url_only: false
+        url_plain: false
+        rel: ''
+        target: ''
+      third_party_settings: {  }
+      weight: 1
+      region: content
+    field_simple_title:
+      type: basic_string
+      label: hidden
+      settings: {  }
+      third_party_settings: {  }
+      weight: 0
+      region: content
+removing: {  }

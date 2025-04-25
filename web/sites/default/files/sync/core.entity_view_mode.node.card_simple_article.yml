@@ -1,0 +1,11 @@
+uuid: 9f344181-47c0-45c9-9328-3538b9c9c4dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_simple_article
+label: 'Card Simple Article'
+description: 'Use the display of the 8p component card simple article'
+targetEntityType: node
+cache: true

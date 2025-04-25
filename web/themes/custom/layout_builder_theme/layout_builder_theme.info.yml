@@ -1,0 +1,42 @@
+name: layout_builder_theme
+type: theme
+description: 'SASS starter kit for a Bootstrap SubTheme.'
+# version: VERSION
+core_version_requirement: ^10.3 || ^11
+base theme: bootstrap
+
+libraries:
+  - bootstrap_sass/global-styling
+  - layout_builder_theme/custom-styling
+  - layout_builder_theme/card_article
+  - layout_builder_theme/card_product
+  - layout_builder_theme/slick
+  - layout_builder_theme/button_cta
+  - layout_builder_theme/header
+  - layout_builder_theme/footer
+
+
+libraries-override:
+  bootstrap_barrio/global-styling: false
+  core/jquery: layout_builder_theme/jquery-custom
+
+regions:
+  top_header: 'Top header'
+  highlighted: Highlighted
+  header: Header
+  page_bottom: 'Page bottom'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'
+  footer_main: 'Footer main'
+  footer_second: 'Footer second'
+  none: None
+
+# Information added by Drupal.org packaging script on 2024-09-16
+version: '5.0.1'
+project: 'bootstrap'
+datestamp: 1726511779

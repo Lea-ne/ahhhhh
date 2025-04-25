@@ -1,0 +1,10 @@
+uuid: 4495df81-6b03-465d-ba96-19bba30b2dce
+langcode: en
+status: true
+dependencies: {  }
+id: card_cta_banner
+label: 'Card Cta Banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,15 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.card_simple_article.field_simple_description
+    module:
+      - text
+  content:
+    field_simple_description:
+      type: text_default
+      label: hidden
+      settings: {  }
+      third_party_settings: {  }
+      weight: 2
+      region: content
+removing: {  }

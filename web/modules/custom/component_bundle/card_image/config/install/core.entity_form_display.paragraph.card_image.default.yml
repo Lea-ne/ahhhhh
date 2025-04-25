@@ -1,0 +1,26 @@
+uuid: ed1b473e-86de-4650-b2f1-f35d6044ff40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_image.field_simple_image_media
+    - paragraphs.paragraphs_type.card_image
+  module:
+    - media_library
+_core:
+  default_config_hash: FaS0sfs744mnz94AXpLAbxQ6mDZPtBReq7peX4TmOA8
+id: paragraph.card_image.default
+targetEntityType: paragraph
+bundle: card_image
+mode: default
+content:
+  field_simple_image_media:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

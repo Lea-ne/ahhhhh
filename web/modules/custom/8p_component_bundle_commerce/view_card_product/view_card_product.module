@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Link module library
+ */
+function view_card_product_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'commerce_product' && $entity->bundle() === 'view_card_product') {
+    $build['#attached']['library'][] = 'view_card_product/component_style';
+  }
+}
+
+

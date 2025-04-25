@@ -1,0 +1,25 @@
+uuid: 9d53b373-8756-4c1b-be02-e646faa0dfc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_color_selection
+    - paragraphs.paragraphs_type.card_cta_banner
+  module:
+    - color_field
+id: paragraph.card_cta_banner.field_text_color_selection
+field_name: field_text_color_selection
+entity_type: paragraph
+bundle: card_cta_banner
+label: 'Text color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#2c2c2c'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

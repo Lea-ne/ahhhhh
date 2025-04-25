@@ -1,0 +1,46 @@
+uuid: 456a1942-d8dc-4237-8e5c-b0400555d2b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_content_list.field_cp_custom_class
+    - field.field.paragraph.card_content_list.field_cp_ref_molecule_content
+    - paragraphs.paragraphs_type.card_content_list
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 72XfNfzbXAcoqw0PmUqbednVu86y8iMoPxQHrAT0CQA
+id: paragraph.card_content_list.default
+targetEntityType: paragraph
+bundle: card_content_list
+mode: default
+content:
+  field_cp_custom_class:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_ref_molecule_content:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

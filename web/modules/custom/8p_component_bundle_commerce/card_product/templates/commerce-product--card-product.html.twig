@@ -1,0 +1,25 @@
+{# Template for Card Basic Content #}
+{% set title = product.title %}
+{% set link_url = product_url %}
+
+{# define media #}
+{% set image_item = product.field_main_product_image['#items'].0 %}
+{% if image_item %}
+  {% set media_entity = image_item.entity %}
+  {% set media = file_url(media_entity.uri.value) %}
+{% endif %}
+
+{# define variation price #}
+{% set product_entity = product_entity is defined ? product_entity : product['#product'] %}
+{% set variation = product_entity.getVariations()[0] %}
+{% set price = variation.getPrice() %}
+
+
+{% include '@component_bundle_commerce/card_product/templates/card-product.html.twig' with {
+    classes: classes,
+    title: title,
+    price: price,
+    media: media,
+    link_url: link_url, 
+    link_title: 'View Product',
+} %} 

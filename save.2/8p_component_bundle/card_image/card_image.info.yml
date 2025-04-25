@@ -1,0 +1,8 @@
+name: '8p Component: Card Image'
+type: module
+description: 'Card Image'
+core_version_requirement: ^9.4 || ^10 || ^11
+package: Paragraphs
+dependencies:
+  - 8p_component_bundle
+

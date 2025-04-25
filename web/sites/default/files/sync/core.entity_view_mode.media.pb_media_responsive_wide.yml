@@ -1,0 +1,13 @@
+uuid: 7ed2b3c8-0979-47d0-bc36-438b875464c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 1--Vdu-lYyEN7TjseutK1cAW2fpC0vs2-ivRNwMjvL8
+id: media.pb_media_responsive_wide
+label: 'PB Media Responsive Wide'
+description: null
+targetEntityType: media
+cache: true

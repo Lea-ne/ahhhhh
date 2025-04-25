@@ -1,0 +1,21 @@
+uuid: 6653a5e4-bf3b-4897-af49-a23f94b6f9f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_overlay_render
+    - paragraphs.paragraphs_type.card_feature_slider
+  module:
+    - options
+id: paragraph.card_feature_slider.field_option_overlay_render
+field_name: field_option_overlay_render
+entity_type: paragraph
+bundle: card_feature_slider
+label: field_option_overlay_render
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

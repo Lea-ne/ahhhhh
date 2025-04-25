@@ -1,0 +1,21 @@
+uuid: 575f20c9-123a-4f4f-b6b5-4fb0d9e154b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.pb_image_caption
+    - media.type.pb_media_image
+_core:
+  default_config_hash: hXB7mN6ebrrpVLXJ05gadVnt1l0UlbkIHJdsgi9pc2A
+id: media.pb_media_image.pb_image_caption
+field_name: pb_image_caption
+entity_type: media
+bundle: pb_media_image
+label: 'Image Caption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+<div class="{{ classes|join(' ') }}">
+    <div class="card__container">
+
+      {% if media %}
+        <div class="card__media">
+          <img src="{{ media }}" alt="{{ media_alt }}">
+        </div>
+      {% endif %}
+      
+      <div class="card__content">
+
+        {% if title %}
+          <h3 class="card__title">
+            {{ title }}
+          </h3>
+        {% endif %}
+        
+        {% if price %}
+          <div class="card__text">
+            {{ price }}
+          </div>
+        {% endif %}
+
+        {% if link_title %}
+          <div class="card__link link-icon-arrow">
+            <a href="{{ link_url }}">{{ link_title }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>

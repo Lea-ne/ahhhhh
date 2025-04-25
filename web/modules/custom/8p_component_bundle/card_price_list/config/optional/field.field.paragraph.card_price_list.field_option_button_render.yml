@@ -1,0 +1,23 @@
+uuid: 93b31d63-893d-4601-a1a3-cff37cb071f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_button_render
+    - paragraphs.paragraphs_type.card_price_list
+  module:
+    - options
+id: paragraph.card_price_list.field_option_button_render
+field_name: field_option_button_render
+entity_type: paragraph
+bundle: card_price_list
+label: 'Option Button Render'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: cp_button_render_default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

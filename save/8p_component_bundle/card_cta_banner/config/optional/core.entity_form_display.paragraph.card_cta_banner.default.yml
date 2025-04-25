@@ -1,0 +1,60 @@
+uuid: 06717e84-b44a-4f49-8d9c-b7e2b35b5755
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_cta_banner.field_overlay_color_selection
+    - field.field.paragraph.card_cta_banner.field_simple_image_media
+    - field.field.paragraph.card_cta_banner.field_simple_link
+    - field.field.paragraph.card_cta_banner.field_simple_title
+    - field.field.paragraph.card_cta_banner.field_text_color_selection
+    - paragraphs.paragraphs_type.card_cta_banner
+  module:
+    - color_field
+    - link
+    - media_library
+id: paragraph.card_cta_banner.default
+targetEntityType: paragraph
+bundle: card_cta_banner
+mode: default
+content:
+  field_overlay_color_selection:
+    type: color_field_widget_box
+    weight: 3
+    region: content
+    settings:
+      default_colors: '#b17457,#e7e0d0,#2c2c2c'
+    third_party_settings: {  }
+  field_simple_image_media:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_simple_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_simple_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text_color_selection:
+    type: color_field_widget_box
+    weight: 2
+    region: content
+    settings:
+      default_colors: '#2c2c2c,#ffffff'
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

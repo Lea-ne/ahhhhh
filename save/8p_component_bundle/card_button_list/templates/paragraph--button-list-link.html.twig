@@ -1,0 +1,26 @@
+{# Define link #}
+{% set link_url = content.field_simple_link[0]['#url'] %}
+{% set link_title = content.field_simple_link[0]['#title'] %}
+
+{# Define colors #}
+{% set bg_color = content.field_bg_color_selection.0['#markup'] ?? '' %}
+{% set text_color = content.field_text_color_selection.0['#markup'] ?? '' %}
+
+{# Compose inline style #}
+{% set style = (bg_color ? 'background-color:' ~ bg_color ~ ';' : '') ~ (text_color ? 'color:' ~ text_color ~ ';' : '') %}
+
+
+{%
+  set classes = [
+    'button-list-link',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <a href="{{ link_url }}" {% if style %}style="{{ style }}"{% endif %}>{{ link_title }}</a>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

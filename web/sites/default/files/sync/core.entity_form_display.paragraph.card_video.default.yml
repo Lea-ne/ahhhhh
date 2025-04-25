@@ -1,0 +1,36 @@
+uuid: b74992e1-c5a8-44c9-a9ad-41775e77a56f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_video.field_cp_custom_class
+    - field.field.paragraph.card_video.field_cp_video
+    - paragraphs.paragraphs_type.card_video
+_core:
+  default_config_hash: 3xvjJAU1gSaV1orcOP0QuSR7mTHkI4nP3yzCFbmpj4Y
+id: paragraph.card_video.default
+targetEntityType: paragraph
+bundle: card_video
+mode: default
+content:
+  field_cp_custom_class:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_video:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

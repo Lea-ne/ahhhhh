@@ -1,0 +1,55 @@
+
+{# Paragraph template for Card Basic Content #}
+{% set title = content.field_simple_title %}
+{% set text = content.field_simple_description %}
+{% set link_url = content.field_simple_link[0]['#url'] %}
+{% set link_title = content.field_simple_link[0]['#title'] %}
+
+{# Define media #}
+{% set media_entity = paragraph.field_simple_image_media.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+{# Define colors #}
+{% set btn_bg_color = content.field_btn_bg_color_selection.0['#markup'] ?? '' %}
+{% set btn_text_color = content.field_btn_text_color_selection.0['#markup'] ?? '' %}
+
+{# Compose inline style #}
+{% set btn_style = (btn_bg_color ? 'background-color:' ~ btn_bg_color ~ ';' : '') ~ (btn_text_color ? 'color:' ~ btn_text_color ~ ';' : '') %}
+
+
+
+{# Define classes #}
+{%
+  set classes = [
+    'component-card-text-callout',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+<div class="{{ classes|join(' ') }}">
+    <div class="card__container">
+      
+      <div class="card__content">
+
+        {% if title %}
+          <h3 class="card__title">
+            {{ title }}
+          </h3>
+        {% endif %}
+        
+        {% if text %}
+          <div class="card__text">
+            {{ text }}
+          </div>
+        {% endif %}
+
+        {% if link_title %}
+          <div class="card__link link-icon-arrow" style="{{ btn_style }}">
+            <a style="color: inherit;" href="{{ link_url }}">{{ link_title }}</a>
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>

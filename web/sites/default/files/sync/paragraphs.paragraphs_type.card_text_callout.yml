@@ -1,0 +1,12 @@
+uuid: d0b296a9-e8d3-4312-a9e7-dded6e3a5eaa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cZjY8szhOnVNTZI2hR3GxgsURkzguLCEfkK0JB-LJ5w
+id: card_text_callout
+label: 'Card Text Callout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

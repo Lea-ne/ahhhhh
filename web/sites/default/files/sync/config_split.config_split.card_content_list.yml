@@ -1,0 +1,25 @@
+uuid: 57bc863f-7cda-48c7-84c6-3d457433d240
+langcode: en
+status: false
+dependencies: {  }
+id: card_content_list
+label: 'Card Content List'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_content_list/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_content_list.field_cp_custom_class
+  - field.field.paragraph.card_content_list.field_cp_ref_molecule_content
+  - field.field.paragraph.molecule_content.field_cp_link
+  - field.field.paragraph.molecule_content.field_cp_text
+  - field.field.paragraph.molecule_content.field_cp_title
+  - field.field.paragraph.molecule_content.field_option_button_render
+  - paragraphs.paragraphs_type.card_content_list
+  - paragraphs.paragraphs_type.molecule_content
+  - field.field.paragraph.molecule_content.field_cp_ref_atom_button
+partial_list: {  }

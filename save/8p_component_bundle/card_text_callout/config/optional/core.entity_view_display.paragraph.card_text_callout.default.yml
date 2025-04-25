@@ -1,0 +1,65 @@
+uuid: 9b355e46-6012-4775-a4aa-171c626b1661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_text_callout.field_btn_bg_color_selection
+    - field.field.paragraph.card_text_callout.field_btn_text_color_selection
+    - field.field.paragraph.card_text_callout.field_simple_description
+    - field.field.paragraph.card_text_callout.field_simple_link
+    - field.field.paragraph.card_text_callout.field_simple_title
+    - paragraphs.paragraphs_type.card_text_callout
+  module:
+    - color_field
+    - link
+    - text
+id: paragraph.card_text_callout.default
+targetEntityType: paragraph
+bundle: card_text_callout
+mode: default
+content:
+  field_btn_bg_color_selection:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_btn_text_color_selection:
+    type: color_field_formatter_text
+    label: hidden
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_simple_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_simple_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_simple_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

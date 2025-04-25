@@ -1,0 +1,12 @@
+uuid: 143f3414-b3aa-4787-a3df-d19b695e433b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1kOlGSC2sSvqqMCxHk_htkLqAAbsLDFlFVADkgL_goY
+id: card_image
+label: 'Card Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

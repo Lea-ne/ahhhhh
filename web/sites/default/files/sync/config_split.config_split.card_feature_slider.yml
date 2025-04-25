@@ -1,0 +1,20 @@
+uuid: e825c0aa-3d8a-4cfb-b9e1-072783d4e40b
+langcode: en
+status: false
+dependencies: {  }
+id: card_feature_slider
+label: 'Card Feature Slider'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_feature_slider/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_feature_slider.field_cp_custom_class
+  - field.field.paragraph.card_feature_slider.field_cp_ref_molecule_slide
+  - field.field.paragraph.card_feature_slider.field_option_overlay_render
+  - paragraphs.paragraphs_type.card_feature_slider
+partial_list: {  }

@@ -1,0 +1,24 @@
+uuid: 2342cc63-73bf-4548-b87d-d503d8b480ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_content_list.field_atom_content_reference
+    - paragraphs.paragraphs_type.card_content_list
+  module:
+    - entity_reference_revisions
+id: paragraph.card_content_list.default
+targetEntityType: paragraph
+bundle: card_content_list
+mode: default
+content:
+  field_atom_content_reference:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

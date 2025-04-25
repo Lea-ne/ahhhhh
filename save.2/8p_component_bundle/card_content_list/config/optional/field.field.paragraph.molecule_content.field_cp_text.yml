@@ -1,0 +1,24 @@
+uuid: 4cd1c1a5-636f-4b5a-99b7-ed44e219ad03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_text
+    - paragraphs.paragraphs_type.molecule_content
+  module:
+    - text
+_core:
+  default_config_hash: Ka8xmxzZjFqRmVkUUhWOkm61YhXRStjR8nylLdek2-s
+id: paragraph.molecule_content.field_cp_text
+field_name: field_cp_text
+entity_type: paragraph
+bundle: molecule_content
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

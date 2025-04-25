@@ -1,0 +1,73 @@
+uuid: 9c2104df-435a-4518-a613-a157e1c348c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_cta_banner.field_cp_custom_class
+    - field.field.paragraph.card_cta_banner.field_cp_image
+    - field.field.paragraph.card_cta_banner.field_cp_link
+    - field.field.paragraph.card_cta_banner.field_cp_text
+    - field.field.paragraph.card_cta_banner.field_cp_title
+    - field.field.paragraph.card_cta_banner.field_option_overlay_render
+    - paragraphs.paragraphs_type.card_cta_banner
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: Lb4xD9B0TOPV8yVA6Svp5eVDsa-6j1AZE2L5kGhlrDY
+id: paragraph.card_cta_banner.default
+targetEntityType: paragraph
+bundle: card_cta_banner
+mode: default
+content:
+  field_cp_custom_class:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_image:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_cp_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_title:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_option_overlay_render:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

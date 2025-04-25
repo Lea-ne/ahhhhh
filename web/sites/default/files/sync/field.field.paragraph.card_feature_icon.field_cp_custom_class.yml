@@ -1,0 +1,21 @@
+uuid: 333453e5-d989-4ac9-90dc-30c3b735d060
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_custom_class
+    - paragraphs.paragraphs_type.card_feature_icon
+_core:
+  default_config_hash: uQvjHhMVYMnoCnHYZ9vmIEZtiiUHwUYw2qsQWCQ4Mho
+id: paragraph.card_feature_icon.field_cp_custom_class
+field_name: field_cp_custom_class
+entity_type: paragraph
+bundle: card_feature_icon
+label: 'Custom Class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

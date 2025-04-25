@@ -1,0 +1,19 @@
+uuid: d563926e-1d90-489f-ac15-f4ba22f02295
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_title
+    - paragraphs.paragraphs_type.atom_title
+id: paragraph.atom_title.field_cp_title
+field_name: field_cp_title
+entity_type: paragraph
+bundle: atom_title
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

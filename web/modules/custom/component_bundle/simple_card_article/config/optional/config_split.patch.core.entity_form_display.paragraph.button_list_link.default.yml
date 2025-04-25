@@ -1,0 +1,16 @@
+adding:
+  dependencies:
+    config:
+      - field.field.paragraph.button_list_link.field_simple_link
+    module:
+      - link
+  content:
+    field_simple_link:
+      type: link_default
+      weight: 1
+      region: content
+      settings:
+        placeholder_url: ''
+        placeholder_title: ''
+      third_party_settings: {  }
+removing: {  }

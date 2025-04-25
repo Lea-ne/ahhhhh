@@ -1,0 +1,22 @@
+uuid: 96f8aa2f-5699-4c46-9566-2cd815b3213e
+langcode: en
+status: false
+dependencies: {  }
+id: card_text_callout
+label: 'Card Text Callout'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: modules/custom/8p_component_bundle/card_text_callout/config/optional
+module: {  }
+theme: {  }
+complete_list:
+  - field.field.paragraph.card_text_callout.field_cp_custom_class
+  - field.field.paragraph.card_text_callout.field_cp_link
+  - field.field.paragraph.card_text_callout.field_cp_text
+  - field.field.paragraph.card_text_callout.field_cp_title
+  - field.field.paragraph.card_text_callout.field_option_button_render
+  - paragraphs.paragraphs_type.card_text_callout
+partial_list: {  }

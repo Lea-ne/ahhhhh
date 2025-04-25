@@ -1,0 +1,32 @@
+uuid: 65540b95-558d-447f-afc4-1f8b3c91063b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: YJoCF85U2iwBNuytrBylMc1MZ4wBqhaUeVwzEFYT6mA
+id: paragraph.field_option_image_fit
+field_name: field_option_image_fit
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cp_image_fit_default
+      label: Default
+    -
+      value: cp_image_fit_cover
+      label: Cover
+    -
+      value: cp_image_fit_contain
+      label: Contain
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

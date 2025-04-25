@@ -1,0 +1,21 @@
+uuid: 29958ffe-568f-47b5-9c7e-7cc2e4a80b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_option_overlay_render
+    - paragraphs.paragraphs_type.card_hero_slider
+  module:
+    - options
+id: paragraph.card_hero_slider.field_option_overlay_render
+field_name: field_option_overlay_render
+entity_type: paragraph
+bundle: card_hero_slider
+label: field_option_overlay_render
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

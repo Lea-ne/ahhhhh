@@ -1,0 +1,22 @@
+uuid: cb6f48db-2c1f-4112-89e8-588a81a0bfe9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - layout_builder_theme
+_core:
+  default_config_hash: kTvNKwaMjPcBXD6QesLH043HQ6s5bwNlGzyT6eclR6U
+id: layout_builder_theme_help
+theme: layout_builder_theme
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
