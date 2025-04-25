@@ -4,11 +4,33 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_feature_slider.field_cp_custom_class
+    - field.field.paragraph.card_feature_slider.field_cp_custom_id
     - field.field.paragraph.card_feature_slider.field_cp_ref_molecule_slide
     - field.field.paragraph.card_feature_slider.field_option_overlay_render
     - paragraphs.paragraphs_type.card_feature_slider
   module:
+    - field_group
     - inline_entity_form
+third_party_settings:
+  field_group:
+    group_options:
+      children:
+        - field_option_overlay_render
+        - field_cp_custom_class
+        - field_cp_custom_id
+      label: Options
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
 _core:
   default_config_hash: 9zyN52m1mYqsWBaAyIRX0Z9iIZG4L7MSZALjybMyFEs
 id: paragraph.card_feature_slider.default
@@ -19,6 +41,14 @@ content:
   field_cp_custom_class:
     type: string_textarea
     weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_custom_id:
+    type: string_textarea
+    weight: 3
     region: content
     settings:
       rows: 1

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_feature_slider.field_cp_custom_class
+    - field.field.paragraph.card_feature_slider.field_cp_custom_id
     - field.field.paragraph.card_feature_slider.field_cp_ref_molecule_slide
     - field.field.paragraph.card_feature_slider.field_option_overlay_render
     - paragraphs.paragraphs_type.card_feature_slider
@@ -23,6 +24,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_ref_molecule_slide:
     type: entity_reference_revisions_entity_view

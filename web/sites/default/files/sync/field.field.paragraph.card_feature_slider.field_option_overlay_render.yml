@@ -13,7 +13,7 @@ id: paragraph.card_feature_slider.field_option_overlay_render
 field_name: field_option_overlay_render
 entity_type: paragraph
 bundle: card_feature_slider
-label: field_option_overlay_render
+label: 'Overlay Render Options'
 description: ''
 required: false
 translatable: false

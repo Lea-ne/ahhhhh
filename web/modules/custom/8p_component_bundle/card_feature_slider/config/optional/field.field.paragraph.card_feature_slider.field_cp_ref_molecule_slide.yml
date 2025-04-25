@@ -8,11 +8,13 @@ dependencies:
     - paragraphs.paragraphs_type.molecule_slide
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: 7xIcI2Ajnu2cog5TREft4ttYHcdV0tyQc3Dm2-og6QA
 id: paragraph.card_feature_slider.field_cp_ref_molecule_slide
 field_name: field_cp_ref_molecule_slide
 entity_type: paragraph
 bundle: card_feature_slider
-label: field_cp_ref_molecule_slide
+label: 'Slide Item'
 description: ''
 required: false
 translatable: false
@@ -43,17 +45,14 @@ settings:
       card_cta_banner:
         weight: 21
         enabled: false
+      card_feature_icon:
+        weight: 20
+        enabled: false
       card_feature_slider:
         weight: 17
         enabled: false
       card_hero_slider:
         weight: 22
-        enabled: false
-      card_image:
-        weight: 23
-        enabled: false
-      card_price_list:
-        weight: 24
         enabled: false
       card_simple_article:
         weight: 25
@@ -66,9 +65,6 @@ settings:
         enabled: false
       molecule_content:
         weight: 28
-        enabled: false
-      molecule_price_list:
-        weight: 29
         enabled: false
       molecule_slide:
         weight: 30
