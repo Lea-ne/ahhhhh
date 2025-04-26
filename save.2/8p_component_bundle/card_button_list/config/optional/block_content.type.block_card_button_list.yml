@@ -1,0 +1,8 @@
+uuid: fe081269-f1d3-4560-8197-4d7f2a6f29c8
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_button_list
+label: 'Card Button List'
+revision: false
+description: null
