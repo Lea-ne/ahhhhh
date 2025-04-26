@@ -12,3 +12,4 @@ services:
       - '@module_handler'
     tags:
       - { name: event_subscriber }
+  
