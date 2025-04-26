@@ -9,6 +9,17 @@ module:
   block_content: 0
   block_form_alter: 0
   breakpoint: 0
+  card_button_list: 0
+  card_content_list: 0
+  card_cta_banner: 0
+  card_feature_icon: 0
+  card_feature_slider: 0
+  card_hero_slider: 0
+  card_image: 0
+  card_price_list: 0
+  card_simple_article: 0
+  card_text_callout: 0
+  card_video: 0
   ckeditor5: 0
   color_field: 0
   comment: 0
@@ -16,6 +27,7 @@ module:
   commerce_price: 0
   commerce_product: 0
   commerce_store: 0
+  component_bundle: 0
   config: 0
   config_split: 0
   config_translation: 0
@@ -60,8 +72,10 @@ module:
   paragraph_bundle_image: 0
   paragraphs_bundles: 0
   paragraphs_features: 0
+  paragraphs_usage: 0
   path: 0
   path_alias: 0
+  ps: 0
   responsive_image: 0
   search: 0
   shortcut: 0

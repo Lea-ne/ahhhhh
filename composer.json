@@ -36,7 +36,9 @@
         "drupal/paragraphs": "^1.19",
         "drupal/paragraphs_bundles": "^1.0",
         "drupal/paragraphs_ee": "^10.0",
+        "drupal/paragraphs_usage": "^1.0",
         "drupal/pathauto": "^1.13",
+        "drupal/ps": "^1.0",
         "drupal/twig_tweak": "^3.4",
         "drush/drush": "^13.5"
     },
