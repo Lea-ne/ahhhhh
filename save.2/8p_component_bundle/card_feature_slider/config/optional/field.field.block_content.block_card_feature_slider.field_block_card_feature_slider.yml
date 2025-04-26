@@ -1,0 +1,79 @@
+uuid: 281a9b68-eaad-42ae-871c-d1de0d439fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_card_feature_slider
+    - field.storage.block_content.field_block_card_feature_slider
+    - paragraphs.paragraphs_type.card_feature_slider
+  module:
+    - entity_reference_revisions
+id: block_content.block_card_feature_slider.field_block_card_feature_slider
+field_name: field_block_card_feature_slider
+entity_type: block_content
+bundle: block_card_feature_slider
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card_feature_slider: card_feature_slider
+    negate: 0
+    target_bundles_drag_drop:
+      atom_button:
+        weight: 18
+        enabled: false
+      atom_text:
+        weight: 19
+        enabled: false
+      atom_title:
+        weight: 20
+        enabled: false
+      card_button_list:
+        weight: 21
+        enabled: false
+      card_content_list:
+        weight: 22
+        enabled: false
+      card_cta_banner:
+        weight: 23
+        enabled: false
+      card_feature_icon:
+        weight: 24
+        enabled: false
+      card_feature_slider:
+        weight: 25
+        enabled: true
+      card_hero_slider:
+        weight: 26
+        enabled: false
+      card_image:
+        weight: 27
+        enabled: false
+      card_price_list:
+        weight: 28
+        enabled: false
+      card_simple_article:
+        weight: 29
+        enabled: false
+      card_text_callout:
+        weight: 30
+        enabled: false
+      card_video:
+        weight: 31
+        enabled: false
+      molecule_content:
+        weight: 32
+        enabled: false
+      molecule_price_list:
+        weight: 33
+        enabled: false
+      molecule_slide:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

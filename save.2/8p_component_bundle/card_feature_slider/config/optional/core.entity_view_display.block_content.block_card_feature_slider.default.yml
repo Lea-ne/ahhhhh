@@ -1,0 +1,25 @@
+uuid: 5cf88af6-eb6e-4bc0-9216-33617ecae7e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_card_feature_slider
+    - field.field.block_content.block_card_feature_slider.field_block_card_feature_slider
+  module:
+    - entity_reference_revisions
+id: block_content.block_card_feature_slider.default
+targetEntityType: block_content
+bundle: block_card_feature_slider
+mode: default
+content:
+  field_block_card_feature_slider:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

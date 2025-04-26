@@ -1,0 +1,8 @@
+uuid: f65ecd54-7320-4368-801c-d18eb8cef0c9
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_feature_slider
+label: 'Card Feature Slider'
+revision: false
+description: null
