@@ -1,9 +1,14 @@
 uuid: 7b08dc4e-e1d6-4ffe-b7ff-0d5a766c2fae
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraph_block
+third_party_settings:
+  paragraph_block:
+    status: true
 _core:
-  default_config_hash: GV1VVy1DO_DPD_X7d-QK1iBNdjvvVYxQmeUwJyIR4U8
+  default_config_hash: UokHQ4fesXxUc0YVHDhwnO0nn7GyfRB9H54tU-Ut8-o
 id: card_image
 label: 'Card Image'
 icon_uuid: null
