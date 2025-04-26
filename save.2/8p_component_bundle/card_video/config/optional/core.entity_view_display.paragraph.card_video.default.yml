@@ -1,9 +1,10 @@
-uuid: 098b8609-83a3-4956-abe1-066e591127fc
+uuid: 52be46ab-fd2a-43ac-a411-fb4c3be99a2b
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.paragraph.card_video.field_cp_custom_class
+    - field.field.paragraph.card_video.field_cp_custom_id
     - field.field.paragraph.card_video.field_cp_video
     - paragraphs.paragraphs_type.card_video
 id: paragraph.card_video.default
@@ -16,13 +17,21 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
   field_cp_video:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

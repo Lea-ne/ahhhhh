@@ -1,0 +1,10 @@
+parameters:
+  level: 4
+  paths:
+    - .
+  ignoreErrors:
+    # Ignore errors which are related to dependencies
+    - "#^Call to an undefined method [a-zA-Z0-9\\\\_]+::(t|getPluginId|getValue|hasField|get|getEntity)\\(\\)#"
+
+includes:
+  - phpstan-baseline.neon

@@ -10,8 +10,6 @@ dependencies:
     - paragraphs.paragraphs_type.card_button_list
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: KwewadXAcH58UQcJ_iY4EUWn2sDTUlTScTsTl9wGCRg
 id: paragraph.card_button_list.field_cp_ref_items_button_list
 field_name: field_cp_ref_items_button_list
 entity_type: paragraph

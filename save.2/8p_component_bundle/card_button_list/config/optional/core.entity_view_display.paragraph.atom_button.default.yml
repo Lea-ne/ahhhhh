@@ -9,8 +9,6 @@ dependencies:
   module:
     - link
     - options
-_core:
-  default_config_hash: 4Wy1xkLoV8hvsQhNAR_a2wPJRqyikLu9OMa16y_mMsI
 id: paragraph.atom_button.default
 targetEntityType: paragraph
 bundle: atom_button

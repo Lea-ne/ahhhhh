@@ -7,11 +7,13 @@ dependencies:
     - paragraphs.paragraphs_type.card_hero_slider
   module:
     - options
+_core:
+  default_config_hash: 8MIA9PA4N3HH7ikoNQSoCSc_M740pXNUh1x3gBmOKSY
 id: paragraph.card_hero_slider.field_option_overlay_render
 field_name: field_option_overlay_render
 entity_type: paragraph
 bundle: card_hero_slider
-label: field_option_overlay_render
+label: 'Overlay Render Options'
 description: ''
 required: false
 translatable: false

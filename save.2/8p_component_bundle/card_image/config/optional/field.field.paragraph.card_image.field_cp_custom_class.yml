@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_cp_custom_class
     - paragraphs.paragraphs_type.card_image
+_core:
+  default_config_hash: TnmuVk3PGkjHQdgvNOuAbDZxAFAKp08SzLVxylRDZGY
 id: paragraph.card_image.field_cp_custom_class
 field_name: field_cp_custom_class
 entity_type: paragraph

@@ -6,4 +6,4 @@ package: Custom
 dependencies:
   - component_bundle
 libraries:
-  - card_button_list/component_style
+  - card_price_list/component_style

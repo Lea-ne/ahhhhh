@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.atom_text
   module:
     - text
-_core:
-  default_config_hash: 4OgM0y3j7-tFdqaqcw70dMC8pYQAzveX0lZZhA823LM
 id: paragraph.atom_text.default
 targetEntityType: paragraph
 bundle: atom_text

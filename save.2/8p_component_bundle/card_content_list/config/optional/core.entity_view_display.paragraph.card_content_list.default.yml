@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_content_list.field_cp_custom_class
+    - field.field.paragraph.card_content_list.field_cp_custom_id
     - field.field.paragraph.card_content_list.field_cp_ref_molecule_content
     - paragraphs.paragraphs_type.card_content_list
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: jgpGbiywN3pGYINGQsG2GSMNYGbSi7F8RJGE_op_64s
+  default_config_hash: hKbA5xUYMdgzwEj3L-YfHMrdJRKQBRGE9meG3bdSR6g
 id: paragraph.card_content_list.default
 targetEntityType: paragraph
 bundle: card_content_list
@@ -21,6 +22,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_ref_molecule_content:
     type: entity_reference_revisions_entity_view

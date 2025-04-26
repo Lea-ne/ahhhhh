@@ -1,0 +1,55 @@
+uuid: 7be15993-d8a9-4fe6-aad5-d6f1ce2a851a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.molecule_slide.field_cp_link
+    - field.field.paragraph.molecule_slide.field_cp_media
+    - field.field.paragraph.molecule_slide.field_cp_text
+    - field.field.paragraph.molecule_slide.field_cp_title
+    - paragraphs.paragraphs_type.molecule_slide
+  module:
+    - link
+    - media_library
+    - text
+_core:
+  default_config_hash: X-nU5ODHkFCtS8mRQBDRwJwlAks8NSHmQhmsK8Rp-og
+id: paragraph.molecule_slide.default
+targetEntityType: paragraph
+bundle: molecule_slide
+mode: default
+content:
+  field_cp_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_cp_media:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_cp_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

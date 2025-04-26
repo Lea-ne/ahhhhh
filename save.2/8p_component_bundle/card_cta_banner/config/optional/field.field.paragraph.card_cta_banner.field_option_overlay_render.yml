@@ -7,11 +7,13 @@ dependencies:
     - paragraphs.paragraphs_type.card_cta_banner
   module:
     - options
+_core:
+  default_config_hash: UC6FpWNugQq3AaIcSO9r9p849dqky5HAzk1PXxH3s5E
 id: paragraph.card_cta_banner.field_option_overlay_render
 field_name: field_option_overlay_render
 entity_type: paragraph
 bundle: card_cta_banner
-label: field_option_overlay_render
+label: 'Overlay Render Options'
 description: ''
 required: false
 translatable: false

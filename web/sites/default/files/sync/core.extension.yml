@@ -7,6 +7,7 @@ module:
   big_pipe: 0
   block: 0
   block_content: 0
+  block_form_alter: 0
   breakpoint: 0
   card_button_list: 0
   card_content_list: 0
@@ -16,6 +17,7 @@ module:
   card_hero_slider: 0
   card_image: 0
   card_price_list: 0
+  card_product: 0
   card_simple_article: 0
   card_text_callout: 0
   card_video: 0
@@ -27,10 +29,12 @@ module:
   commerce_product: 0
   commerce_store: 0
   component_bundle: 0
+  component_bundle_commerce: 0
   config: 0
   config_split: 0
   contact: 0
   contextual: 0
+  ctools: 0
   custom_layouts: 0
   datetime: 0
   dblog: 0
@@ -43,9 +47,11 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  form_decorator: 0
   help: 0
   history: 0
   image: 0
+  inline_block_title_automatic: 0
   inline_entity_form: 0
   layout_builder: 0
   layout_builder_modal: 0
@@ -60,6 +66,10 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraph_block: 0
+  paragraph_bundle_image: 0
+  paragraphs_bundles: 0
+  paragraphs_features: 0
   path: 0
   path_alias: 0
   responsive_image: 0
@@ -73,6 +83,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  view_card_product: 0
   views_ui: 0
   pathauto: 1
   views: 10

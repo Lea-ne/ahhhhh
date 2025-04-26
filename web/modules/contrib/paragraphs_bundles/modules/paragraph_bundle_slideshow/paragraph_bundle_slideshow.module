@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Paragraph Bundle Slideshow.
+ *
+ * Filename:     paragraph_bundle_slideshow.module
+ * Website:      https://www.flashwebcenter.com
+ * Description:  template.
+ * Developer:    Alaa Haddad https://www.alaahaddad.com.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function paragraph_bundle_slideshow_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name === 'help.page.paragraph_bundle_slideshow') {
+    return paragraphs_bundles__helper_render_readme();
+  }
+  return NULL;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function paragraph_bundle_slideshow_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__slideshow_bundle' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__slideshow_section_bundle' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}

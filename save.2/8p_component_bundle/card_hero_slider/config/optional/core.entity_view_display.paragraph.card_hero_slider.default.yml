@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_hero_slider.field_cp_custom_class
+    - field.field.paragraph.card_hero_slider.field_cp_custom_id
     - field.field.paragraph.card_hero_slider.field_cp_ref_molecule_slide
     - field.field.paragraph.card_hero_slider.field_option_overlay_render
     - paragraphs.paragraphs_type.card_hero_slider
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: YST077HK3E933bqq1-ayTx3qrAIWBuZsmODD0rJ7rGQ
 id: paragraph.card_hero_slider.default
 targetEntityType: paragraph
 bundle: card_hero_slider
@@ -21,6 +24,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_ref_molecule_slide:
     type: entity_reference_revisions_entity_view

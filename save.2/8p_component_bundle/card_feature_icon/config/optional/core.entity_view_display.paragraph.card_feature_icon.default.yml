@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_feature_icon.field_cp_custom_class
+    - field.field.paragraph.card_feature_icon.field_cp_custom_id
     - field.field.paragraph.card_feature_icon.field_cp_image
     - field.field.paragraph.card_feature_icon.field_cp_link
     - field.field.paragraph.card_feature_icon.field_cp_text
@@ -12,6 +13,8 @@ dependencies:
   module:
     - link
     - text
+_core:
+  default_config_hash: berzwAZD3BjjARPO6cZMFSs8xDiggf3QmyeTVrbhNWs
 id: paragraph.card_feature_icon.default
 targetEntityType: paragraph
 bundle: card_feature_icon
@@ -24,10 +27,18 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_cp_image:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
+      view_mode: default
       link: true
     third_party_settings: {  }
     weight: 1

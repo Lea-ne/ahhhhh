@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.atom_button
   module:
     - link
-_core:
-  default_config_hash: AHusVKAbOnRaJ9i7PZeWghQxD5qhAnJ0V_dahTBuS68
 id: paragraph.atom_button.field_cp_link
 field_name: field_cp_link
 entity_type: paragraph

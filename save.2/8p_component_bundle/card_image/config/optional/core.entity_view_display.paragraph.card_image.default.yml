@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_image.field_cp_custom_class
+    - field.field.paragraph.card_image.field_cp_custom_id
     - field.field.paragraph.card_image.field_cp_image
     - field.field.paragraph.card_image.field_option_image_fit
     - field.field.paragraph.card_image.field_option_image_size
     - paragraphs.paragraphs_type.card_image
   module:
     - options
+_core:
+  default_config_hash: zzyl_AIuQS2MxPEe6dHLM26918UrzwBw-F3WXpAUWhQ
 id: paragraph.card_image.default
 targetEntityType: paragraph
 bundle: card_image
@@ -22,10 +25,18 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_cp_image:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
+      view_mode: default
       link: true
     third_party_settings: {  }
     weight: 1

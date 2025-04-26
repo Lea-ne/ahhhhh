@@ -16,10 +16,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_theme().
  */
-function card_image_theme($existing, $type, $theme, $path) {
-  return [
-    'paragraph__card_image' => [
-      'base hook' => 'paragraph',
-    ],
-  ];
-}
+// function card_image_theme($existing, $type, $theme, $path) {
+//   return [
+//     'paragraph__card_image' => [
+//       'base hook' => 'paragraph',
+//     ],
+//   ];
+// }

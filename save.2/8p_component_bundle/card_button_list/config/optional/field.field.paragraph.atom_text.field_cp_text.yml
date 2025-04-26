@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.atom_text
   module:
     - text
-_core:
-  default_config_hash: 4_sjb_ROwibMXU-iG-Qtp_WVOMGFZ04E3Zv0M6zgQXo
 id: paragraph.atom_text.field_cp_text
 field_name: field_cp_text
 entity_type: paragraph

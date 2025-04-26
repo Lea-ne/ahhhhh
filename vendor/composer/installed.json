@@ -1411,6 +1411,55 @@
             "install-path": "../../web/modules/contrib/address"
         },
         {
+            "name": "drupal/block_form_alter",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_form_alter.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_form_alter-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "e442a8bd8b74f8404905012c248b46c0249412fc"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1724706726",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/u/chris-burge",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides block form alter functions.",
+            "homepage": "https://www.drupal.org/project/block_form_alter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_form_alter",
+                "issues": "https://www.drupal.org/project/issues/block_form_alter"
+            },
+            "install-path": "../../web/modules/contrib/block_form_alter"
+        },
+        {
             "name": "drupal/bootstrap",
             "version": "5.0.1",
             "version_normalized": "5.0.1.0",
@@ -2533,6 +2582,124 @@
             "install-path": "../../web/modules/contrib/field_group"
         },
         {
+            "name": "drupal/form_decorator",
+            "version": "1.0.0-beta1",
+            "version_normalized": "1.0.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/form_decorator.git",
+                "reference": "1.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/form_decorator-1.0.0-beta1.zip",
+                "reference": "1.0.0-beta1",
+                "shasum": "4342e23db71e687ec04598137130048230039ec2"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta1",
+                    "datestamp": "1738256871",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "harlor",
+                    "homepage": "https://www.drupal.org/user/2674831"
+                },
+                {
+                    "name": "hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                }
+            ],
+            "description": "Allow to decorate forms",
+            "homepage": "https://www.drupal.org/project/form_decorator",
+            "support": {
+                "source": "https://git.drupalcode.org/project/form_decorator"
+            },
+            "install-path": "../../web/modules/contrib/form_decorator"
+        },
+        {
+            "name": "drupal/inline_block_title_automatic",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/inline_block_title_automatic.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_block_title_automatic-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "89d8fc3ce16a946ed1f62915fbeb377d6ed20ac9"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "jangregor/phpstan-prophecy": "dev-master",
+                "mglaman/phpstan-drupal": "^1.2.10",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "^1.11",
+                "phpstan/phpstan-deprecation-rules": "*",
+                "phpstan/phpstan-phpunit": "1.4.x-dev",
+                "phpstan/phpstan-strict-rules": "^1@stable",
+                "previousnext/coding-standard": "1.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1724286244",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "Automatically add titles to inline blocks.",
+            "homepage": "https://www.drupal.org/project/inline_block_title_automatic",
+            "support": {
+                "source": "https://git.drupalcode.org/project/inline_block_title_automatic",
+                "issues": "https://www.drupal.org/project/issues/inline_block_title_automatic"
+            },
+            "install-path": "../../web/modules/contrib/inline_block_title_automatic"
+        },
+        {
             "name": "drupal/inline_entity_form",
             "version": "3.0.0-rc20",
             "version_normalized": "3.0.0.0-RC20",
@@ -2695,6 +2862,75 @@
             "install-path": "../../web/modules/contrib/layout_builder_modal"
         },
         {
+            "name": "drupal/layout_paragraphs",
+            "version": "2.1.1",
+            "version_normalized": "2.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_paragraphs.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_paragraphs-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "6fc90954c67939933a6eb24000892822715e4f90"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/paragraphs": "^1.6"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/entity_usage": "2.x-dev",
+                "drupal/paragraphs-paragraphs_library": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1732724895",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "itamair",
+                    "homepage": "https://www.drupal.org/user/1179076"
+                },
+                {
+                    "name": "justin2pin",
+                    "homepage": "https://www.drupal.org/user/278450"
+                },
+                {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                },
+                {
+                    "name": "sethhill",
+                    "homepage": "https://www.drupal.org/user/676480"
+                }
+            ],
+            "description": "Layout Paragraphs",
+            "homepage": "https://www.drupal.org/project/layout_paragraphs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/layout_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/layout_paragraphs"
+            },
+            "install-path": "../../web/modules/contrib/layout_paragraphs"
+        },
+        {
             "name": "drupal/media_library_form_element",
             "version": "2.1.1",
             "version_normalized": "2.1.1.0",
@@ -2767,6 +3003,113 @@
                 "issues": "https://www.drupal.org/project/issues/media_library_form_element"
             },
             "install-path": "../../web/modules/contrib/media_library_form_element"
+        },
+        {
+            "name": "drupal/paragraph_block",
+            "version": "2.0.0-rc1",
+            "version_normalized": "2.0.0.0-RC1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraph_block.git",
+                "reference": "2.0.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraph_block-2.0.0-rc1.zip",
+                "reference": "2.0.0-rc1",
+                "shasum": "de04e274bda2c33fdbfc027d99b372ab1f3e8bd8"
+            },
+            "require": {
+                "drupal/block_form_alter": "^2.1",
+                "drupal/core": "^10 || ^11",
+                "drupal/form_decorator": "*",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-rc1",
+                    "datestamp": "1735841248",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pascal Crott",
+                    "homepage": "https://www.drupal.org/u/hydra"
+                }
+            ],
+            "description": "Exposes paragraph types as blocks.",
+            "homepage": "https://www.drupal.org/project/paragraph_block",
+            "support": {
+                "source": "git@git.erdfisch.de:contrib/paragraph_block.git"
+            },
+            "install-path": "../../web/modules/contrib/paragraph_block"
+        },
+        {
+            "name": "drupal/paragraph_blocks",
+            "version": "4.1.5",
+            "version_normalized": "4.1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraph_blocks.git",
+                "reference": "4.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraph_blocks-4.1.5.zip",
+                "reference": "4.1.5",
+                "shasum": "d0ed282d1098a71892fd3f85a6e7987903a967ac"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/ctools": "^4.0",
+                "drupal/paragraphs": "^1.15"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.1.5",
+                    "datestamp": "1745353382",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "basvredeling",
+                    "homepage": "https://www.drupal.org/user/207078"
+                },
+                {
+                    "name": "douggreen",
+                    "homepage": "https://www.drupal.org/user/29191"
+                }
+            ],
+            "description": "Drupal Paragraph Blocks module",
+            "homepage": "https://www.drupal.org/project/paragraph_blocks",
+            "keywords": [
+                "Drupal",
+                "Paragraphs"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraph_blocks"
+            },
+            "install-path": "../../web/modules/contrib/paragraph_blocks"
         },
         {
             "name": "drupal/paragraphs",
@@ -2851,6 +3194,192 @@
                 "source": "https://git.drupalcode.org/project/paragraphs"
             },
             "install-path": "../../web/modules/contrib/paragraphs"
+        },
+        {
+            "name": "drupal/paragraphs_bundles",
+            "version": "1.0.11",
+            "version_normalized": "1.0.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_bundles.git",
+                "reference": "1.0.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_bundles-1.0.11.zip",
+                "reference": "1.0.11",
+                "shasum": "3efb46e258bbcab69d1c3f7e4d85cd4c74d329ea"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/field_group": "*",
+                "drupal/paragraphs": "*"
+            },
+            "require-dev": {
+                "drupal/contact_formatter": "*",
+                "drupal/link_attributes": "*",
+                "drupal/paragraph_bundle_3d_carousel-paragraph_bundle_3d_carousel": "*",
+                "drupal/paragraph_bundle_image-paragraph_bundle_image": "*",
+                "drupal/paragraph_bundle_slideshow-paragraph_bundle_slideshow": "*",
+                "drupal/viewsreference": "*",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.11",
+                    "datestamp": "1741160289",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alaa Haddad (alaahaddad.com)",
+                    "homepage": "https://www.drupal.org/u/flashwebcenter",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A reusable Paragraphs Bundles.",
+            "homepage": "https://drupal.org/project/paragraphs_bundles",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_bundles",
+                "issues": "https://drupal.org/project/issues/paragraphs_bundles"
+            },
+            "install-path": "../../web/modules/contrib/paragraphs_bundles"
+        },
+        {
+            "name": "drupal/paragraphs_ee",
+            "version": "10.0.6",
+            "version_normalized": "10.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_ee.git",
+                "reference": "10.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_ee-10.0.6.zip",
+                "reference": "10.0.6",
+                "shasum": "4b04602b6cda074b86c77a8e6d64f82350818dba"
+            },
+            "require": {
+                "drupal/core": ">=10.0",
+                "drupal/paragraphs_features": "^2.0"
+            },
+            "require-dev": {
+                "drupal/paragraphs_sets": "*",
+                "phpunit/phpunit": "^9.5",
+                "weitzman/drupal-test-traits": "^1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "10.0.6",
+                    "datestamp": "1741108032",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Borchert",
+                    "homepage": "https://www.drupal.org/user/36942",
+                    "email": "stefan.borchert@undpaul.de"
+                }
+            ],
+            "description": "Paragraphs Editor Enhancements for better usability.",
+            "homepage": "https://www.drupal.org/project/paragraphs_ee",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_ee"
+            },
+            "install-path": "../../web/modules/contrib/paragraphs_ee"
+        },
+        {
+            "name": "drupal/paragraphs_features",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_features.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_features-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "1e82c20d5fdcbff8615af7d6797f272e85610496"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11",
+                "drupal/paragraphs": "^1.13"
+            },
+            "require-dev": {
+                "drupal/gin": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1736258966",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mladen Todorovic",
+                    "homepage": "https://www.drupal.org/user/2103716",
+                    "email": "mladen.todorovic@burda.com"
+                },
+                {
+                    "name": "Daniel Bosen",
+                    "homepage": "https://www.drupal.org/user/404865",
+                    "email": "daniel.bosen@burda.com"
+                },
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://www.drupal.org/user/3511180",
+                    "email": "christian.fritsch@burda.com"
+                },
+                {
+                    "name": "Volker Killesreiter",
+                    "homepage": "https://www.drupal.org/user/57527",
+                    "email": "volker.killesreiter@burda.com"
+                },
+                {
+                    "name": "Alex Pott",
+                    "email": "alex.a.pott@gmail.com"
+                }
+            ],
+            "description": "Paragraphs features for extending paragraphs widget functionality.",
+            "homepage": "https://www.drupal.org/project/paragraphs_features",
+            "support": {
+                "source": "https://git.drupalcode.org/project/paragraphs_features"
+            },
+            "install-path": "../../web/modules/contrib/paragraphs_features"
         },
         {
             "name": "drupal/pathauto",

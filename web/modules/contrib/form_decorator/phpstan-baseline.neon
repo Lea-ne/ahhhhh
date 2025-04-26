@@ -1,0 +1,79 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined method Drupal\\Core\\Form\\FormInterface\:\:save\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: modules/form_decorator_example/src/FormDecorator/NodeCreatedDate.php
+
+		-
+			message: '#^Class Drupal\\form_decorator\\Annotation\\FormDecorator has an uninitialized readonly property \$hook\. Assign it in the constructor\.$#'
+			identifier: property.uninitializedReadonly
+			count: 1
+			path: src/Annotation/FormDecorator.php
+
+		-
+			message: '#^Call to an undefined method Drupal\\Core\\Entity\\EntityFormInterface\:\:getFormDisplay\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/ContentEntityFormDecoratorBase.php
+
+		-
+			message: '#^Call to an undefined method Drupal\\Core\\Entity\\EntityFormInterface\:\:getFormLangcode\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/ContentEntityFormDecoratorBase.php
+
+		-
+			message: '#^Call to an undefined method Drupal\\Core\\Entity\\EntityFormInterface\:\:isDefaultFormLangcode\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/ContentEntityFormDecoratorBase.php
+
+		-
+			message: '#^Call to an undefined method Drupal\\Core\\Entity\\EntityFormInterface\:\:setFormDisplay\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/ContentEntityFormDecoratorBase.php
+
+		-
+			message: '#^Method Drupal\\form_decorator\\EntityFormDecoratorBase\:\:setEntity\(\) should return \$this\(Drupal\\form_decorator\\EntityFormDecoratorBase\) but returns Drupal\\Core\\Entity\\EntityFormInterface\.$#'
+			identifier: return.type
+			count: 1
+			path: src/EntityFormDecoratorBase.php
+
+		-
+			message: '#^Method Drupal\\form_decorator\\EntityFormDecoratorBase\:\:setEntityTypeManager\(\) should return \$this\(Drupal\\form_decorator\\EntityFormDecoratorBase\) but returns Drupal\\Core\\Entity\\EntityFormInterface\.$#'
+			identifier: return.type
+			count: 1
+			path: src/EntityFormDecoratorBase.php
+
+		-
+			message: '#^Method Drupal\\form_decorator\\EntityFormDecoratorBase\:\:setModuleHandler\(\) should return \$this\(Drupal\\form_decorator\\EntityFormDecoratorBase\) but returns Drupal\\Core\\Entity\\EntityFormInterface\.$#'
+			identifier: return.type
+			count: 1
+			path: src/EntityFormDecoratorBase.php
+
+		-
+			message: '#^Method Drupal\\form_decorator\\EntityFormDecoratorBase\:\:setOperation\(\) should return \$this\(Drupal\\form_decorator\\EntityFormDecoratorBase\) but returns Drupal\\Core\\Entity\\EntityFormInterface\.$#'
+			identifier: return.type
+			count: 1
+			path: src/EntityFormDecoratorBase.php
+
+		-
+			message: '#^Method Drupal\\form_decorator\\EntityFormDecoratorBase\:\:setStringTranslation\(\) should return \$this\(Drupal\\form_decorator\\EntityFormDecoratorBase\) but returns Drupal\\Core\\Entity\\EntityFormInterface\.$#'
+			identifier: return.type
+			count: 1
+			path: src/EntityFormDecoratorBase.php
+
+		-
+			message: '#^Left side of && is always true\.$#'
+			identifier: booleanAnd.leftAlwaysTrue
+			count: 1
+			path: src/FormDecoratorServiceProvider.php
+
+		-
+			message: '#^PHPDoc type array of property Drupal\\Tests\\form_decorator\\Kernel\\NodeFormFieldTest\:\:\$modules is not covariant with PHPDoc type array\<string\> of overridden property Drupal\\KernelTests\\KernelTestBase\:\:\$modules\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: tests/src/Kernel/NodeFormFieldTest.php
