@@ -1,0 +1,8 @@
+uuid: b3e751d3-9e63-4f2a-88f5-8cd233d3b467
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_image
+label: 'Card Image'
+revision: false
+description: null
