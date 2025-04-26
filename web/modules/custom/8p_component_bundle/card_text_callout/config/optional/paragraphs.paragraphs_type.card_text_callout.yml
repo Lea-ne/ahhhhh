@@ -1,9 +1,14 @@
 uuid: d0b296a9-e8d3-4312-a9e7-dded6e3a5eaa
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraph_block
+third_party_settings:
+  paragraph_block:
+    status: true
 _core:
-  default_config_hash: zSYxGSFMe1fDB3XIG4CafJI2D_Ky_zR3CT5Lb6VMzog
+  default_config_hash: cZjY8szhOnVNTZI2hR3GxgsURkzguLCEfkK0JB-LJ5w
 id: card_text_callout
 label: 'Card Text Callout'
 icon_uuid: null
