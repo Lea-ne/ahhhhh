@@ -1,0 +1,25 @@
+uuid: 48207223-a717-4c35-b24d-a3e5501eb386
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_card_cta_banner
+    - field.field.block_content.block_card_cta_banner.field_block_card_cta_banner
+  module:
+    - entity_reference_revisions
+id: block_content.block_card_cta_banner.default
+targetEntityType: block_content
+bundle: block_card_cta_banner
+mode: default
+content:
+  field_block_card_cta_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
