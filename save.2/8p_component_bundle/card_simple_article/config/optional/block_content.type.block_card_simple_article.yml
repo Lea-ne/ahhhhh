@@ -1,0 +1,8 @@
+uuid: a4fe2dc0-268d-4717-8407-ad013a4c723d
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_simple_article
+label: 'Card Simple Article'
+revision: false
+description: null
