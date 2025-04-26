@@ -1,0 +1,25 @@
+uuid: 5e8d04df-f0e7-436c-a406-58a15ef44a2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_card_hero_slider
+    - field.field.block_content.block_card_hero_slider.field_block_card_hero_slider
+  module:
+    - entity_reference_revisions
+id: block_content.block_card_hero_slider.default
+targetEntityType: block_content
+bundle: block_card_hero_slider
+mode: default
+content:
+  field_block_card_hero_slider:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
