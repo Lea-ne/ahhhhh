@@ -17,7 +17,6 @@ module:
   card_hero_slider: 0
   card_image: 0
   card_price_list: 0
-  card_product: 0
   card_simple_article: 0
   card_text_callout: 0
   card_video: 0
@@ -29,9 +28,9 @@ module:
   commerce_product: 0
   commerce_store: 0
   component_bundle: 0
-  component_bundle_commerce: 0
   config: 0
   config_split: 0
+  config_translation: 0
   contact: 0
   contextual: 0
   ctools: 0
@@ -53,10 +52,13 @@ module:
   image: 0
   inline_block_title_automatic: 0
   inline_entity_form: 0
+  language: 0
   layout_builder: 0
+  layout_builder_at: 0
   layout_builder_modal: 0
   layout_discovery: 0
   link: 0
+  locale: 0
   media: 0
   media_library: 0
   media_library_form_element: 0
@@ -83,9 +85,9 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
-  view_card_product: 0
   views_ui: 0
   pathauto: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

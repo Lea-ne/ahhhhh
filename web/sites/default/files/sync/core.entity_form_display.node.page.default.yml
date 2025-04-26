@@ -61,6 +61,13 @@ content:
         delete_confirmation: false
         show_drag_and_drop: false
         show_collapse_all: false
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

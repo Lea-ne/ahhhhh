@@ -38,6 +38,7 @@ content:
     region: content
 hidden:
   created: true
+  langcode: true
   name: true
   pb_image_field: true
   uid: true

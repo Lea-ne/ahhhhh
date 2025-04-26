@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '676c1e310ebcb72c3d19601d083aa0b88293b8f0',
+        'reference' => '3ef7420da9904fe861a8ac51313fce48738f02c2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -505,6 +505,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/layout_builder_at' => array(
+            'pretty_version' => '3.0.1',
+            'version' => '3.0.1.0',
+            'reference' => '3.0.1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/layout_builder_at',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/layout_builder_modal' => array(
             'pretty_version' => '2.0.0',
             'version' => '2.0.0.0',
@@ -616,7 +625,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '676c1e310ebcb72c3d19601d083aa0b88293b8f0',
+            'reference' => '3ef7420da9904fe861a8ac51313fce48738f02c2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

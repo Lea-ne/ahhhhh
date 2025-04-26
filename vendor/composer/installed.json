@@ -2796,6 +2796,60 @@
             "install-path": "../../web/modules/contrib/inline_entity_form"
         },
         {
+            "name": "drupal/layout_builder_at",
+            "version": "3.0.1",
+            "version_normalized": "3.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_at.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_at-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "2536145629fb0dbfece38e683fada1a8b291d51f"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1745326369",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kristof De Jaeger (swentel)",
+                    "homepage": "https://www.drupal.org/u/swentel",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "svendecabooter",
+                    "homepage": "https://www.drupal.org/user/35369"
+                }
+            ],
+            "description": "Layout Builder Asymmetric Translation",
+            "homepage": "https://www.drupal.org/project/layout_builder_at",
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_at",
+                "issues": "https://www.drupal.org/project/issues/layout_builder_at",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            },
+            "install-path": "../../web/modules/contrib/layout_builder_at"
+        },
+        {
             "name": "drupal/layout_builder_modal",
             "version": "2.0.0",
             "version_normalized": "2.0.0.0",
