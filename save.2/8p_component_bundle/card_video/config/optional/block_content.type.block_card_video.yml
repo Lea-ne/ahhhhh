@@ -1,0 +1,8 @@
+uuid: b7a19fa4-c12a-448c-8569-44c498d498ef
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_video
+label: 'Card Video'
+revision: false
+description: null
