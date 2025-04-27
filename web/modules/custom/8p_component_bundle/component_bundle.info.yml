@@ -6,4 +6,3 @@ package: Custom
 dependencies:
   - paragraphs
   - drupal:media_library
-  - color_field

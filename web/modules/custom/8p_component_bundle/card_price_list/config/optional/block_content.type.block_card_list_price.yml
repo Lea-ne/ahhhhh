@@ -1,0 +1,8 @@
+uuid: ee279bd2-fc35-4d50-858c-a572b6a13247
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_list_price
+label: 'Card List Price'
+revision: false
+description: null

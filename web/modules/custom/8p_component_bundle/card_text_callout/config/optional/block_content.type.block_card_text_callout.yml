@@ -1,0 +1,8 @@
+uuid: b33e0d21-9de2-475f-a08f-05c5f784d2b2
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_text_callout
+label: 'Card Text Callout'
+revision: false
+description: null

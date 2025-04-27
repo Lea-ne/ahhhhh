@@ -1,0 +1,8 @@
+uuid: 9e440ed9-9b03-415e-87b5-a4f62d2cd6c3
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_hero_slider
+label: 'Card Hero Slider'
+revision: false
+description: null

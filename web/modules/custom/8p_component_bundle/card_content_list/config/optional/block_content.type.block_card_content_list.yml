@@ -1,0 +1,8 @@
+uuid: 261a17b4-4a68-44b9-97ef-9f52cfa6a880
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_content_list
+label: 'Card Content List'
+revision: false
+description: null

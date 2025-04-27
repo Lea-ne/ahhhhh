@@ -1,14 +1,7 @@
 uuid: 761c1879-5e15-4b6c-9ef3-f27816afb5e2
 langcode: en
 status: true
-dependencies:
-  module:
-    - paragraph_block
-third_party_settings:
-  paragraph_block:
-    status: true
-_core:
-  default_config_hash: SipnvVDTh320NeCktBqE8gmZE7VqNClAMsBl88Q0Ad4
+dependencies: {  }
 id: card_simple_article
 label: 'Card Simple Article'
 icon_uuid: null

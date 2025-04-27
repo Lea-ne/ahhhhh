@@ -1,0 +1,25 @@
+uuid: bccf7c4c-5bc1-4b65-8b51-a7b2698b01d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_card_button_list
+    - field.field.block_content.block_card_button_list.field_block_card_button_list
+  module:
+    - entity_reference_revisions
+id: block_content.block_card_button_list.default
+targetEntityType: block_content
+bundle: block_card_button_list
+mode: default
+content:
+  field_block_card_button_list:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

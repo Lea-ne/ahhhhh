@@ -1,0 +1,8 @@
+uuid: b20f040e-3015-447b-af38-f6c52a6bbb94
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_feature_icon
+label: 'Card Feature Icon'
+revision: false
+description: null

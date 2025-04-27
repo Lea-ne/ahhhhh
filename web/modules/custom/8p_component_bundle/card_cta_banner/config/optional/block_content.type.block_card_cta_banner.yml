@@ -1,0 +1,8 @@
+uuid: 038eb515-1771-4c8b-a6e4-6b1e7d2e04af
+langcode: en
+status: true
+dependencies: {  }
+id: block_card_cta_banner
+label: 'Card Cta Banner'
+revision: false
+description: null
