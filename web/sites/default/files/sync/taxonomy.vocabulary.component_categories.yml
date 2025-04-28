@@ -1,9 +1,0 @@
-uuid: de4be1e5-6583-4155-bb7c-f3928273dab2
-langcode: en
-status: true
-dependencies: {  }
-name: 'Component Categories'
-vid: component_categories
-description: null
-weight: 0
-new_revision: false
