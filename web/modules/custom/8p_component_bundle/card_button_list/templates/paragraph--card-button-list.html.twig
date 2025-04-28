@@ -1,11 +1,10 @@
 {# Define items listed #}
 {% set items = [] %}
-{% for item in content.field_cp_ref_molecule_price_list %}
+{% for item in content.field_cp_ref_items_button_list %}
     {% if item['#paragraph'] %}
          {% set items = items|merge([item]) %}
     {% endif %}
 {% endfor %}
-
 
 {# Define options #}
 {% set custom_id = paragraph.field_cp_custom_id.0.value %}
@@ -14,7 +13,7 @@
 
 {%
   set classes = [
-    'component-card-price-list',
+    'component-card-button-list',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     custom_class,
   ]

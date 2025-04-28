@@ -1,0 +1,63 @@
+{# Define items listed #}
+{% set items = [] %}
+{% for item in content.field_cp_ref_molecule_content %}
+    {% if item['#paragraph'] %}
+         {% set items = items|merge([item]) %}
+    {% endif %}
+{% endfor %}
+
+TO DEFINE
+{# get slide items value #}
+{% set title = content.field_cp_title %}
+{% set text = content.field_cp_text %}
+{% set link_url = content.field_cp_link[0]['#url'] %}
+{% set link_title = content.field_cp_link[0]['#title'] %}
+
+{# Define slide item media #}
+{% set media_entity = paragraph.field_cp_image.entity %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+{# Define options #}
+{% set custom_id = paragraph.field_cp_custom_id.0.value %}
+{% set custom_class = paragraph.field_cp_custom_class.0.value %}
+
+
+
+{%
+  set classes = [
+    'component-card-feature-slider',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    custom_class,
+  ]
+%}
+
+
+{# template #}
+<div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
+    <div class="card__container">
+      
+      <div class="card__content">
+
+        {% if title %}
+          <h3 class="card__title">
+            {{ title }}
+          </h3>
+        {% endif %}
+        
+        {% if text %}
+          <div class="card__text">
+            {{ text }}
+          </div>
+        {% endif %}
+
+        {% if link_title %}
+          <div class="card__link">
+            <a href="{{ link_url }}">{{ link_title }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+</div>
+
+

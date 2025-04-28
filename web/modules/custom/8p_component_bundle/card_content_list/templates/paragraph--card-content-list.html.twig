@@ -1,0 +1,30 @@
+{# Define items listed #}
+{% set items = [] %}
+{% for item in content.field_cp_ref_molecule_content %}
+    {% if item['#paragraph'] %}
+         {% set items = items|merge([item]) %}
+    {% endif %}
+{% endfor %}
+
+{# Define options #}
+{% set custom_id = paragraph.field_cp_custom_id.0.value %}
+{% set custom_class = paragraph.field_cp_custom_class.0.value %}
+
+
+{%
+  set classes = [
+    'component-card-content-list',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    custom_class,
+  ]
+%}
+
+
+{# template #}
+<div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
+    <div class="card__container">
+
+    {{ items }}
+
+    </div>  
+</div>

@@ -1,4 +1,4 @@
-<div class="{{ classes|join(' ') }}">
+<div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
     <div class="card__container">
 
       {% if media %}
@@ -22,12 +22,10 @@
         {% endif %}
 
         {% if link_title %}
-          <div class="card__link link-icon-arrow">
+          <div class="card__link">
             <a href="{{ link_url }}">{{ link_title }}</a>
           </div>
         {% endif %}
-
-        ehllo
       </div>
     </div>
-  </div>
+</div>

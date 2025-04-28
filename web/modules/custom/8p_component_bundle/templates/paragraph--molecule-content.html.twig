@@ -5,27 +5,21 @@
 {% set link_title = content.field_cp_link[0]['#title'] %}
 
 {# Define options #}
-{% set custom_id = paragraph.field_cp_custom_id.0.value %}
-{% set custom_class = paragraph.field_cp_custom_class.0.value %}
 
-{# Define media #}
-{% set media_entity = paragraph.field_cp_image.entity %}
-{% set image = media_entity.field_media_image.entity %}
-{% set media = image.uri.value|file_url %}
+
 
 
 {%
   set classes = [
-    'component-card-cta-banner',
+    'component-molecule-content',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
-    custom_class,
   ]
 %}
 
 
 {# template #}
-<div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %} style="background-image: url('{{ media }}');">
-    <div class="card__container">
+<div class="{{ classes|join(' ') }}">
+    <div class="item__container">
       
       <div class="card__content">
 
@@ -49,5 +43,3 @@
       </div>
     </div>
 </div>
-
-

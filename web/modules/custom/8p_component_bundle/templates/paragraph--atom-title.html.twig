@@ -1,0 +1,27 @@
+{# Paragraph template values #}
+{% set title = content.field_cp_title %}
+
+
+{%
+  set classes = [
+    'component-atom-title',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+
+{# template #}
+<div class="{{ classes|join(' ') }}">
+    <div class="item__container">
+      
+      <div class="card__content">
+
+        {% if title %}
+          <h3 class="card__title">
+            {{ title }}
+          </h3>
+        {% endif %}
+
+      </div>
+    </div>
+</div>

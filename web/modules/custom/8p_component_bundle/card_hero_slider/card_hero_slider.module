@@ -21,10 +21,6 @@ function card_hero_slider_theme($existing, $type, $theme, $path) {
     'paragraph__card_hero_slider' => [
       'base hook' => 'paragraph',
     ],
-
-    'paragraph__atom_hero_slide' => [
-      'base hook' => 'paragraph',
-    ],
   ];
 }
 

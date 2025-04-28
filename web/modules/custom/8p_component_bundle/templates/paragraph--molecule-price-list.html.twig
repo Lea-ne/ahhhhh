@@ -1,0 +1,38 @@
+{# Paragraph template values #}
+{% set title = content.field_cp_title %}
+{% set text = content.field_cp_text %}
+
+{# Define options #}
+
+
+
+
+{%
+  set classes = [
+    'component-molecule-price_list',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+
+{# template #}
+<div class="{{ classes|join(' ') }}">
+    <div class="item__container">
+      
+      <div class="card__content">
+
+        {% if title %}
+          <h3 class="card__title">
+            {{ title }}
+          </h3>
+        {% endif %}
+        
+        {% if text %}
+          <div class="card__text">
+            {{ text }}
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+</div>

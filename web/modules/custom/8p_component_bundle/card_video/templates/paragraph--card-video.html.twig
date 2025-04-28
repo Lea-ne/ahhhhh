@@ -1,0 +1,90 @@
+{# Define options #}
+{% set custom_id = paragraph.field_cp_custom_id.0.value %}
+{% set custom_class = paragraph.field_cp_custom_class.0.value %}
+
+{# Define media #}
+{% set media_entity = paragraph.field_cp_video.entity %}
+{% set media_is_video =  media_entity.field_media_video_file.entity %}
+{% set media_is_embed = media_entity.field_media_oembed_video.entity %}
+
+{% if media_is_video  %}
+      {% set media = media_is_video|file_url %}
+{% endif %}
+
+{% if media_is_embed  %}
+      {% set youtube_url = media_is_embed.field_media_oembed_video.value %}
+      {% set media = youtube_url|split('/')|last|split('?')|first %}
+{% endif %}
+
+{%
+  set classes = [
+    'component-card-video',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    custom_class,
+  ]
+%}
+
+
+{# template #}
+<div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
+    <div class="card__container">
+      
+      {% if media %}
+        <div class="card__media">
+          {% if media_is_video %}
+            <video autoplay muted loop playsinline>    
+                <source src="{{ media }}" type="video/mp4">
+            </video>
+          {% endif %}
+
+          {% if media_is_embed %}
+           <iframe 
+           width="560" 
+           height="315" 
+           src="https://www.youtube.com/embed/{{ media}}?" 
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+           </iframe>
+          {% endif %}
+        </div>
+      {% endif %}
+      
+    </div>
+</div>
+
+  
+
+    {# for remote videos (not youtube) #}
+    {# {% if media_is_video  %}
+      {% set media_uri = media_is_video|file_url %}
+      
+      <div{{ attributes.addClass(classes)}}>
+
+      <div class="video-background-container-018">
+        <video autoplay muted loop playsinline class="background-video-018">    
+          <source src="{{ media_uri }}" type="video/mp4">
+        </video>
+      </div>
+    {% endif %} #}
+
+
+
+    {# for embeded video #}
+    {# {% if media_is_embed  %}
+     <div{{ attributes.addClass(classes) }}>
+      Récupérer l'URL de la vidéo YouTube à partir du champ 
+      {% set youtube_url = paragraph.field_image_media_paragraph.entity.field_media_oembed_video.entity.field_media_oembed_video.value %}
+      {% set video_id = youtube_url|split('/')|last|split('?')|first %}
+   
+        <div class="video-container">
+          <iframe
+            class="youtube_video_embed"
+            src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1&controls=0&fullscreen=1&loop=1&playlist={{ video_id }}&playsinline=1&modestbranding=1&showinfo=0&mute=1"
+            style="pointer-events: none;"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+        ></iframe>
+        </div>
+    {% endif %} #}

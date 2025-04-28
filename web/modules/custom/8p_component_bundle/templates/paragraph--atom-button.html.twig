@@ -1,0 +1,30 @@
+{# Paragraph template values #}
+{% set link_url = content.field_cp_link[0]['#url'] %}
+{% set link_title = content.field_cp_link[0]['#title'] %}
+
+{# Define options #}
+
+
+{%
+  set classes = [
+    'component-atom-button',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+  ]
+%}
+
+
+{# template #}
+<div class="{{ classes|join(' ') }}">
+    <div class="item__container">
+      
+      <div class="card__content">
+
+        {% if link_title %}
+          <div class="card__link">
+            <a href="{{ link_url }}">{{ link_title }}</a>
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+</div>

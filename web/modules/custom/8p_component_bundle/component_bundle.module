@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Paragraph Bundle Image.
+ *
+ * Filename:     paragraph_bundle_image.module
+ * Website:      https://www.flashwebcenter.com
+ * Description:  template.
+ * Developer:    Alaa Haddad https://www.alaahaddad.com.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme for the paragraph().
+ */
+function component_bundle_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__molecule_content' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__molecule_price_list' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__atom_title' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__atom_text' => [
+      'base hook' => 'paragraph',
+    ],
+    'paragraph__atom_button' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
+
+
+
+
+
+
+function component_bundle_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'component_bundle') {
+    $build['#attached']['library'][] = 'component_bundle/component_style';
+  }
+}
