@@ -5,7 +5,7 @@ use Drupal\Core\Config\FileStorage;
 /**
  * 9002 — Réécrit (update) toutes les configs de config/optional de card_price_list.
  */
-function card_feature_slider_update_9005() {
+function card_feature_slider_update_9004() {
   // 1) Récupère le chemin du module.
   $module_path = \Drupal::service('extension.path.resolver')
     ->getPath('module', 'card_feature_slider');
