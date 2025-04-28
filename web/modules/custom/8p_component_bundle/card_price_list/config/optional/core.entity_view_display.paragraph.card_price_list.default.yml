@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.card_price_list.field_cp_custom_class
+    - field.field.paragraph.card_price_list.field_cp_custom_id
     - field.field.paragraph.card_price_list.field_cp_link
     - field.field.paragraph.card_price_list.field_cp_ref_molecule_price_list
     - field.field.paragraph.card_price_list.field_option_button_render
@@ -12,6 +13,8 @@ dependencies:
     - entity_reference_revisions
     - link
     - options
+_core:
+  default_config_hash: RYI6Bt_J2fdJQi-yxggRYsuwpOc49zOmcQbljzL7tUE
 id: paragraph.card_price_list.default
 targetEntityType: paragraph
 bundle: card_price_list
@@ -23,6 +26,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_cp_link:
     type: link

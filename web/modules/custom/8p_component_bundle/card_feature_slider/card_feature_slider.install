@@ -1,0 +1,34 @@
+<?php
+
+use Drupal\Core\Config\FileStorage;
+
+/**
+ * 9002 — Réécrit (update) toutes les configs de config/optional de card_price_list.
+ */
+function card_feature_slider_update_9005() {
+  // 1) Récupère le chemin du module.
+  $module_path = \Drupal::service('extension.path.resolver')
+    ->getPath('module', 'card_feature_slider');
+
+  // 2) Pointe FileStorage sur config/optional.
+  $source = new FileStorage($module_path . '/config/optional');
+
+  // 3) Service pour éditer la config.
+  $config_factory = \Drupal::service('config.factory');
+
+  // 4) Pour chaque config définie dans config/optional...
+  foreach ($source->listAll() as $config_name) {
+    $data = $source->read($config_name);
+
+    // 5) Réécrit la config en base avec le YAML.
+    $editable = $config_factory->getEditable($config_name);
+    $editable
+      ->setData($data)
+      ->save();
+  }
+
+  // 6) Vide tous les caches pour prendre en compte les changements.
+  drupal_flush_all_caches();
+
+  return t('Les configurations optionnelles de card_price_list ont été mises à jour (hook 9002).');
+}

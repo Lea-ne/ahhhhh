@@ -7,6 +7,8 @@ dependencies:
     - field.field.block_content.block_card_feature_slider.field_block_card_feature_slider
   module:
     - paragraphs
+_core:
+  default_config_hash: AQr2H1RrwotYwVFO1yri5rari0FZFvCxZNINnsTw8Q8
 id: block_content.block_card_feature_slider.default
 targetEntityType: block_content
 bundle: block_card_feature_slider

@@ -15,10 +15,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_theme for the paragraph().
- */
+ */ 
 function card_hero_slider_theme($existing, $type, $theme, $path) {
   return [
-    'paragraph__card_hero_slider' => [
+    ' paragraph__card_hero_slider' => [
       'base hook' => 'paragraph',
     ],
   ];

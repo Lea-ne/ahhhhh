@@ -6,6 +6,9 @@
     {% endif %}
 {% endfor %}
 
+{# Link #}
+{% set link_url = content.field_cp_link[0]['#url'] %}
+{% set link_title = content.field_cp_link[0]['#title'] %}
 
 {# Define options #}
 {% set custom_id = paragraph.field_cp_custom_id.0.value %}
@@ -26,6 +29,14 @@
     <div class="card__container">
 
     {{ items }}
+    
+    <div class="card__content">
+        {% if link_title %}
+        <div class="card__link">
+            <a href="{{ link_url }}">{{ link_title }}</a>
+        </div>
+        {% endif %}
+    </div>
 
     </div>  
 </div>

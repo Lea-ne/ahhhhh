@@ -39,7 +39,7 @@ content:
     weight: 2
     region: content
     settings:
-      rows: 5
+      rows: 1
       placeholder: ''
     third_party_settings: {  }
   field_cp_custom_id:
@@ -47,7 +47,7 @@ content:
     weight: 3
     region: content
     settings:
-      rows: 5
+      rows: 1
       placeholder: ''
     third_party_settings: {  }
   field_cp_video:

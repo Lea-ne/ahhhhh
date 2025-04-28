@@ -76,7 +76,7 @@ content:
     third_party_settings: {  }
   field_cp_text:
     type: text_textarea
-    weight: 0
+    weight: 1
     region: content
     settings:
       rows: 3
@@ -84,7 +84,7 @@ content:
     third_party_settings: {  }
   field_cp_title:
     type: string_textarea
-    weight: 1
+    weight: 0
     region: content
     settings:
       rows: 1
