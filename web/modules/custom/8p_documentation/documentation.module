@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Paragraph Bundle Image.
+ *
+ * Filename:     paragraph_bundle_image.module
+ * Website:      https://www.flashwebcenter.com
+ * Description:  template.
+ * Developer:    Alaa Haddad https://www.alaahaddad.com.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme for the paragraph().
+ */
+function documentation_theme($existing, $type, $theme, $path) {
+  return [
+    'page__node__8p_documentation' => [
+      'base hook' => 'node',
+    ],
+  ];
+}
+
+
+
+
+
+
+function documentation_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'paragraph') {
+    $build['#attached']['library'][] = 'documentation/general_style';
+  }
+}

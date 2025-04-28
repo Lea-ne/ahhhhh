@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.8p_documentation.field_8p_doc_figma_link
     - field.field.node.8p_documentation.field_8p_doc_important_note
     - field.field.node.8p_documentation.field_8p_documentation_categorie
+    - field.field.node.8p_documentation.layout_builder__layout
     - node.type.8p_documentation
   module:
     - link
@@ -104,6 +105,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 2
@@ -114,4 +120,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

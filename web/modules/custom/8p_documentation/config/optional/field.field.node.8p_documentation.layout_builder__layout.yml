@@ -1,0 +1,21 @@
+uuid: bcd60e5e-3e12-4da2-8a84-cd9e77655e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.8p_documentation
+  module:
+    - layout_builder
+id: node.8p_documentation.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: 8p_documentation
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

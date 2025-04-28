@@ -1,0 +1,10 @@
+name: '8p Documentation'
+type: module
+description: 'Provide a content type to create documentation'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - paragraphs
+  - drupal:media_library
+libraries:
+  - documentation/general_style

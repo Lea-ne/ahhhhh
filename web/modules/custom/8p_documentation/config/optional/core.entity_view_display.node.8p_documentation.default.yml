@@ -10,9 +10,96 @@ dependencies:
     - field.field.node.8p_documentation.field_8p_documentation_categorie
     - node.type.8p_documentation
   module:
+    - layout_builder
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d7e71f01-5db1-4414-92c0-0b95fb8b906b:
+            uuid: d7e71f01-5db1-4414-92c0-0b95fb8b906b
+            region: content
+            configuration:
+              id: 'extra_field_block:node:8p_documentation:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          65a668ed-f586-4e82-addb-0587e4b3f7c6:
+            uuid: 65a668ed-f586-4e82-addb-0587e4b3f7c6
+            region: content
+            configuration:
+              id: 'field_block:node:8p_documentation:field_8p_doc_component_structure'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5ae5a626-dc4a-4f03-ae0b-ea5a58710e94:
+            uuid: 5ae5a626-dc4a-4f03-ae0b-ea5a58710e94
+            region: content
+            configuration:
+              id: 'field_block:node:8p_documentation:field_8p_doc_component_option'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          3428226f-469c-45b5-bb69-53fb9571a358:
+            uuid: 3428226f-469c-45b5-bb69-53fb9571a358
+            region: content
+            configuration:
+              id: 'field_block:node:8p_documentation:field_8p_doc_important_note'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          8a301eb4-44fb-44bc-9929-fb4bf943f262:
+            uuid: 8a301eb4-44fb-44bc-9929-fb4bf943f262
+            region: content
+            configuration:
+              id: 'field_block:node:8p_documentation:field_8p_doc_figma_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
 id: node.8p_documentation.default
 targetEntityType: node
 bundle: 8p_documentation
