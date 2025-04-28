@@ -1,0 +1,29 @@
+uuid: 5e89ba42-352a-4a52-9660-2d7196a08d6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_8p_documentation_categorie
+    - node.type.8p_documentation
+    - taxonomy.vocabulary.8p_documentation_categories
+id: node.8p_documentation.field_8p_documentation_categorie
+field_name: field_8p_documentation_categorie
+entity_type: node
+bundle: 8p_documentation
+label: '8p Documentation Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      8p_documentation_categories: 8p_documentation_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

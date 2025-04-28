@@ -1,0 +1,9 @@
+uuid: fe5f4eba-4fae-4811-94ea-b2d1a8f0442e
+langcode: en
+status: true
+dependencies: {  }
+name: '8p Documentation Categories'
+vid: 8p_documentation_categories
+description: null
+weight: 0
+new_revision: false
