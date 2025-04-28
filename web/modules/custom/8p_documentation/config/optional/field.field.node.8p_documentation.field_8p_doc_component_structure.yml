@@ -1,0 +1,22 @@
+uuid: 1a205ed9-e921-4bc1-97db-b762c2c6240c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_8p_doc_component_structure
+    - node.type.8p_documentation
+  module:
+    - text
+id: node.8p_documentation.field_8p_doc_component_structure
+field_name: field_8p_doc_component_structure
+entity_type: node
+bundle: 8p_documentation
+label: 'Component Structure'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: f1737ee3-9a3e-41d4-a8b6-6e0aee551678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_8p_doc_important_note
+    - node.type.8p_documentation
+  module:
+    - text
+id: node.8p_documentation.field_8p_doc_important_note
+field_name: field_8p_doc_important_note
+entity_type: node
+bundle: 8p_documentation
+label: 'Important Note'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

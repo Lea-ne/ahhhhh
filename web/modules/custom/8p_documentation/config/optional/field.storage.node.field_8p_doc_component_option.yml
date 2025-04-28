@@ -1,0 +1,19 @@
+uuid: e5438244-c03a-4a6c-b24f-92bc0e25b113
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_8p_doc_component_option
+field_name: field_8p_doc_component_option
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 33b4d330-0576-41fa-a1d4-8b0707ba8724
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_8p_doc_component_structure
+field_name: field_8p_doc_component_structure
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

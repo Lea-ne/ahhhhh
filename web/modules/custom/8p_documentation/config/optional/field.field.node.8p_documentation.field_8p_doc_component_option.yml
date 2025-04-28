@@ -1,0 +1,22 @@
+uuid: ab2152e2-061d-4439-a536-920f9e465bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_8p_doc_component_option
+    - node.type.8p_documentation
+  module:
+    - text
+id: node.8p_documentation.field_8p_doc_component_option
+field_name: field_8p_doc_component_option
+entity_type: node
+bundle: 8p_documentation
+label: 'Component Options'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

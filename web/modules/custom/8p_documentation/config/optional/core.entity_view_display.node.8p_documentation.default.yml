@@ -3,27 +3,59 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.8p_documentation.field_8p_doc_component_option
+    - field.field.node.8p_documentation.field_8p_doc_component_structure
+    - field.field.node.8p_documentation.field_8p_doc_figma_link
+    - field.field.node.8p_documentation.field_8p_doc_important_note
     - field.field.node.8p_documentation.field_8p_documentation_categorie
     - node.type.8p_documentation
   module:
+    - link
+    - text
     - user
 id: node.8p_documentation.default
 targetEntityType: node
 bundle: 8p_documentation
 mode: default
 content:
-  field_8p_documentation_categorie:
-    type: entity_reference_label
+  field_8p_doc_component_option:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_8p_doc_component_structure:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_8p_doc_figma_link:
+    type: link
     label: above
     settings:
-      link: true
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 4
+    region: content
+  field_8p_doc_important_note:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_8p_documentation_categorie: true
   langcode: true
