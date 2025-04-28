@@ -27,16 +27,16 @@
 {# template #}
 <div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
     <div class="card__container">
-
-    {{ items }}
-    
-    <div class="card__content">
-        {% if link_title %}
-        <div class="card__link">
-            <a href="{{ link_url }}">{{ link_title }}</a>
+        <div class="card__content">
+            {{ items }}
+        
+            <div class="card__content">
+                {% if link_title %}
+                <div class="card__link">
+                    <a href="{{ link_url }}">{{ link_title }}</a>
+                </div>
+                {% endif %}
+            </div>
         </div>
-        {% endif %}
-    </div>
-
     </div>  
 </div>

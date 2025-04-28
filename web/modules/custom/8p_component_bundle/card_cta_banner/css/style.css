@@ -1,0 +1,17 @@
+.component-card-cta-banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-card-cta-banner .card__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

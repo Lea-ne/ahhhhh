@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f2ad79efbad47f48367903f7900ea1d3e3243c9f',
+        'reference' => 'e77568fd4e6e0a7c7dff4d89028e8c8dc38ce58d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -514,6 +514,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/layout_builder_browser' => array(
+            'pretty_version' => '1.8.0',
+            'version' => '1.8.0.0',
+            'reference' => '8.x-1.8',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/layout_builder_browser',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/layout_builder_modal' => array(
             'pretty_version' => '2.0.0',
             'version' => '2.0.0.0',
@@ -643,7 +652,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f2ad79efbad47f48367903f7900ea1d3e3243c9f',
+            'reference' => 'e77568fd4e6e0a7c7dff4d89028e8c8dc38ce58d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

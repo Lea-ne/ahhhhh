@@ -1,22 +1,25 @@
-{# Define items listed #}
-{% set items = [] %}
-{% for item in content.field_cp_ref_molecule_content %}
-    {% if item['#paragraph'] %}
-         {% set items = items|merge([item]) %}
-    {% endif %}
+{% set slides = [] %}
+{% for item in paragraph.field_cp_ref_molecule_slide %}
+  {% set slide = item.entity %}
+
+  {% set title = slide.field_cp_title.value|striptags %}
+  {% set text = slide.field_cp_text.value|striptags %}
+  {% set link_title = slide.field_cp_link.0.title ?? '' %}
+  {% set link_url = slide.field_cp_link.0.uri ?? '' %}
+
+  {% set media_entity = slide.field_cp_media.entity %}
+  {% set image = media_entity.field_media_image.entity %}
+  {% set media = image.uri.value|file_url %}
+
+  {% set slides = slides|merge([{
+    title: title,
+    text: text,
+    link_title: link_title,
+    link_url: link_url,
+    media: media
+  }]) %}
 {% endfor %}
 
-TO DEFINE
-{# get slide items value #}
-{% set title = content.field_cp_title %}
-{% set text = content.field_cp_text %}
-{% set link_url = content.field_cp_link[0]['#url'] %}
-{% set link_title = content.field_cp_link[0]['#title'] %}
-
-{# Define slide item media #}
-{% set media_entity = paragraph.field_cp_image.entity %}
-{% set image = media_entity.field_media_image.entity %}
-{% set media = image.uri.value|file_url %}
 
 {# Define options #}
 {% set custom_id = paragraph.field_cp_custom_id.0.value %}
@@ -35,29 +38,40 @@ TO DEFINE
 
 {# template #}
 <div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
-    <div class="card__container">
-      
-      <div class="card__content">
+      <div class="card__container">
 
-        {% if title %}
-          <h3 class="card__title">
-            {{ title }}
-          </h3>
-        {% endif %}
-        
-        {% if text %}
-          <div class="card__text">
-            {{ text }}
-          </div>
-        {% endif %}
+        {% for slide in slides %}
+          <div class="component-molecule-slide">
 
-        {% if link_title %}
-          <div class="card__link">
-            <a href="{{ link_url }}">{{ link_title }}</a>
+            {% if slide.media %}
+            <div class="atom__media">
+              <img src="{{ slide.media }}">
+            </div>
+            {% endif %}
+
+            <div class="item__container">
+                <div class="item__content">
+
+                {% if slide.title %}
+                    <h3 class="card__title">{{ slide.title }}</h3>
+                {% endif %}
+
+                {% if slide.text %}
+                    <div class="card__text">{{ slide.text }}</div>
+                {% endif %}
+
+                {% if slide.link_title %}
+                    <div class="card__link">
+                    <a href="{{ slide.link_url }}" style="color: inherit;">{{ slide.link_title }}</a>
+                    </div>
+                {% endif %}
+
+                </div>
+            </div>
+
           </div>
-        {% endif %}
+        {% endfor %}
       </div>
-    </div>
 </div>
 
 

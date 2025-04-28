@@ -1,0 +1,10 @@
+name: '8p documentation'
+type: module
+description: 'Provide a new content type "docuementation" to create a simple guide'
+core_version_requirement: ^11
+package: Custom
+dependencies:
+  - paragraphs
+  - drupal:media_library
+libraries:
+  - 8p_documentatio/general_style

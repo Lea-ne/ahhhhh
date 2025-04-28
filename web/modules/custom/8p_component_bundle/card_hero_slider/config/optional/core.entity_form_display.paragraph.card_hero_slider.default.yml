@@ -10,7 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.card_hero_slider
   module:
     - field_group
-    - inline_entity_form
+    - paragraphs
 third_party_settings:
   field_group:
     group_options:
@@ -32,7 +32,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: j8mSvmGrsn40EEcK7dlOw71uNQlmUQdSPB4g0i_hyXU
+  default_config_hash: 746ZKCcqfGQg9EC-D-3pLEPL9HIECE8LRAcmaJsPzbA
 id: paragraph.card_hero_slider.default
 targetEntityType: paragraph
 bundle: card_hero_slider
@@ -55,17 +55,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_cp_ref_molecule_slide:
-    type: inline_entity_form_simple
+    type: paragraphs
     weight: 0
     region: content
     settings:
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      collapsible: false
-      collapsed: false
-      revision: false
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_option_overlay_render:
     type: options_select

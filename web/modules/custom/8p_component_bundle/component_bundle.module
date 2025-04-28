@@ -42,7 +42,7 @@ function component_bundle_theme($existing, $type, $theme, $path) {
 
 
 function component_bundle_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
-  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'component_bundle') {
-    $build['#attached']['library'][] = 'component_bundle/component_style';
+  if ($entity->getEntityTypeId() === 'paragraph') {
+    $build['#attached']['library'][] = 'component_bundle/general_style';
   }
 }

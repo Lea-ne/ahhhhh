@@ -1,0 +1,6 @@
+general_style:
+  version: 1.0
+  css:
+    theme:
+      css/general.css: {}
+  js: {}
