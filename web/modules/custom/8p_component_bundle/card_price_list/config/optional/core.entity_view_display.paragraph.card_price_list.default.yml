@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.card_price_list.field_cp_custom_id
     - field.field.paragraph.card_price_list.field_cp_link
     - field.field.paragraph.card_price_list.field_cp_ref_molecule_price_list
+    - field.field.paragraph.card_price_list.field_cp_title
     - field.field.paragraph.card_price_list.field_option_button_render
     - paragraphs.paragraphs_type.card_price_list
   module:
@@ -14,7 +15,7 @@ dependencies:
     - link
     - options
 _core:
-  default_config_hash: RYI6Bt_J2fdJQi-yxggRYsuwpOc49zOmcQbljzL7tUE
+  default_config_hash: D_iMjulorDCOGVl2I_oMyx_VsdoKPMQsyAplRAFyMss
 id: paragraph.card_price_list.default
 targetEntityType: paragraph
 bundle: card_price_list
@@ -54,6 +55,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_cp_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_option_button_render:
     type: list_key

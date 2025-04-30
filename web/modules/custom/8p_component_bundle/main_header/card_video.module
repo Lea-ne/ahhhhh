@@ -16,17 +16,17 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_theme().
  */
-function card_image_theme($existing, $type, $theme, $path) {
+function card_video_theme($existing, $type, $theme, $path) {
   return [
-    'paragraph__card_image' => [
+    'paragraph__card_video' => [
       'base hook' => 'paragraph',
     ],
   ];
 }
 
 
-function card_image_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
-  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_image') {
-    $build['#attached']['library'][] = 'card_image/component_style';
+function card_video_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'paragraph' && $entity->bundle() === 'card_video') {
+    $build['#attached']['library'][] = 'card_video/component_style';
   }
 }

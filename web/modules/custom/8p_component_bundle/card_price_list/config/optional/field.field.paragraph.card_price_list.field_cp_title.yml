@@ -1,0 +1,19 @@
+uuid: daf3d53e-a142-4271-951c-96391e63c7d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cp_title
+    - paragraphs.paragraphs_type.card_price_list
+id: paragraph.card_price_list.field_cp_title
+field_name: field_cp_title
+entity_type: paragraph
+bundle: card_price_list
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

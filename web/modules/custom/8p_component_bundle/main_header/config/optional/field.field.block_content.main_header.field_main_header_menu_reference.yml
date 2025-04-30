@@ -1,0 +1,23 @@
+uuid: 909c4b23-36fd-42b3-ae1d-c904936338a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.main_header
+    - field.storage.block_content.field_main_header_menu_reference
+id: block_content.main_header.field_main_header_menu_reference
+field_name: field_main_header_menu_reference
+entity_type: block_content
+bundle: main_header
+label: 'Main Header Menu Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:menu'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -6,7 +6,8 @@
     {% endif %}
 {% endfor %}
 
-{# Link #}
+{# field value #}
+{% set title = content.field_cp_title %}
 {% set link_url = content.field_cp_link[0]['#url'] %}
 {% set link_title = content.field_cp_link[0]['#title'] %}
 
@@ -28,15 +29,22 @@
 <div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
     <div class="card__container">
         <div class="card__content">
+            
+            {% if title %}
+                <h3 class="card__title">
+                    {{ title }}
+                </h3>
+            {% endif %}
+
             {{ items }}
         
-            <div class="card__content">
-                {% if link_title %}
-                <div class="card__link">
-                    <a href="{{ link_url }}">{{ link_title }}</a>
-                </div>
-                {% endif %}
+           
+            {% if link_title %}
+            <div class="card__link">
+                <a href="{{ link_url }}">{{ link_title }}</a>
             </div>
+            {% endif %}
+            
         </div>
     </div>  
 </div>

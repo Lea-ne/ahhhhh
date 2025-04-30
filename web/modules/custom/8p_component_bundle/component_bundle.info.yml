@@ -6,5 +6,6 @@ package: Custom
 dependencies:
   - paragraphs
   - drupal:media_library
+  - field_group
 libraries:
   - component_bundle/general_style

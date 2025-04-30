@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.card_price_list.field_cp_custom_id
     - field.field.paragraph.card_price_list.field_cp_link
     - field.field.paragraph.card_price_list.field_cp_ref_molecule_price_list
+    - field.field.paragraph.card_price_list.field_cp_title
     - field.field.paragraph.card_price_list.field_option_button_render
     - paragraphs.paragraphs_type.card_price_list
   module:
@@ -17,6 +18,7 @@ third_party_settings:
   field_group:
     group_options:
       children:
+        - field_option_button_render
         - field_cp_custom_class
         - field_cp_custom_id
       label: Options
@@ -33,7 +35,7 @@ third_party_settings:
         description: ''
         required_fields: true
 _core:
-  default_config_hash: yfNLWbcWvEnM-188aK2x1AgVbUAas2ckr9X9tB_baIE
+  default_config_hash: OE3fmW-749aIRnXKImWOYPNcG678pg6KFpJIgeHkzPk
 id: paragraph.card_price_list.default
 targetEntityType: paragraph
 bundle: card_price_list
@@ -41,7 +43,7 @@ mode: default
 content:
   field_cp_custom_class:
     type: string_textarea
-    weight: 4
+    weight: 3
     region: content
     settings:
       rows: 1
@@ -49,7 +51,7 @@ content:
     third_party_settings: {  }
   field_cp_custom_id:
     type: string_textarea
-    weight: 5
+    weight: 4
     region: content
     settings:
       rows: 1
@@ -57,7 +59,7 @@ content:
     third_party_settings: {  }
   field_cp_link:
     type: link_default
-    weight: 1
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
@@ -65,7 +67,7 @@ content:
     third_party_settings: {  }
   field_cp_ref_molecule_price_list:
     type: paragraphs
-    weight: 0
+    weight: 1
     region: content
     settings:
       title: Paragraph
@@ -80,6 +82,14 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_cp_title:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
     third_party_settings: {  }
   field_option_button_render:
     type: options_select
