@@ -61,6 +61,7 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  main_header: 0
   media: 0
   media_library: 0
   media_library_form_element: 0
@@ -70,7 +71,6 @@ module:
   node: 0
   options: 0
   page_cache: 0
-  paragraph_block: 0
   paragraph_bundle_image: 0
   paragraphs_bundles: 0
   paragraphs_features: 0

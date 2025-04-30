@@ -1,0 +1,37 @@
+{# Define header logo #}
+{% set media_entity = content.field_main_header_logo.0['#media'] %}
+{% set image = media_entity.field_media_image.entity %}
+{% set media = image.uri.value|file_url %}
+
+
+{# Define footer social media menu #}
+{% set header_menu_entity = content.field_main_header_menu_reference.0['#plain_text'] ? : ''  %}
+{% if header_menu_entity is not empty %}
+    {% set header_menu = drupal_menu(header_menu_entity) %}
+{% endif %}
+
+{%
+  set classes = [
+    'component-main-header',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    custom_class,
+  ]
+%}
+
+
+<div class="component-header container">
+  <div class="header__container">
+    
+    <!-- Bloc gauche : logo, texte et réseaux sociaux -->
+    <div class="header__brand-logo">
+        <img src="{{ media }}" alt="Logo" />
+    </div>
+    
+    <!-- Bloc droit : menu principal à colonnes (2 niveaux) -->
+    <nav class="header__menu">
+      {{ header_menu }}
+    </nav>
+    
+  </div>
+</div>
