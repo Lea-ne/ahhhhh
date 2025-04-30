@@ -1,19 +1,56 @@
-uuid: fbfccdc2-a00e-4528-8de7-a27e3df910ba
+uuid: 41b12ec9-54a0-4cef-8169-5877300ed6bf
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.card_product.field_simple_product_reference
+    - field.field.paragraph.card_product.field_cp_custom_class
+    - field.field.paragraph.card_product.field_cp_custom_id
+    - field.field.paragraph.card_product.field_cp_product_reference
     - paragraphs.paragraphs_type.card_product
-_core:
-  default_config_hash: lW4sVzkdyQUoe6hLkrLA1Wnab-iGcqnllnM6kOGCYj8
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_options:
+      children:
+        - field_cp_custom_class
+        - field_cp_custom_id
+      label: Options
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
 id: paragraph.card_product.default
 targetEntityType: paragraph
 bundle: card_product
 mode: default
 content:
-  field_simple_product_reference:
-    type: entity_reference_autocomplete_tags
+  field_cp_custom_class:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_custom_id:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_cp_product_reference:
+    type: entity_reference_autocomplete
     weight: 0
     region: content
     settings:

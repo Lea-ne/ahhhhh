@@ -1,23 +1,35 @@
-uuid: b1f13429-43f3-444d-8edc-ad605259d42d
+uuid: 8889d953-c924-4e02-9749-1f018427a670
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.card_product.field_simple_product_reference
+    - field.field.paragraph.card_product.field_cp_custom_class
+    - field.field.paragraph.card_product.field_cp_custom_id
+    - field.field.paragraph.card_product.field_cp_product_reference
     - paragraphs.paragraphs_type.card_product
-_core:
-  default_config_hash: WyUsv3t5qOvoJk6H59gJFdWaTJ-iD-1AmzHE4eQ1zZI
 id: paragraph.card_product.default
 targetEntityType: paragraph
 bundle: card_product
 mode: default
 content:
-  field_simple_product_reference:
-    type: entity_reference_entity_view
+  field_cp_custom_class:
+    type: basic_string
     label: hidden
-    settings:
-      view_mode: card_product
-      link: false
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cp_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cp_product_reference:
+    type: entity_reference_entity_id
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content

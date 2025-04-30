@@ -1,18 +1,16 @@
-uuid: e0e1225e-df53-4bf3-a14a-721635fa7994
+uuid: 7c980f24-4115-4917-989b-63b0cc674fb3
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.default
-    - field.storage.paragraph.field_simple_product_reference
+    - field.storage.paragraph.field_cp_product_reference
     - paragraphs.paragraphs_type.card_product
-_core:
-  default_config_hash: sjH0EKYCY2639uHCDBQpp_v0Ftjohae0s0Bcca1f7Xc
-id: paragraph.card_product.field_simple_product_reference
-field_name: field_simple_product_reference
+id: paragraph.card_product.field_cp_product_reference
+field_name: field_cp_product_reference
 entity_type: paragraph
 bundle: card_product
-label: 'Simple Product Reference'
+label: 'Product Reference'
 description: ''
 required: false
 translatable: false

@@ -1,21 +1,19 @@
-uuid: f4ed0242-ac24-4ddb-b258-7218b90ebd46
+uuid: 40eec2da-ac5f-4d11-a555-80f597858c9d
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - paragraphs
-_core:
-  default_config_hash: PAzL1fKyxNlv2ODegZUoXsziNM1b-Y50ujYDiN78_Oc
-id: paragraph.field_simple_product_reference
-field_name: field_simple_product_reference
+id: paragraph.field_cp_product_reference
+field_name: field_cp_product_reference
 entity_type: paragraph
 type: entity_reference
 settings:
   target_type: commerce_product
 module: core
 locked: false
-cardinality: 1
+cardinality: 4
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

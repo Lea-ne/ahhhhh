@@ -1,9 +1,7 @@
-uuid: 91821881-21df-4161-a252-47abc3a61500
+uuid: 00bb454f-32d2-4fa2-9276-6e809d02dbb4
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: wTVrCxqbrlV0xvcAAZdFrodvljX0MxUzc4AmJyL4h_s
 id: card_product
 label: 'Card Product'
 icon_uuid: null
