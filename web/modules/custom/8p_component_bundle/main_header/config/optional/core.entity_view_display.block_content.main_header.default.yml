@@ -4,13 +4,31 @@ status: true
 dependencies:
   config:
     - block_content.type.main_header
+    - field.field.block_content.main_header.field_block_custom_class
+    - field.field.block_content.main_header.field_block_custom_id
     - field.field.block_content.main_header.field_main_header_logo
     - field.field.block_content.main_header.field_main_header_menu_reference
+_core:
+  default_config_hash: lzqhXoB1poQHRH9ygqi4qtlXAgfJx6fOqeLiTfJc0oY
 id: block_content.main_header.default
 targetEntityType: block_content
 bundle: main_header
 mode: default
 content:
+  field_block_custom_class:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_block_custom_id:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_main_header_logo:
     type: entity_reference_entity_view
     label: hidden
