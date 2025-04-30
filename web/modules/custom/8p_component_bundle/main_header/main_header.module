@@ -12,7 +12,6 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 
-
 /**
  * Implements hook_theme().
  */
@@ -22,11 +21,4 @@ function main_header_theme($existing, $type, $theme, $path) {
       'base hook' => 'block',
     ],
   ];
-}
-
-
-function main_header_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
-  if ($entity->getEntityTypeId() === 'block' && $entity->bundle() === 'main_header') {
-    $build['#attached']['library'][] = 'main_header/component_style';
-  }
 }

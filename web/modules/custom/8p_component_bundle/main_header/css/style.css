@@ -1,23 +1,141 @@
-.component-header .header__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+.component-main-header{
     width: 100%;
 }
 
-.component-header .header__container .header__brand-logo{ 
-    max-width: 200px;
+.component-main-header .header__logo{
+    width: 200px;
+    height: auto;
+    display: block;
 }
 
-.component-header .header__container .header__brand-logo img{ 
+.component-main-header .header__brand-logo img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
-.component-header .header__container .header__menu ul.nav{ 
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 30px;
+/* for all link of the menu */
+.component-main-header .navbar-collapse ul.nav li.nav-item a{
+    width: fit-content;
+}
+.component-main-header .navbar-collapse ul.nav li.nav-item a:hover{
+    color: var(--color-primary);
+}
+
+.component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu{
+    display: none;
+}
+.component-main-header .menu-item--expanded {
+    position: relative;
+}
+
+
+@media (min-width: 991.98px) {
+    /* Menu list styles*/
+    .component-main-header .navbar-nav ul.nav{
+        display: flex;
+        gap: 20px;
+    }
+    /* First level li */
+    .component-main-header .navbar-collapse ul.nav > li {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    /* ul second level */
+    .component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu{
+        position: absolute;
+        top: 100%;
+        left: -10px;
+        z-index: 10;
+        background: rgb(255, 255, 255);
+    }
+
+    /* li second level */
+    .component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu > li{
+       padding: 4px 10px;
+    }
+    .component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu > li:first-child{
+        padding-top: 10px;
+    }
+    .component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu > li:last-child{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .component-main-header .header__logo{
+        width: 150px;
+    }
+    /* Menu list styles*/
+    .component-main-header .navbar-nav{
+        margin-top: 10px;
+        border-top: 1px solid var(--color-primary);
+    }
+
+    /* ul */
+    .component-main-header .navbar-collapse ul.nav {
+      flex-direction: column !important;
+    }
+
+    /* li first child */
+    .component-main-header .navbar-collapse ul.nav > li {
+        border-bottom: 1px solid black;
+    }
+    .component-main-header .navbar-collapse ul.nav > li > a{
+        font-weight: 500;
+        font-size: 18px;
+        padding: 12px 0;
+        max-width: fit-content;
+    }
+
+    .component-main-header .navbar-collapse ul.nav > li.nav-item.menu-item--expanded::after{
+        content: '';
+        display: block;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' d='M6 6L18 18M6 18L18 6'/%3E%3C/svg%3E");
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(45deg);
+        transition: all 0.1s ease;
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+
+    .component-main-header .navbar-collapse ul.nav > li.nav-item.menu-item--expanded.is-opened::after{
+        transform: rotate(0deg);
+    }
+
+
+    /* li second child */
+    .component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu{
+        padding: 0px 0 12px 12px;
+    }
+    .component-main-header .navbar-collapse ul.nav li.nav-item.menu-item--expanded .menu > li > a{
+        padding: 4px 0;
+    }
+
+
+
+    /* Burger Menu overide styles */
+    .component-main-header .navbar-toggler, 
+    .component-main-header .navbar-toggler:focus 
+    .component-main-header .navbar-toggler:focus-visible
+    {
+        padding: 0;
+        box-shadow: none !important;
+        border: 0;
+        outline: none;
+    }
+
+    .component-main-header .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+      
+    /* Quand le menu est ouvert, changer l'icône */
+    .component-main-header .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' d='M6 6L18 18M6 18L18 6'/%3E%3C/svg%3E");
+    }
 }

@@ -1,13 +1,14 @@
-{# Define header logo #}
+{# Définition des variables #}
+{% set custom_id = content.field_block_custom_id.0['#context']['value'] ?? '' %}
+{% set custom_class = content.field_block_custom_class.0['#context']['value'] ?? '' %}
+
 {% set media_entity = content.field_main_header_logo.0['#media'] %}
 {% set image = media_entity.field_media_image.entity %}
 {% set media = image.uri.value|file_url %}
 
-
-{# Define footer social media menu #}
-{% set header_menu_entity = content.field_main_header_menu_reference.0['#plain_text'] ? : ''  %}
+{% set header_menu_entity = content.field_main_header_menu_reference.0['#plain_text'] ?: '' %}
 {% if header_menu_entity is not empty %}
-    {% set header_menu = drupal_menu(header_menu_entity) %}
+  {% set header_menu = drupal_menu(header_menu_entity) %}
 {% endif %}
 
 {%
@@ -19,19 +20,29 @@
   ]
 %}
 
+<div class="{{ classes|join(' ') }}" {% if custom_id %} id="{{ custom_id }}"{% endif %}>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
 
-<div class="component-header container">
-  <div class="header__container">
-    
-    <!-- Bloc gauche : logo, texte et réseaux sociaux -->
-    <div class="header__brand-logo">
-        <img src="{{ media }}" alt="Logo" />
-    </div>
-    
-    <!-- Bloc droit : menu principal à colonnes (2 niveaux) -->
-    <nav class="header__menu">
-      {{ header_menu }}
+      <!-- Logo -->
+      <a class="header__logo" href="/">
+        <img src="{{ media }}" alt="Logo" class="img-fluid">
+      </a>
+
+      <!-- Burger button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu" aria-controls="mainHeaderMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="header__menu collapse navbar-collapse justify-content-end" id="mainHeaderMenu">
+        <div class="navbar-nav">
+          {{ header_menu }}
+        </div>
+      </div>
+
     </nav>
-    
   </div>
 </div>
+
+{{ attach_library('main_header/component_style') }}
